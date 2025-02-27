@@ -12,3 +12,12 @@
                         13.02.2025
 1. Added recording of streaming radio to existing data storage devices.
 All tracks of the stream are written to one file, but if the stream has track names, they are written to a text file of this stream.
+
+                        01.02.2025
+1. Added streaming radio that supports http and https protocols. OpenSSL is required for https to work.
+2. The detected errors have been fixed.
+                    
+                        24.01.2025
+1. Added storage of user equalizer data.
+2. Added automatic setting of sampling frequency from the track.
+3. The detected errors have been fixed.
