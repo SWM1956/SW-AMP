@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIG>
+  <TApplication>
+    <Options_frm CBox7_Checked="1" ComboBox1_Tag="0" ComboBox3_Tag="0" ComboBox4_Tag="0" ComboBox5_Tag="0" ComboBox1_Text="Auto" UpDown1_Position="10" CheckBox1_Checked="1" CheckBox2_Checked="1" CheckBox3_Checked="0" CheckBox4_Checked="0" CheckBox5_Checked="0" CheckBox6_Checked="0" TrackBar2_Position="7" TrackBar3_Position="75" ComboBox1_ItemIndex="11" ComboBox3_ItemIndex="2" ComboBox4_ItemIndex="0" ComboBox5_ItemIndex="4">
+      <ComboBox3_Items Count="3" Item0="8-bit" Item1="16-bit" Item2="32(float)"/>
+      <ComboBox4_Items Count="2" Item0="Stereo" Item1="Mono"/>
+      <ComboBox5_Items Count="5" Item0="Interpolation: Linear" Item1="Interpolation: Sinc 8 point" Item2="Interpolation: Sinc 16 point" Item3="Interpolation: Sinc 32 point" Item4="Interpolation: Sinc 64 point"/>
+      <ComboBox1_Items Count="12" Item0="8000" Item1="22050" Item2="24000" Item3="32000" Item4="44100" Item5="48000" Item6="88200" Item7="96000" Item8="176400" Item9="192000" Item10="384000" Item11="Auto"/>
+    </Options_frm>
+  </TApplication>
+</CONFIG>

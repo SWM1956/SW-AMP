@@ -1,0 +1,17 @@
+object Form1: TForm1
+  Left = 1
+  Height = 51
+  Top = 22
+  Width = 56
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  OnCreate = FormCreate
+  ShowInTaskBar = stNever
+  LCLVersion = '2.2.0.4'
+  object Timer2: TTimer
+    Interval = 100
+    OnTimer = Timer2Timer
+    Left = 232
+    Top = 56
+  end
+end

@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":471204,"name":"tfrm_list.caption","sourcebytes":[108,105,115,116],"value":"list"},
+{"hash":162442785,"name":"tfrm_list.bgrashape11.caption","sourcebytes":[66,71,82,65,83,104,97,112,101,49,49],"value":"BGRAShape11"},
+{"hash":162442788,"name":"tfrm_list.bgrashape14.caption","sourcebytes":[66,71,82,65,83,104,97,112,101,49,52],"value":"BGRAShape14"},
+{"hash":180498917,"name":"tfrm_list.statusbar1.hint","sourcebytes":[67,117,114,114,101,110,116,32,112,108,97,121,108,105,115,116,32,102,105,108,101],"value":"Current playlist file"}
+]}

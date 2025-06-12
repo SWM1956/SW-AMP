@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":210202701,"name":"tcover_form.caption","sourcebytes":[67,111,118,101,114,95,70,111,114,109],"value":"Cover_Form"},
+{"hash":162442786,"name":"tcover_form.bgrashape12.caption","sourcebytes":[66,71,82,65,83,104,97,112,101,49,50],"value":"BGRAShape12"},
+{"hash":162442785,"name":"tcover_form.bgrashape11.caption","sourcebytes":[66,71,82,65,83,104,97,112,101,49,49],"value":"BGRAShape11"}
+]}

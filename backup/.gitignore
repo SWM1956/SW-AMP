@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+# Lazarus / Free Pascal: ігноруємо бінарники та кеш
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.ppu
+*.compiled
+*.a
+*.rsj
+*.map
+*.rst
+*.pdb
+*.bak
+*.cfg
+
+# Каталоги для збірки / кешу
+build/
+lib/
+backup/
+tmp/
+
+# Тимчасові файли IDE
+*.lps
+*.lpi~
+*.lpr~
+*.~*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+=======
+keyboard.log
+>>>>>>> c2deec6 (Remove pict)
+keyboard.log

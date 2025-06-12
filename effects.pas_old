@@ -1,0 +1,968 @@
+unit effects;
+
+{$mode Delphi}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
+  StdCtrls, XMLPropStorage, lazdynamic_bass,
+  DynLibs, Dynamic_BassFX,
+  LCLTranslator, DefaultTranslator, BGRAShape, PairSplitter;
+
+type
+
+  { TFrm_Effects }
+
+  TFrm_Effects = class(TForm)
+    BGRAShape16: TBGRAShape;
+    BGRAShape17: TBGRAShape;
+    BGRAShape18: TBGRAShape;
+    BGRAShape20: TBGRAShape;
+    BGRAShape21: TBGRAShape;
+    BGRAShape22: TBGRAShape;
+    BGRAShape23: TBGRAShape;
+    BGRAShape24: TBGRAShape;
+    BGRAShape25: TBGRAShape;
+    BGRAShape26: TBGRAShape;
+    BGRAShape27: TBGRAShape;
+    BGRAShape28: TBGRAShape;
+    BGRAShape29: TBGRAShape;
+    BGRAShape30: TBGRAShape;
+    BGRAShape31: TBGRAShape;
+    BGRAShape32: TBGRAShape;
+    BGRAShape33: TBGRAShape;
+    CheckBox1: TCheckBox;
+    CheckBox10: TCheckBox;
+    CheckBox11: TCheckBox;
+    CheckBox12: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
+    CheckBox6: TCheckBox;
+    CheckBox7: TCheckBox;
+    CheckBox8: TCheckBox;
+    CheckBox9: TCheckBox;
+    Ef2Name1: TPanel;
+    Ef8Name1: TPanel;
+    Ef7Name1: TPanel;
+    Ef6Name1: TPanel;
+    Ef5Name1: TPanel;
+    Ef3Name1: TPanel;
+    Ef3Name2: TPanel;
+    Label1: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label2: TLabel;
+    Label20: TLabel;
+    Label21: TLabel;
+    Label22: TLabel;
+    Label23: TLabel;
+    Label24: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label27: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
+    Label3: TLabel;
+    Label30: TLabel;
+    Label31: TLabel;
+    Label32: TLabel;
+    Label33: TLabel;
+    Label34: TLabel;
+    Label35: TLabel;
+    Label37: TLabel;
+    Label38: TLabel;
+    Label39: TLabel;
+    Label4: TLabel;
+    Label40: TLabel;
+    Label41: TLabel;
+    Label42: TLabel;
+    Label43: TLabel;
+    Label44: TLabel;
+    Label45: TLabel;
+    Label48: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Pane116: TPanel;
+    Panel16: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Panel8: TPanel;
+    Ef1Name: TPanel;
+    TabSheet3: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet5: TTabSheet;
+    TabSheet6: TTabSheet;
+    TabSheet7: TTabSheet;
+    TabSheet8: TTabSheet;
+    Timer1: TTimer;
+    XMLPropStorage1: TXMLPropStorage;
+    XTB1: TTrackBar;
+    XTB10: TTrackBar;
+    XTB11: TTrackBar;
+    XTB12: TTrackBar;
+    XTB13: TTrackBar;
+    XTB14: TTrackBar;
+    XTB15: TTrackBar;
+    XTB16: TTrackBar;
+     XTB18: TTrackBar;
+     XTB19: TTrackBar;
+     XTB2: TTrackBar;
+     XTB20: TTrackBar;
+     XTB21: TTrackBar;
+     XTB23: TTrackBar;
+    XTB3: TTrackBar;
+    XTB4: TTrackBar;
+    XTB5: TTrackBar;
+    XTB6: TTrackBar;
+    XTB7: TTrackBar;
+    XTB8: TTrackBar;
+    PageControl1:TPageControl;
+    TabSheet1:TTabSheet;
+    TabSheet4:TTabSheet;
+    XTB9: TTrackBar;
+
+    procedure CheckBox10Change(Sender: TObject);
+    procedure CheckBox10Click(Sender: TObject);
+    procedure CheckBox1Change(Sender: TObject);
+    procedure CheckBox1Click(Sender: TObject);
+    procedure CheckBox2Change(Sender: TObject);
+    procedure CheckBox2Click(Sender: TObject);
+    procedure CheckBox3Change(Sender: TObject);
+    procedure CheckBox3Click(Sender: TObject);
+    procedure CheckBox4Change(Sender: TObject);
+    procedure CheckBox4Click(Sender: TObject);
+    procedure CheckBox5Change(Sender: TObject);
+    procedure CheckBox5Click(Sender: TObject);
+    procedure CheckBox6Change(Sender: TObject);
+    procedure CheckBox6Click(Sender: TObject);
+    procedure CheckBox7Change(Sender: TObject);
+    procedure CheckBox7Click(Sender: TObject);
+    procedure CheckBox8Change(Sender: TObject);
+    procedure CheckBox8Click(Sender: TObject);
+    procedure CheckBox9Change(Sender: TObject);
+    procedure CheckBox9Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+
+
+    procedure Timer1Timer(Sender: TObject);
+    procedure XMLPropStorage1RestoreProperties(Sender: TObject);
+    procedure XTB10Change(Sender: TObject);
+    procedure XTB11Change(Sender: TObject);
+    procedure XTB12Change(Sender: TObject);
+    procedure XTB15Change(Sender: TObject);
+    procedure XTB16Change(Sender: TObject);
+    procedure XTB18Change(Sender: TObject);
+    procedure XTB23Change(Sender: TObject);
+
+    procedure XTB2Change(Sender: TObject);
+    procedure XTB1Change(Sender: TObject);
+    procedure XTB2MouseWheel(Sender: TObject; Shift: TShiftState;
+      WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
+    procedure XTB3Change(Sender: TObject);
+    procedure XTB4Change(Sender: TObject);
+    procedure XTB5Change(Sender: TObject);
+    procedure XTB6Change(Sender: TObject);
+    procedure XTB7Change(Sender: TObject);
+    procedure XTB8Change(Sender: TObject);
+    procedure XTB9Change(Sender: TObject);
+
+  private
+    procedure SetCompressor;
+    procedure SetPeakEqualizer;
+    procedure SetStereoExpand;
+    procedure UpdateCP;
+    procedure UpdatePeakEqulizer;
+    procedure UpdateStereoExpand;
+
+  public
+     procedure UpdateR();
+     procedure SetReverb();
+     procedure SetChorus();
+     procedure SetEcho;
+     procedure SetFlanger;
+     procedure UpdateFL;
+     procedure UpdateEC;
+     procedure UpdatecH();
+     procedure RunEffects();
+     //XTB1:TTrackBar;
+  end;
+
+var
+  Frm_Effects: TFrm_Effects;
+   xtb8Pos, xtb7Pos, xtb6Pos, xtb5Pos, xtb4Pos, xtb3Pos, tb1Pos, tb2Pos :Integer;
+   sr:Integer =0;
+  ec:Integer =0;
+  ho: Integer =0;
+  fl: Integer =0;
+  cp: Integer =0;
+  stE: Integer =0;
+  equal: Integer =0;
+  equal1: Integer =0;
+  reverbInChannel:bool =false;
+  echoInChannel:bool =false;
+  chorusInChannel:bool =false;
+  flangerInChannel:bool =false;
+  compressorInChannel:bool =false;
+  peakEqualizerInChannel:bool   =false;
+   peakEqualizer1InChannel:bool   =false;
+  stereoExpandInChannel:bool   =false;
+//  peakEqualizer1InChannel
+
+implementation
+uses sw_player;
+{$R *.lfm}
+
+{ TFrm_Effects }
+
+procedure TFrm_Effects.XTB2Change(Sender: TObject);
+begin
+tb2Pos:=XTB2.Position;
+//caption:=Xtb2.Position.ToString;
+UpdateR;
+end;
+
+
+procedure TFrm_Effects.XTB1Change(Sender: TObject);
+begin
+tb1Pos:=XTB1.Position;
+UpdateR;
+end;
+
+procedure TFrm_Effects.XTB2MouseWheel(Sender: TObject; Shift: TShiftState;
+  WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
+begin
+    (Sender as TTrackBar).Position:=(Sender as TTrackBar).Position+(WheelDelta div 120);
+ Handled := True;
+end;
+
+procedure TFrm_Effects.XTB3Change(Sender: TObject);
+begin
+  UpdateEC;
+end;
+
+procedure TFrm_Effects.XTB4Change(Sender: TObject);
+begin
+  UpdatecH;
+end;
+
+procedure TFrm_Effects.XTB5Change(Sender: TObject);
+begin
+  UpdatecH;
+end;
+
+procedure TFrm_Effects.XTB6Change(Sender: TObject);
+begin
+  UpdateEC;
+end;
+
+procedure TFrm_Effects.XTB7Change(Sender: TObject);
+begin
+  UpdatecH;
+end;
+
+procedure TFrm_Effects.XTB8Change(Sender: TObject);
+begin
+UpdateEC;
+end;
+
+procedure TFrm_Effects.XTB9Change(Sender: TObject);
+begin
+      UpdateFL;
+end;
+
+procedure TFrm_Effects.RunEffects;
+begin
+      if Channel>0 then begin
+ ec:=0;
+ sr:=0;
+ ho:=0;
+ fl:=0;
+ cp:=0;
+ equal:=0;
+ equal1:=0;
+ stE:=0;
+ //Form_player.Caption:=IntToStr(itt);
+ setReverb();
+ setEcho();
+ setChorus();
+ setFlanger();
+ setCompressor();
+ setPeakEqualizer();
+ setStereoExpand();
+      end;
+end;
+
+procedure TFrm_Effects.SetReverb;
+  var
+    be:integer;
+begin
+ if (onReverb and (Channel>0) and (sr<1)) then begin
+   sr:=sr+1;
+ //  BASS_ChannelPause(Channel);
+      BASS_ChannelRemoveFX(Channel,fx[27]);
+        be:= BASS_ErrorGetCode;
+   fx[27] := BASS_ChannelSetFX(channel, BASS_FX_DX8_REVERB, 0);
+  be:= BASS_ErrorGetCode;
+  if be=0 then
+     reverbInChannel:=true
+     else
+       reverbInChannel:=false;
+   UpdateR();
+  //BASS_ChannelPlay(Channel, false);
+end;
+end;
+
+procedure TFrm_Effects.UpdateR;
+var
+  v:Double;
+begin
+   if reverbInChannel then begin
+  BASS_FXGetParameters(fx[27], @pR);
+  pR.fReverbTime:=0.00001*tb2Pos*tb2Pos*tb2Pos+0.001;
+
+    Label4.Caption:=FloatToStrF(pR.fReverbTime,ffFixed,0,3)+' mS';;
+   pR.fHighFreqRTRatio := 0.3;
+v := tb1Pos/100;
+pR.fReverbMix := 0.012*v*v*v;
+  Label6.Caption:=FloatToStrF(pR.fReverbMix, ffFixed, 0, 1)+rsDB; ;
+  BASS_FXSetParameters(fx[27], @pR);
+   end;
+   end;
+
+procedure TFrm_Effects.UpdatecH;
+var
+  v:Double;
+begin
+   if chorusInChannel then begin
+
+  BASS_FXGetParameters(fx[21], @pR);
+                                v := Xtb4.Position*0.1;
+                                pcH.fDepth :=0.0001*v*v*v;;
+                                 v := Xtb5.Position*0.1;
+                                pcH.fFrequency:= 0.00001*v*v*v;
+  Label11.Caption:= FloatToStrF(pcH.fFrequency,ffFixed,0,3)+' Hz';
+    Label10.Caption:= FloatToStrF(pcH.fDepth,ffFixed,0,3)+' %';
+//    pcH.fFeedback:=Xtb6.Position;
+        pcH.fWetDryMix := 90;
+        pch.fFeedback:=90;
+        pcH.lWaveform:=0;
+      pcH.lPhase := 4;
+      pch.fDelay:=10;
+  // 0.012*v*v*v;
+  BASS_FXSetParameters(fx[21], @pR);
+
+   end;
+end;
+
+procedure  TFrm_Effects.SetChorus();
+var
+  be:integer;
+begin
+{  if onChorus then begin
+      BASS_ChannelRemoveFX(Channel,fx[21]);
+   fx[21] := BASS_ChannelSetFX(channel, BASS_FX_DX8_CHORUS, 0);
+   UpdatecH()
+end
+else
+  BASS_ChannelRemoveFX(Channel,fx[21]);
+}
+
+   if (onChorus and (Channel>0) and (ho<1)) then begin
+   ho:=ho+1;
+       BASS_ChannelRemoveFX(Channel,fx[21]);
+    fx[21] := BASS_ChannelSetFX(channel, BASS_FX_DX8_CHORUS, 1);
+   be:= BASS_ErrorGetCode;
+  if be=0 then
+     chorusInChannel:=true
+     else
+       chorusInChannel:=false;
+    UpdatecH();
+ end;
+
+//caption:=(Application.VersionInfo);
+end;
+
+procedure TFrm_Effects.SetEcho;
+var
+  be:integer;
+begin
+  if (OnEcho and (Channel>0) and (ec<1)) then begin
+   ec:=ec+1;
+       BASS_ChannelRemoveFX(Channel,fx[22]);
+    fx[22] := BASS_ChannelSetFX(channel, BASS_FX_DX8_ECHO, 1);
+   be:= BASS_ErrorGetCode;
+  if be=0 then
+     echoInChannel:=true
+     else
+       echoInChannel:=false;
+    UpdateEC();
+ end;
+
+end;
+
+procedure TFrm_Effects.SetStereoExpand;
+var
+  be:integer;
+begin
+  if (OnStereoExpand and (Channel>0) and (stE<1)) then begin
+   stE:=Ste+1;
+       BASS_ChannelRemoveFX(Channel,fx[30]);
+    fx[30] := BASS_ChannelSetFX(channel, BASS_FX_DX8_ECHO, 1);
+   be:= BASS_ErrorGetCode;
+  if be=0 then
+     stereoExpandInChannel:=true
+     else
+       stereoExpandInChannel:=false;
+    UpdateStereoExpand();
+ end;
+
+end;
+
+procedure TFrm_Effects.SetFlanger;
+var
+  be:integer;
+begin
+ { if onFlanger then begin
+       BASS_ChannelRemoveFX(Channel,fx[23]);
+    fx[23] := BASS_ChannelSetFX(channel, BASS_FX_DX8_FLANGER, 0);
+    UpdateFL()
+ end       }
+
+    if (onFlanger and (Channel>0) and (fl<1)) then begin
+   fl:=fl+1;
+     BASS_ChannelRemoveFX(Channel,fx[23]);
+           fx[23]:=0;
+       fx[23] := BASS_ChannelSetFX(channel, BASS_FX_DX8_FLANGER, 1);
+
+   be:= BASS_ErrorGetCode;
+  if be=0 then
+     flangerInChannel:=true
+     else
+       flangerInChannel:=false;
+    UpdateFL();
+ end;
+
+ end;
+
+procedure TFrm_Effects.SetCompressor;
+var
+  be:integer;
+
+Begin
+   if (onCompressor and (Channel>0) and (cp<1)) then begin
+ //  vers:=BASS_FX_GetVersion();
+   cp:=cp+1;
+       BASS_ChannelRemoveFX(Channel,fx[26]);
+    fx[26] := BASS_ChannelSetFX(channel, BASS_FX_BFX_COMPRESSOR2, 1);
+   be:= BASS_ErrorGetCode;
+  if be=0 then
+     compressorInChannel:=true
+     else
+       compressorInChannel:=false;
+    UpdateCP();
+ end;
+end;
+
+procedure TFrm_Effects.SetPeakEqualizer;
+var
+  be:integer;
+
+Begin
+   if (OnPeakEqualizer and (Channel>0) and (equal<1)) then begin
+ //  vers:=BASS_FX_GetVersion();
+   equal:=equal+1;
+       BASS_ChannelRemoveFX(Channel,fx[28]);
+    fx[28] := BASS_ChannelSetFX(channel, BASS_FX_BFX_BQF  , 1);
+   be:= BASS_ErrorGetCode;
+  if be=0 then
+     peakEqualizerInChannel:=true
+     else
+       peakEqualizerInChannel:=false;
+ //   UpdatePeakEqulizer();
+ end;
+      if (OnPeakEqualizer1 and (Channel>0) and (equal1<1)) then begin
+   equal1:=equal1+1;
+       BASS_ChannelRemoveFX(Channel,fx[29]);
+    fx[29] := BASS_ChannelSetFX(channel, BASS_FX_BFX_BQF  , 1);
+   be:= BASS_ErrorGetCode;
+  if be=0 then
+     peakEqualizer1InChannel:=true
+     else
+       peakEqualizer1InChannel:=false;
+  UpdatePeakEqulizer();
+ end;
+
+end;
+
+
+
+
+procedure TFrm_Effects.UpdatePeakEqulizer;
+var
+  v, v1:Double;
+begin
+ if peakEqualizerInChannel and OnPeakEqualizer then Begin
+ BASS_FXGetParameters(fx[28], @pExt);
+Pext.lFilter:=  BASS_BFX_BQF_PEAKINGEQ;
+v := Xtb18.Position;
+pExt.fCenter:=v;
+v:=Xtb19.Position/10;
+pExt.fGain := v;
+pExt.fBandwidth:=1.0;
+if checkBox9.Checked and checkBox11.Checked then
+pext.lChannel:=-1
+else
+  if checkBox9.Checked and (Not checkBox11.Checked) then
+ pext.lChannel:=1
+ else
+   if checkBox11.Checked and (Not checkBox9.Checked) then
+ pext.lChannel:=2 ;
+Label37.Caption:= FloatToStrF(pExt.fCenter,ffFixed,5,0)+'Hz';
+Label38.Caption:= FloatToStrF(pExt.fGain,ffFixed,5,1)+'dB';
+BASS_FXSetParameters(fx[28], @pExt);
+end;
+  if (checkBox10.Checked or CheckBox12.Checked ) and peakEqualizer1InChannel then  Begin
+
+ BASS_FXGetParameters(fx[29], @pExt1);
+Pext1.lFilter:=  BASS_BFX_BQF_PEAKINGEQ;
+v1 := Xtb20.Position;
+pExt1.fCenter:=v1;
+v1:=Xtb21.Position/10;
+pExt1.fGain := v1;
+pExt1.fBandwidth:=1.0;
+if checkBox10.Checked and checkBox12.Checked then
+pext1.lChannel:=-1
+else
+  if checkBox10.Checked and (Not checkBox12.Checked) then
+ pext1.lChannel:=1
+ else
+   if checkBox12.Checked and (Not checkBox10.Checked) then
+ pext1.lChannel:=2 ;
+
+.Caption:= FloatToStrF(pExt1.fCenter,ffFixed,5,0)+'Hz';
+Label44.Caption:= FloatToStrF(pExt1.fGain,ffFixed,5,1)+'dB';
+BASS_FXSetParameters(fx[29], @pExt1);
+end;
+
+ end;
+
+procedure TFrm_Effects.UpdateCP;
+var
+  v:Double;
+begin
+ if compressorInChannel then Begin
+BASS_FXGetParameters(fx[26], @pCo);
+v := Xtb10.Position;
+pCo.fRelease := v;
+Label21.Caption:= FloatToStrF(pCo.fRelease,ffFixed,0,0)+' mS';
+
+v := XTB12.Position*0.1;
+pCo.fThreshold:= v;
+//pf.fWetDryMix:=70;
+Label23.Caption:= FloatToStrF(pCo.fThreshold,ffFixed,0,1)+' dB';
+pco.fGain:=pco.fThreshold*(1/(pco.fRatio)-0.6);
+V:= XTB13.Position*0.1;
+pCo.fAttack:=v;
+ Label24.Caption:= FloatToStrF(pCo.fAttack,ffFixed,0,1)+' mS';
+  pCo.fRelease:=v*5;
+ V:= XTB14.Position*0.1;
+pCo.fRatio:=v;
+ Label25.Caption:= FloatToStrF(pCo.fRatio,ffFixed,0,1)+':1';
+
+BASS_FXSetParameters(fx[26], @pCo);
+
+end;
+ end;
+
+procedure TFrm_Effects.UpdateFL;
+var
+  v:Double;
+begin
+ if flangerInChannel then Begin
+BASS_FXGetParameters(fx[23], @pF);
+v := Xtb9.Position*0.1;
+pF.fDepth :=0.0001*v*v*v;;
+Label20.Caption:= FloatToStrF(pF.fDepth,ffFixed,0,3)+' %';
+v := XTB11.Position*0.1;
+pF.fFrequency:= 0.00001*v*v*v;
+//pf.fWetDryMix:=70;
+Label22.Caption:= FloatToStrF(pF.fFrequency,ffFixed,0,3)+' Hz';
+BASS_FXSetParameters(fx[23], @pF);
+
+end;
+ end;
+
+
+
+
+
+procedure TFrm_Effects.UpdateEC;
+var
+  v:Double;
+begin
+   if echoInChannel then Begin
+BASS_FXGetParameters(fx[22], @pE);
+v:=Xtb6.Position*0.1;
+pE.fFeedback:=0.0001*v*v*v;
+ Label9.Caption:=FloatToStrF(pE.fFeedback,ffFixed,0,1)+' %';
+
+ v:=Xtb7.Position*0.1;
+pE.fLeftDelay:=0.01*v*v*v+1;
+ Label13.Caption:=FloatToStrF(pE.fLeftDelay,ffFixed,0,2)+' mS';
+
+ v:=Xtb8.Position*0.1;
+pE.fRightDelay:=0.01*v*v*v+1;
+ Label14.Caption:=FloatToStrF(pE.fRightDelay,ffFixed,0,2)+' mS';
+v := XTB3.Position*0.1;
+pE.fWetDryMix :=0.0001*v*v*v;
+// pE.lPanDelay:=true;
+
+Label8.Caption:=FloatToStrF(pE.fWetDryMix,ffFixed,0,1)+' %';
+BASS_FXSetParameters(fx[22], @pE);
+   end;
+   end;
+
+procedure TFrm_Effects.UpdateStereoExpand;
+var
+  v:Double;
+begin
+   if stereoExpandInChannel then Begin
+BASS_FXGetParameters(fx[30], @pstE);
+pstE.fFeedback:=0;
+v:=Xtb23.Position*0.1;
+ pstE.fRightDelay:=0.01*v*v*v+1;
+ Label45.Caption:=FloatToStrF(pstE.fRightDelay,ffFixed,3,2);
+ if pste.fRightDelay >1.1 then
+ Label45.Caption:=FloatToStrF(pstE.fRightDelay*2.518891688, ffFixed,3,2);
+// if pste.fRightDelay <3 then
+ // Label45.Caption:=FloatToStrF(0, ffFixed,3,2);
+pstE.fLeftDelay:=1;
+pstE.fWetDryMix :=100;
+BASS_FXSetParameters(fx[30], @pstE);
+   end;
+   end;
+
+
+procedure TFrm_Effects.CheckBox1Change(Sender: TObject);
+begin
+OnReverb:=CheckBox1.Checked;
+if onReverb then begin
+sr:=0;
+setReverb;
+end
+else begin
+       BASS_ChannelRemoveFX(Channel,fx[27]);
+
+     reverbInChannel:=false;
+  end;
+
+end;
+
+procedure TFrm_Effects.CheckBox10Click(Sender: TObject);
+begin
+     Xtb20.Enabled:=CheckBox10.Checked or CheckBox12.Checked;
+    Xtb21.Enabled:=CheckBox10.Checked or CheckBox12.Checked;
+end;
+
+procedure TFrm_Effects.CheckBox10Change(Sender: TObject);
+begin
+            OnPeakEqualizer1:=CheckBox10.Checked or  CheckBox12.Checked;
+      if OnPeakEqualizer1 then begin
+     equal1:=0;
+      setPeakEqualizer;
+      end
+      else begin
+             BASS_ChannelRemoveFX(Channel,fx[29]);
+          peakEqualizer1InChannel:=false;
+        end;
+
+end;
+
+
+
+procedure TFrm_Effects.CheckBox1Click(Sender: TObject);
+begin
+    Xtb1.Enabled:=CheckBox1.Checked;
+  Xtb2.Enabled:=CheckBox1.Checked;
+end;
+
+procedure TFrm_Effects.CheckBox2Change(Sender: TObject);
+
+begin
+OnChorus:=CheckBox2.Checked;
+if OnChorus then begin
+ho:=0;
+setChorus;
+end
+else begin
+       BASS_ChannelRemoveFX(Channel,fx[21]);
+    chorusInChannel:=false;
+  end;
+
+
+end;
+
+procedure TFrm_Effects.CheckBox2Click(Sender: TObject);
+begin
+    Xtb4.Enabled:=CheckBox2.Checked;
+  Xtb5.Enabled:=CheckBox2.Checked;
+end;
+
+procedure TFrm_Effects.CheckBox3Change(Sender: TObject);
+begin
+{OnEcho:=CheckBox3.Checked;
+setEcho;
+
+BASS_ChannelRemoveFX(Channel,fx[22]);
+ }
+
+OnEcho:=CheckBox3.Checked;
+if OnEcho then begin
+ec:=0;
+setEcho;
+end
+else begin
+       BASS_ChannelRemoveFX(Channel,fx[22]);
+    echoInChannel:=false;
+  end;
+
+
+
+
+
+end;
+
+procedure TFrm_Effects.CheckBox3Click(Sender: TObject);
+begin
+  Xtb8.Enabled:=CheckBox3.Checked;
+  Xtb3.Enabled:=CheckBox3.Checked;
+  Xtb6.Enabled:=CheckBox3.Checked;
+  Xtb7.Enabled:=CheckBox3.Checked;
+end;
+
+procedure TFrm_Effects.CheckBox4Change(Sender: TObject);
+begin
+ //OnFlanger:=CheckBox4.Checked;
+//setFLanger;
+
+OnFlanger:=CheckBox4.Checked;
+if OnFlanger then begin
+fl:=0;
+setFlanger;
+end
+else begin
+       BASS_ChannelRemoveFX(Channel,fx[23]);
+    flangerInChannel:=false;
+  end;
+
+end;
+
+procedure TFrm_Effects.CheckBox4Click(Sender: TObject);
+begin
+    Xtb9.Enabled:=CheckBox4.Checked;
+  Xtb11.Enabled:=CheckBox4.Checked;
+end;
+
+procedure TFrm_Effects.CheckBox5Change(Sender: TObject);
+begin
+      OnCompressor:=CheckBox5.Checked;
+      if OnCompressor then begin
+     cp:=0;
+      setCompressor;
+      end
+      else begin
+             BASS_ChannelRemoveFX(Channel,fx[26]);
+          CompressorInChannel:=false;
+        end;
+end;
+
+procedure TFrm_Effects.CheckBox5Click(Sender: TObject);
+begin
+
+  Xtb10.Enabled:=CheckBox5.Checked;
+  Xtb12.Enabled:=CheckBox5.Checked;
+ Xtb13.Enabled:=CheckBox5.Checked;
+ Xtb14.Enabled:=CheckBox5.Checked;
+end;
+
+procedure TFrm_Effects.CheckBox6Change(Sender: TObject);
+begin
+
+end;
+
+procedure TFrm_Effects.CheckBox6Click(Sender: TObject);
+begin
+    if not CheckBox6.Checked then begin
+     XTB15.Position:=0;
+       label32.Caption:=FloatToStrF(0,ffFixed,0,0)+'%';
+       FXTempo:=0;
+     BASS_ChannelSetAttribute(channel, BASS_ATTRIB_TEMPO, FXTempo);
+     xtb15.Enabled:=false;
+  end
+    else begin
+              xtb15.Enabled:=true;
+     //         XTB15.Position:=0;
+
+    end;
+end;
+
+procedure TFrm_Effects.CheckBox7Change(Sender: TObject);
+begin
+
+end;
+
+procedure TFrm_Effects.CheckBox7Click(Sender: TObject);
+begin
+      if not CheckBox7.Checked then begin
+     XTB16.Position:=0;
+       label33.Caption:=FloatToStrF(0,ffFixed,0,0)+'%';
+       FXPitch:=0;
+     BASS_ChannelSetAttribute(channel, BASS_ATTRIB_TEMPO_PITCH, FXPitch);
+     xtb16.Enabled:=false;
+  end
+    else begin
+              xtb16.Enabled:=true;
+end;
+ end;
+
+procedure TFrm_Effects.CheckBox8Change(Sender: TObject);
+begin
+  OnStereoExpand:=CheckBox8.Checked;
+if OnStereoExpand then begin
+stE:=0;
+setStereoExpand;
+end
+else begin
+       BASS_ChannelRemoveFX(Channel,fx[30]);
+    StereoExpandInChannel:=false;
+  end;
+
+end;
+
+procedure TFrm_Effects.CheckBox8Click(Sender: TObject);
+begin
+   Xtb23.Enabled:=CheckBox8.Checked;
+end;
+
+procedure TFrm_Effects.CheckBox9Change(Sender: TObject);
+begin
+          OnPeakEqualizer:=CheckBox9.Checked or  CheckBox11.Checked ;
+      if OnPeakEqualizer then begin
+     equal:=0;
+      setPeakEqualizer;
+      end
+      else begin
+             BASS_ChannelRemoveFX(Channel,fx[28]);
+          peakEqualizerInChannel:=false;
+        end;
+
+
+end;
+
+procedure TFrm_Effects.CheckBox9Click(Sender: TObject);
+begin
+   Xtb18.Enabled:=CheckBox9.Checked or CheckBox11.Checked;
+    Xtb19.Enabled:=CheckBox9.Checked or CheckBox11.Checked;
+end;
+
+procedure TFrm_Effects.FormActivate(Sender: TObject);
+begin
+  tb2Pos:=XTB2.Position;
+  tb1Pos:=XTB1.Position;
+  xtb4Pos:=XTB2.Position;
+  xtb5Pos:=XTB1.Position;
+  xtb7Pos:=XTB2.Position;
+  xtb8Pos:=XTB1.Position;
+
+end;
+
+
+
+
+
+
+
+
+procedure TFrm_Effects.Timer1Timer(Sender: TObject);
+begin
+// Label6.Caption:=FloatToStrF(pR.fReverbMix,ffFixed,3,3)+' dB';;  pR.fReverbMix.ToString;
+// Label4.Caption:=FloatToStrF(pR.fReverbTime,ffFixed,3,3)+' mS';;  pR.fReverbTime.ToString;
+end;
+
+procedure TFrm_Effects.XMLPropStorage1RestoreProperties(Sender: TObject);
+begin
+       if CheckBox1.Checked then begin
+ //      CheckBo1.Checked:=false;
+ //      OnReverb:=False;
+ //        CheckBo1.Checked:=True;
+       end;
+end;
+
+procedure TFrm_Effects.XTB10Change(Sender: TObject);
+begin
+    UpdateCP;
+end;
+
+procedure TFrm_Effects.XTB11Change(Sender: TObject);
+begin
+  UpdateFL;
+end;
+
+procedure TFrm_Effects.XTB12Change(Sender: TObject);
+begin
+      UpdateCP;
+end;
+
+procedure TFrm_Effects.XTB16Change(Sender: TObject);
+begin
+     if checkBox7.Checked then begin
+   FXPitch:=XTB16.Position;
+     label33.Caption:=FloatToStrF(FXPitch,ffFixed,0,0)+'%';
+     BASS_ChannelSetAttribute(channel, BASS_ATTRIB_TEMPO_PITCH, FXPitch);
+
+     end;
+end;
+
+
+
+procedure TFrm_Effects.XTB18Change(Sender: TObject);
+begin
+  UpdatePeakEqulizer;
+end;
+
+procedure TFrm_Effects.XTB23Change(Sender: TObject);
+begin
+  UpdateStereoExpand;
+end;
+
+procedure TFrm_Effects.XTB15Change(Sender: TObject);
+begin
+   if checkBox6.Checked then begin
+   FXTempo:=XTB15.Position;
+     label32.Caption:=FloatToStrF(FXTempo,ffFixed,0,0)+'%';
+     BASS_ChannelSetAttribute(channel, BASS_ATTRIB_TEMPO, FXTempo);
+
+     end;
+end;
+
+
+
+end.
+

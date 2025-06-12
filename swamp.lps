@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <ManyBuildModesSelection Value="Default,Debug,Release"/>
+    <BuildModes Active="Release"/>
+    <Units Count="45">
+      <Unit0>
+        <Filename Value="swamp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="9"/>
+        <CursorPos Y="40"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="sw_player.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form_player"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="4678"/>
+        <CursorPos X="3" Y="4691"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="effects.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frm_Effects"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="316"/>
+        <CursorPos X="121" Y="316"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="list.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frm_List"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="767"/>
+        <CursorPos X="32" Y="791"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Cover.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Cover_Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="66"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="options1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Options_frm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="263"/>
+        <CursorPos X="75" Y="272"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="add_url.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form_addurl"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="39"/>
+        <CursorPos X="47" Y="53"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="url_dialog.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16"/>
+        <UsageCount Value="191"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="Options.pas"/>
+        <ComponentName Value="Options_frm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="options"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="8" Y="41"/>
+        <UsageCount Value="167"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="35" Y="11"/>
+        <UsageCount Value="191"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="bass.pas"/>
+        <UnitName Value="BASS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="928"/>
+        <CursorPos Y="636"/>
+        <UsageCount Value="51"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="lazdynamic_bass.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="35" Y="148"/>
+        <UsageCount Value="99"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="spectrum_vis.pas"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="25"/>
+        <CursorPos X="51" Y="38"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\..\usr\share\lazarus\2.2.4\lcl\include\menuitem.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1170"/>
+        <CursorPos Y="1195"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\..\usr\share\lazarus\2.2.4\lcl\customtimer.pas"/>
+        <UnitName Value="CustomTimer"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="175"/>
+        <CursorPos Y="191"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\..\usr\share\lazarus\2.2.4\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\scrollbar.inc"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="82"/>
+        <CursorPos Y="97"/>
+        <UsageCount Value="96"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\customtimer.pas"/>
+        <UnitName Value="CustomTimer"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="143"/>
+        <CursorPos Y="155"/>
+        <UsageCount Value="91"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\control.inc"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="4261"/>
+        <CursorPos Y="4276"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\.lazarus\onlinepackagemanager\packages\bgrabitmap-master\bgrabitmap\bgragraphics.pas"/>
+        <UnitName Value="BGRAGraphics"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="44"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2370"/>
+        <CursorPos Y="2385"/>
+        <UsageCount Value="93"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5412"/>
+        <CursorPos Y="5430"/>
+        <UsageCount Value="85"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\propertystorage.pas"/>
+        <UnitName Value="PropertyStorage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="528"/>
+        <CursorPos Y="553"/>
+        <UsageCount Value="76"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\.lazarus\onlinepackagemanager\packages\bgrabitmap-master\bgrabitmap\bgragtkbitmap.pas"/>
+        <UnitName Value="BGRAGtkBitmap"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="80" Y="55"/>
+        <UsageCount Value="26"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="102"/>
+        <CursorPos Y="116"/>
+        <UsageCount Value="72"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="CommonTypes.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="34" Y="14"/>
+        <UsageCount Value="61"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="56"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\customcheckbox.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="117"/>
+        <CursorPos Y="134"/>
+        <UsageCount Value="12"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="Dynamic_BassFX.pas"/>
+        <TopLine Value="46"/>
+        <CursorPos X="2" Y="51"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\.lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgragtkbitmap.pas"/>
+        <UnitName Value="BGRAGtkBitmap"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="9" Y="44"/>
+        <UsageCount Value="1"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\..\.lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgraqtbitmap.pas"/>
+        <UnitName Value="BGRAQtBitmap"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="38"/>
+        <CursorPos X="75" Y="51"/>
+        <UsageCount Value="2"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\..\..\.lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgragraphics.pas"/>
+        <UnitName Value="BGRAGraphics"/>
+        <EditorIndex Value="12"/>
+        <UsageCount Value="101"/>
+        <Loaded Value="True"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\interfaces\gtk2\gtk2callback.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1910"/>
+        <CursorPos Y="1927"/>
+        <UsageCount Value="24"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\..\.lazarus\onlinepackagemanager\packages\BGRAControls\bcbasectrls.pas"/>
+        <UnitName Value="BCBaseCtrls"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="5"/>
+        <CursorPos X="84" Y="20"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\components\lazutils\laztracer.pas"/>
+        <UnitName Value="LazTracer"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos Y="50"/>
+        <UsageCount Value="98"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\customcontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="17" Y="57"/>
+        <UsageCount Value="72"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\..\..\..\usr\share\fpcsrc\3.2.2\packages\fv\src\menus.pas"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos X="11" Y="74"/>
+        <UsageCount Value="49"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="Dynamic_Bass.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1039"/>
+        <CursorPos X="7" Y="1054"/>
+        <UsageCount Value="56"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\interfaces\gtk2\gtk2proc.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3761"/>
+        <CursorPos Y="3780"/>
+        <UsageCount Value="11"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="Dynamic_Bassenc.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="223"/>
+        <CursorPos Y="26"/>
+        <UsageCount Value="15"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="Dynamic_BASSenc_MP3.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="4"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="..\..\..\..\..\usr\share\fpcsrc\3.2.2\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="730"/>
+        <CursorPos X="27" Y="743"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\2.2.0\lcl\include\menuitem.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="71"/>
+        <CursorPos Y="85"/>
+        <UsageCount Value="17"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="list.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="CDControl.pas"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="60"/>
+        <CursorPos Y="81"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit44>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="list.pas"/>
+        <Caret Line="11" Column="38"/>
+      </Position1>
+      <Position2>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="5" Column="20"/>
+      </Position2>
+      <Position3>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1263" Column="34" TopLine="1245"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Cover.pas"/>
+        <Caret Line="77" Column="27" TopLine="64"/>
+      </Position4>
+      <Position5>
+        <Filename Value="list.pas"/>
+        <Caret Line="718" Column="6" TopLine="714"/>
+      </Position5>
+      <Position6>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="3577" Column="15" TopLine="3563"/>
+      </Position6>
+      <Position7>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="700" Column="70" TopLine="685"/>
+      </Position7>
+      <Position8>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="701" Column="68" TopLine="685"/>
+      </Position8>
+      <Position9>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="702" Column="68" TopLine="685"/>
+      </Position9>
+      <Position10>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1998" Column="32" TopLine="1983"/>
+      </Position10>
+      <Position11>
+        <Filename Value="list.pas"/>
+        <Caret Line="9" Column="47"/>
+      </Position11>
+      <Position12>
+        <Filename Value="list.pas"/>
+        <Caret Line="115" Column="70" TopLine="91"/>
+      </Position12>
+      <Position13>
+        <Filename Value="list.pas"/>
+        <Caret Line="117" Column="65" TopLine="93"/>
+      </Position13>
+      <Position14>
+        <Filename Value="list.pas"/>
+        <Caret Line="243" Column="53" TopLine="219"/>
+      </Position14>
+      <Position15>
+        <Filename Value="list.pas"/>
+        <Caret Line="791" Column="32" TopLine="776"/>
+      </Position15>
+      <Position16>
+        <Filename Value="list.pas"/>
+        <Caret Line="115" Column="70" TopLine="100"/>
+      </Position16>
+      <Position17>
+        <Filename Value="list.pas"/>
+        <Caret Line="117" Column="65" TopLine="100"/>
+      </Position17>
+      <Position18>
+        <Filename Value="list.pas"/>
+        <Caret Line="243" Column="53" TopLine="219"/>
+      </Position18>
+      <Position19>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="700" Column="70" TopLine="685"/>
+      </Position19>
+      <Position20>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="701" Column="68" TopLine="685"/>
+      </Position20>
+      <Position21>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="702" Column="68" TopLine="685"/>
+      </Position21>
+      <Position22>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1998" Column="32" TopLine="1974"/>
+      </Position22>
+      <Position23>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="700" Column="70" TopLine="685"/>
+      </Position23>
+      <Position24>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="701" Column="68" TopLine="685"/>
+      </Position24>
+      <Position25>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="702" Column="68" TopLine="685"/>
+      </Position25>
+      <Position26>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1998" Column="32" TopLine="1980"/>
+      </Position26>
+      <Position27>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="4700" Column="51" TopLine="4685"/>
+      </Position27>
+      <Position28>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1358" TopLine="1330"/>
+      </Position28>
+      <Position29>
+        <Filename Value="spectrum_vis.pas"/>
+        <Caret Line="38" Column="51" TopLine="25"/>
+      </Position29>
+      <Position30>
+        <Filename Value="swamp.lpr"/>
+        <Caret Line="40" TopLine="9"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1" ActiveMode="default">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <HistoryLists Count="2">
+      <List0 Name="LaunchingApplication" Type="File" Count="2">
+        <Item1 Value="/usr/bin/xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+        <Item2 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+      </List0>
+      <List1 Name="WorkingDirectory" Type="File" Count="2">
+        <Item1 Value="/home/slawa/Документи/Lazarus_Projects/SWamp/lib/x86_64-linux"/>
+        <Item2 Value="/media/slawa/ee62a5c2-a4ed-42df-90db-0b77e9220b34/slawa/Документи/Lazarus_Projects/SWamp/lib/x86_64-linux/lib"/>
+      </List1>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\MyComponents\ftrackbar.pas"/>
+        <Line Value="46"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkData"/>
+        <WatchData Value="       Off_Equalizer:= not  Off_Equalizer;
+"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="sw_player.pas"/>
+        <Line Value="1984"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="sw_player.pas"/>
+        <Line Value="4845"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="CDControl.pas"/>
+        <Line Value="1"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

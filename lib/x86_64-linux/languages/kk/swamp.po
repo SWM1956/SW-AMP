@@ -1,0 +1,1860 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: swamp\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: sw_player.acancel
+msgctxt "sw_player.acancel"
+msgid "Cancel"
+msgstr "Болдырмау"
+
+#: sw_player.actualbitrate
+msgid "Actual Track Bitrate"
+msgstr "Нақты трек бит жылдамдығы"
+
+#: sw_player.adelete
+msgid "Are you sure you want to delete this "
+msgstr "Сіз мұны шынымен жойғыңыз келе ме"
+
+#: sw_player.afile
+msgid "The file "
+msgstr "Файл "
+
+#: sw_player.afileerror
+msgid "File upload error"
+msgstr "Файлды жүктеп салу қатесі"
+
+#: sw_player.autoplay
+msgctxt "sw_player.autoplay"
+msgid "Auto Play"
+msgstr "Авто ойнату"
+
+#: sw_player.balance
+msgid "Balanсe"
+msgstr "Баланс"
+
+#: sw_player.bandanalizer
+msgctxt "sw_player.bandanalizer"
+msgid "Count Bands Analizer"
+msgstr "Санақ жолақтары анализаторы"
+
+#: sw_player.bargraph
+msgid "Bar Graph"
+msgstr "Bar Graph"
+
+#: sw_player.bfile
+msgid "file?"
+msgstr "файл?"
+
+#: sw_player.bright
+msgctxt "sw_player.bright"
+msgid "Bright"
+msgstr "Жарқын"
+
+#: sw_player.chorus
+msgctxt "sw_player.chorus"
+msgid "Chorus"
+msgstr "Хор"
+
+#: sw_player.clearyesno
+msgid "Are you sure you want to clear the playlist?"
+msgstr "Ойнату тізімін шынымен өшіргіңіз келе ме?"
+
+#: sw_player.confirm
+msgid "Confirm"
+msgstr "Растау"
+
+#: sw_player.delayleft
+msgctxt "sw_player.delayleft"
+msgid "Delay for left channel"
+msgstr "Сол жақ арна үшін кідіріс"
+
+#: sw_player.delayright
+msgctxt "sw_player.delayright"
+msgid "Delay for right channel"
+msgstr "Оң арна үшін кідіріс"
+
+#: sw_player.depth
+msgctxt "sw_player.depth"
+msgid "Depth"
+msgstr "Тереңдігі"
+
+#: sw_player.ebass_error_codec
+msgid ""
+"The file uses a codec that is not available/supported. This can apply to WAV "
+"and AIFF files."
+msgstr ""
+"Файл қол жетімді емес/қолдау көрсетілмейтін кодектерді пайдаланады. Бұл WAV "
+"және AIFF файлдарына қолданылуы мүмкін."
+
+#: sw_player.ebass_error_denied
+msgid "A valid username/password is required."
+msgstr ""
+
+#: sw_player.ebass_error_fileform
+msgid "The files format is not recognised/supported."
+msgstr "Файл пішімі танылмайды/қолдау көрсетілмейді."
+
+#: sw_player.ebass_error_fileopen
+msgid "The file could not be opened."
+msgstr "Файлды ашу мүмкін болмады."
+
+#: sw_player.ebass_error_format
+msgid "The sample format is not supported."
+msgstr "Үлгі пішіміне қолдау көрсетілмейді."
+
+#: sw_player.ebass_error_illparam
+msgid "url is not a valid URL."
+msgstr "URL жарамды URL мекенжайы емес."
+
+#: sw_player.ebass_error_init
+msgid "BASS_Init has not been successfully called."
+msgstr "BASS_Init сәтті шақырылмады."
+
+#: sw_player.ebass_error_mem
+msgid "There is insufficient memory."
+msgstr "Жад жеткіліксіз."
+
+#: sw_player.ebass_error_no3d
+msgid "Could not initialize 3D support."
+msgstr "3D қолдауын инициализациялау мүмкін болмады."
+
+#: sw_player.ebass_error_nonet
+msgid ""
+"No internet connection could be opened. Can be caused by a bad proxy setting."
+msgstr ""
+"Ешқандай интернет байланысы ашылмады. Нашар прокси параметрінен туындауы "
+"мүмкін."
+
+#: sw_player.ebass_error_notaudio
+msgid ""
+"The file does not contain audio, or it also contains video and videos are "
+"disabled."
+msgstr "Файлда дыбыс жоқ немесе бейне және бейнелер өшірілген."
+
+#: sw_player.ebass_error_notavail
+msgid ""
+"The BASS_STREAM_AUTOFREE flag cannot be combined with the BASS_STREAM_DECODE "
+"flag."
+msgstr ""
+"BASS_STREAM_AUTOFREE жалауын BASS_STREAM_DECODE жалаушасымен біріктіру "
+"мүмкін емес."
+
+#: sw_player.ebass_error_protocol
+msgid "The protocol in url is not supported."
+msgstr "URL мекенжайындағы протоколға қолдау көрсетілмейді."
+
+#: sw_player.ebass_error_speaker
+msgid "The specified SPEAKER flags are invalid."
+msgstr "Көрсетілген SPEAKER жалаушалары жарамсыз."
+
+#: sw_player.ebass_error_ssl
+msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
+msgstr "SSL/HTTPS қолдауы қолжетімді емес. BASS_CONFIG_LIBSSL қараңыз."
+
+#: sw_player.ebass_error_timeout
+msgid ""
+"The server did not respond to the request within the timeout period, as set "
+"with the BASS_CONFIG_NET_TIMEOUT config option."
+msgstr ""
+"BASS_CONFIG_NET_TIMEOUT конфигурациялау опциясымен орнатылған күту уақытында "
+"сервер сұрауға жауап бермеді."
+
+#: sw_player.ebass_error_unknown
+msgid "Some other mystery problem!"
+msgstr "Басқа жұмбақ мәселе!"
+
+#: sw_player.ebass_error_unstreamable
+msgid ""
+"The file cannot be streamed. This could be because an MP4 files mdat atom "
+"comes before its \"moov\" atom."
+msgstr ""
+"Файлды ағынмен жіберу мүмкін емес. Бұл MP4 файлдарының атомының \"moov\" "
+"атомынан бұрын келуіне байланысты болуы мүмкін."
+
+#: sw_player.echo
+msgctxt "sw_player.echo"
+msgid "Echo"
+msgstr "Эхо"
+
+#: sw_player.efects
+msgctxt "sw_player.efects"
+msgid "Effects"
+msgstr "Әсер"
+
+#: sw_player.effenable
+msgctxt "sw_player.effenable"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: sw_player.equalizer
+msgid "Equalazer"
+msgstr "Эквалайзер"
+
+#: sw_player.feedback
+msgctxt "sw_player.feedback"
+msgid "Feedback"
+msgstr "Кері байланыс"
+
+#: sw_player.flanger
+msgctxt "sw_player.flanger"
+msgid "Flanger"
+msgstr "Флангер"
+
+#: sw_player.flchor0
+#, fuzzy
+#| msgctxt "sw_player.flanger"
+#| msgid "Flanger"
+msgctxt "sw_player.flchor0"
+msgid "Flanger"
+msgstr "Флангер"
+
+#: sw_player.flchor1
+msgid "Exaggerated chorus leads to multiple pitch shifted voices"
+msgstr "Шамадан тыс хор бірнеше дыбыс деңгейінің ауысуына әкеледі"
+
+#: sw_player.flchor2
+msgid "Motocycle"
+msgstr "Мотоцикл"
+
+#: sw_player.flchor3
+msgid "Devil"
+msgstr "Ібіліс"
+
+#: sw_player.flchor4
+msgid "Who say that there are not many voices?"
+msgstr "Дауыс көп емес деп кім айтты?"
+
+#: sw_player.flchor5
+msgid "Back chipmunk"
+msgstr "Артқы бурундук"
+
+#: sw_player.flchor6
+msgid "Water"
+msgstr "Су"
+
+#: sw_player.flchor7
+msgid "This is the airplane"
+msgstr "Бұл ұшақ"
+
+#: sw_player.frequency
+msgctxt "sw_player.frequency"
+msgid "Frequency modulation"
+msgstr "Жиілік модуляциясы"
+
+#: sw_player.hideq
+msgctxt "sw_player.hideq"
+msgid "Hide Equalizer"
+msgstr "Эквалайзерді жасыру"
+
+#: sw_player.interpolat0
+msgid "Interpolation: Linear"
+msgstr "Интерполяция: сызықтық"
+
+#: sw_player.interpolat1
+msgid "Interpolation: Sync 8 point"
+msgstr "Интерполяция: Синк 8 ұпай"
+
+#: sw_player.interpolat2
+msgid "Interpolation: Sync 16 point"
+msgstr "Интерполяция: Синк 16 ұпай"
+
+#: sw_player.interpolat3
+msgid "Interpolation: Sync 32 point "
+msgstr "Интерполяция: Синк 32 ұпай"
+
+#: sw_player.interpolat4
+msgid "Interpolation: Sync 64 point"
+msgstr "Интерполяция: Синк 64 ұпай"
+
+#: sw_player.languages
+msgid "Languages"
+msgstr "Тілдер"
+
+#: sw_player.line
+msgid "Line"
+msgstr "Line"
+
+#: sw_player.logvol
+msgctxt "sw_player.logvol"
+msgid "Logarithmic volume control"
+msgstr "Логарифмдік дыбыс деңгейін реттеу"
+
+#: sw_player.mono
+msgid "Mono"
+msgstr "Моно"
+
+#: sw_player.nosuch
+msgid " does not exist"
+msgstr " does not exist"
+
+#: sw_player.ofeq
+msgctxt "sw_player.ofeq"
+msgid "Off Equalizer"
+msgstr "Эквалайзер өшірулі"
+
+#: sw_player.offanalizer
+msgctxt "sw_player.offanalizer"
+msgid "Turn OFF Analizer"
+msgstr "Анализаторды өшіріңіз"
+
+#: sw_player.oneq
+msgid "On Equalizer"
+msgstr "Эквалайзерде"
+
+#: sw_player.openplaylistcaption
+msgctxt "sw_player.openplaylistcaption"
+msgid "Open Playlist"
+msgstr "Ойнату тізімін ашыңыз"
+
+#: sw_player.params
+msgctxt "sw_player.params"
+msgid "Params"
+msgstr "Парам"
+
+#: sw_player.player
+msgctxt "sw_player.player"
+msgid "Player"
+msgstr "Ойыншы"
+
+#: sw_player.playlist
+msgctxt "sw_player.playlist"
+msgid "PlayList"
+msgstr "Ойнату тізімдері"
+
+#: sw_player.reverberation
+msgctxt "sw_player.reverberation"
+msgid "Reverberation"
+msgstr "Реверберация"
+
+#: sw_player.reverbmix
+msgctxt "sw_player.reverbmix"
+msgid "Reverberation Mix"
+msgstr "Реверберация қоспасы"
+
+#: sw_player.reverbtime
+msgctxt "sw_player.reverbtime"
+msgid "Reverberation Time"
+msgstr "Реверберация уақыты"
+
+#: sw_player.rsdb
+msgid " dB"
+msgstr ""
+
+#: sw_player.sheq
+msgctxt "sw_player.sheq"
+msgid "Show Equalizer"
+msgstr "Эквалайзерді көрсету"
+
+#: sw_player.spanalizer
+msgctxt "sw_player.spanalizer"
+msgid "Spectrum Analizer"
+msgstr "Спектр анализаторы"
+
+#: sw_player.startanalizer
+msgid "Start Analizer"
+msgstr "Анализаторды іске қосыңыз"
+
+#: sw_player.stereo
+msgctxt "sw_player.stereo"
+msgid "Stereo"
+msgstr "Стерео"
+
+#: sw_player.stopanalizer
+msgctxt "sw_player.stopanalizer"
+msgid "Stop Analizer"
+msgstr "Анализаторды тоқтату"
+
+#: sw_player.tonvol
+msgctxt "sw_player.tonvol"
+msgid "Loudly compensated volume control"
+msgstr "Қатты компенсацияланған дыбыс деңгейін басқару"
+
+#: sw_player.volume
+msgctxt "sw_player.volume"
+msgid "Volume"
+msgstr "Көлемі"
+
+#: sw_player.wet
+msgctxt "sw_player.wet"
+msgid "Delayed/Direct"
+msgstr "Кешіктірілген/Тікелей"
+
+#: tcover_form.bgrashape11.caption
+msgctxt "tcover_form.bgrashape11.caption"
+msgid "BGRAShape11"
+msgstr ""
+
+#: tcover_form.bgrashape12.caption
+msgctxt "tcover_form.bgrashape12.caption"
+msgid "BGRAShape12"
+msgstr ""
+
+#: tcover_form.caption
+msgid "Cover_Form"
+msgstr ""
+
+#: tform_addurl.bgrashape15.caption
+msgctxt "tform_addurl.bgrashape15.caption"
+msgid "BGRAShape14"
+msgstr ""
+
+#: tform_addurl.bgrashape21.caption
+msgctxt "tform_addurl.bgrashape21.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tform_addurl.button1.caption
+msgid "Ok"
+msgstr ""
+
+#: tform_addurl.button2.caption
+msgctxt "tform_addurl.button2.caption"
+msgid "Cancel"
+msgstr "Болдырмау"
+
+#: tform_addurl.caption
+msgctxt "tform_addurl.caption"
+msgid "Add URL"
+msgstr "URL қосу"
+
+#: tform_addurl.label1.caption
+msgid "URL"
+msgstr ""
+
+#: tform_addurl.label2.caption
+msgid "Tittle"
+msgstr "Атау"
+
+#: tform_player.acoustic.caption
+msgid "Acoustic"
+msgstr "Acoustic"
+
+#: tform_player.addurl.caption
+msgctxt "tform_player.addurl.caption"
+msgid "Add URL"
+msgstr "URL қосу"
+
+#: tform_player.alternative.caption
+msgid "Alternative"
+msgstr "Alternative"
+
+#: tform_player.ballad.caption
+msgid "Ballad"
+msgstr "Ballad"
+
+#: tform_player.bgrashape1.caption
+msgid "BGRAShape1"
+msgstr ""
+
+#: tform_player.bgrashape1.hint
+msgid "Play Selected Track"
+msgstr "Таңдалған жолды ойнату"
+
+#: tform_player.bgrashape10.caption
+msgid "BGRAShape10"
+msgstr ""
+
+#: tform_player.bgrashape11.caption
+msgctxt "tform_player.bgrashape11.caption"
+msgid "BGRAShape11"
+msgstr ""
+
+#: tform_player.bgrashape12.caption
+msgctxt "tform_player.bgrashape12.caption"
+msgid "BGRAShape12"
+msgstr ""
+
+#: tform_player.bgrashape12.hint
+msgid "Open Files"
+msgstr "Файлдарды ашу"
+
+#: tform_player.bgrashape13.caption
+msgid "BGRAShape13"
+msgstr ""
+
+#: tform_player.bgrashape14.caption
+msgctxt "tform_player.bgrashape14.caption"
+msgid "BGRAShape14"
+msgstr ""
+
+#: tform_player.bgrashape16.caption
+msgctxt "tform_player.bgrashape16.caption"
+msgid "BGRAShape16"
+msgstr ""
+
+#: tform_player.bgrashape2.caption
+msgid "BGRAShape2"
+msgstr ""
+
+#: tform_player.bgrashape2.hint
+msgctxt "tform_player.bgrashape2.hint"
+msgid "Stop"
+msgstr "Тоқта"
+
+#: tform_player.bgrashape3.caption
+msgid "BGRAShape3"
+msgstr ""
+
+#: tform_player.bgrashape3.hint
+msgctxt "tform_player.bgrashape3.hint"
+msgid "Pause"
+msgstr "Кідірту"
+
+#: tform_player.bgrashape4.caption
+msgid "BGRAShape4"
+msgstr ""
+
+#: tform_player.bgrashape4.hint
+msgctxt "tform_player.bgrashape4.hint"
+msgid "Pause"
+msgstr "Кідірту"
+
+#: tform_player.bgrashape5.caption
+msgid "BGRAShape5"
+msgstr ""
+
+#: tform_player.bgrashape5.hint
+msgid "Next Track"
+msgstr "Келесі трек"
+
+#: tform_player.bgrashape6.caption
+msgid "BGRAShape6"
+msgstr ""
+
+#: tform_player.bgrashape7.caption
+msgid "BGRAShape7"
+msgstr ""
+
+#: tform_player.bgrashape7.hint
+msgid "Previous Track"
+msgstr "Алдыңғы трек"
+
+#: tform_player.bgrashape8.caption
+msgid "BGRAShape8"
+msgstr ""
+
+#: tform_player.bgrashape9.caption
+msgid "BGRAShape9"
+msgstr ""
+
+#: tform_player.bitbtn1.caption
+msgid "FX"
+msgstr "FX"
+
+#: tform_player.bitbtn1.hint
+msgid "Sound Effects"
+msgstr "Дыбыс әсерлері"
+
+#: tform_player.bitbtn2.caption
+msgid "Opt"
+msgstr "Opt"
+
+#: tform_player.bitbtn2.hint
+msgctxt "tform_player.bitbtn2.hint"
+msgid "Options"
+msgstr "Опциялар"
+
+#: tform_player.caption
+msgctxt "tform_player.caption"
+msgid "SW-AMP"
+msgstr "SW-AMP"
+
+#: tform_player.classic.caption
+msgid "Classic"
+msgstr ""
+
+#: tform_player.clearlist.caption
+msgctxt "tform_player.clearlist.caption"
+msgid "Clear List"
+msgstr "Тізімді тазалау"
+
+#: tform_player.closeapp.caption
+msgctxt "tform_player.closeapp.caption"
+msgid "Close SW-AMP"
+msgstr "SW-AMP жабыңыз"
+
+#: tform_player.closeplaylist.caption
+msgid "Close PlayList"
+msgstr "Ойнату тізімін жабу"
+
+#: tform_player.closeswampmenu.caption
+msgctxt "tform_player.closeswampmenu.caption"
+msgid "Close SW-AMP"
+msgstr "SW-AMP жабыңыз"
+
+#: tform_player.club.caption
+msgid "Club"
+msgstr ""
+
+#: tform_player.copytocustomeq.caption
+msgctxt "tform_player.copytocustomeq.caption"
+msgid "Copy to Custom Preset"
+msgstr "Custom көшіру"
+
+#: tform_player.custom.caption
+msgid "Custom"
+msgstr ""
+
+#: tform_player.dance.caption
+msgid "Dance"
+msgstr "Dance"
+
+#: tform_player.deleteplaylist.caption
+msgid "Delete PlayList"
+msgstr "Ойнату тізімін жою"
+
+#: tform_player.editor.caption
+msgid "Edit Selected"
+msgstr "Таңдалғанды ​​өңдеу"
+
+#: tform_player.electronic.caption
+msgid "Electronic"
+msgstr "Electronic"
+
+#: tform_player.flat.caption
+msgid "Flat"
+msgstr "Flat"
+
+#: tform_player.fullbass.caption
+msgid "Full Bass"
+msgstr "Full Bass"
+
+#: tform_player.fullbassandtreble.caption
+msgid "Full Bass And Treble"
+msgstr "Full Bass And Treble"
+
+#: tform_player.fulltreble.caption
+msgid "Full Treble"
+msgstr "Full Treble"
+
+#: tform_player.headphones.caption
+msgid "Headphones"
+msgstr "Headphones"
+
+#: tform_player.heavymetal.caption
+msgid "Heavy Metal"
+msgstr "Heavy Metal"
+
+#: tform_player.hideeq.caption
+msgctxt "tform_player.hideeq.caption"
+msgid "Show Equalizer"
+msgstr "Эквалайзерді көрсету"
+
+#: tform_player.hideequalizer.caption
+msgctxt "tform_player.hideequalizer.caption"
+msgid "Hide Equalizer"
+msgstr "Эквалайзерді жасыру"
+
+#: tform_player.hidelist.caption
+msgid "Hide List"
+msgstr "Тізімді жасыру"
+
+#: tform_player.hiphop.caption
+msgid "Hip-Hop"
+msgstr "Hip-Hop"
+
+#: tform_player.industrial.caption
+msgid "Industrial"
+msgstr "Industrial"
+
+#: tform_player.jazz.caption
+msgid "Jazz"
+msgstr "Jazz"
+
+#: tform_player.label1.caption
+msgctxt "tform_player.label1.caption"
+msgid "00:00"
+msgstr "00:00"
+
+#: tform_player.label1.hint
+msgid "Current time position"
+msgstr "Ағымдағы уақыт орны"
+
+#: tform_player.label2.caption
+msgctxt "tform_player.label2.caption"
+msgid "00:00"
+msgstr "00:00"
+
+#: tform_player.label2.hint
+msgid "End Time position"
+msgstr "Аяқталу уақыты орны"
+
+#: tform_player.label3.caption
+msgctxt "tform_player.label3.caption"
+msgid "0"
+msgstr "0"
+
+#: tform_player.label4.hint
+msgid "Current track bitrate kbps"
+msgstr "Ағымдағы трек бит жылдамдығы кбит"
+
+#: tform_player.label5.hint
+msgid "Current track sampling frequency "
+msgstr "Ағымдағы жолды таңдау жиілігі"
+
+#: tform_player.label6.caption
+msgctxt "tform_player.label6.caption"
+msgid " "
+msgstr ""
+
+#: tform_player.label6.hint
+msgid "CPU usage by decoder %"
+msgstr "Декодер бойынша процессорды пайдалану %"
+
+#: tform_player.label7.hint
+msgid "Bit depth"
+msgstr "Бит тереңдігі"
+
+#: tform_player.lang1.caption
+msgid "Bosanski"
+msgstr "Bosanski"
+
+#: tform_player.lang10.caption
+msgid "Italiano"
+msgstr "Italiano"
+
+#: tform_player.lang11.caption
+msgid "Polski"
+msgstr "Polski"
+
+#: tform_player.lang12.caption
+msgid "Français"
+msgstr "Français"
+
+#: tform_player.lang13.caption
+msgid "ქართული"
+msgstr "ქართული"
+
+#: tform_player.lang14.caption
+msgid "қазақ"
+msgstr "Қазақ"
+
+#: tform_player.lang2.caption
+msgid "English"
+msgstr "English"
+
+#: tform_player.lang3.caption
+msgid "Español"
+msgstr "Español"
+
+#: tform_player.lang4.caption
+msgid "Сatalà"
+msgstr "Сatalà"
+
+#: tform_player.lang5.caption
+msgid "Deutsch"
+msgstr "Deutsch"
+
+#: tform_player.lang6.caption
+msgid "Ελληνικά"
+msgstr "Ελληνικά"
+
+#: tform_player.lang7.caption
+msgid "Беларускі"
+msgstr "Беларускі"
+
+#: tform_player.lang8.caption
+msgid "عرب"
+msgstr "عرب"
+
+#: tform_player.lang9.caption
+msgid "Український"
+msgstr "Український"
+
+#: tform_player.language.caption
+msgid "Language"
+msgstr "Тіл"
+
+#: tform_player.largehall.caption
+msgid "Large Hall"
+msgstr "Large Hall"
+
+#: tform_player.lbleq1.caption
+msgctxt "tform_player.lbleq1.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq10.caption
+msgctxt "tform_player.lbleq10.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq11.caption
+msgctxt "tform_player.lbleq11.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq12.caption
+msgctxt "tform_player.lbleq12.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq13.caption
+msgctxt "tform_player.lbleq13.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq14.caption
+msgctxt "tform_player.lbleq14.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq15.caption
+msgctxt "tform_player.lbleq15.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq16.caption
+msgctxt "tform_player.lbleq16.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq17.caption
+msgctxt "tform_player.lbleq17.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq18.caption
+msgctxt "tform_player.lbleq18.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq2.caption
+msgctxt "tform_player.lbleq2.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq3.caption
+msgctxt "tform_player.lbleq3.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq4.caption
+msgctxt "tform_player.lbleq4.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq5.caption
+msgctxt "tform_player.lbleq5.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq6.caption
+msgctxt "tform_player.lbleq6.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq7.caption
+msgctxt "tform_player.lbleq7.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq8.caption
+msgctxt "tform_player.lbleq8.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.lbleq9.caption
+msgctxt "tform_player.lbleq9.caption"
+msgid "0.0"
+msgstr ""
+
+#: tform_player.leftover.caption
+msgid "LeftOver"
+msgstr ""
+
+#: tform_player.live.caption
+msgid "Live"
+msgstr "Live"
+
+#: tform_player.menuitem3.caption
+msgid "Bar graph"
+msgstr "Bar graph"
+
+#: tform_player.menuitem5.caption
+msgid "Delete Selected"
+msgstr "Таңдалғанды жою"
+
+#: tform_player.menustopstart.caption
+msgctxt "tform_player.menustopstart.caption"
+msgid "Stop Analizer"
+msgstr "Анализаторды тоқтату"
+
+#: tform_player.neg25.caption
+msgid "-0.25"
+msgstr ""
+
+#: tform_player.neg50.caption
+msgid "-0.5"
+msgstr ""
+
+#: tform_player.neg75.caption
+msgid "-0.75"
+msgstr ""
+
+#: tform_player.nextmenu.caption
+msgid "Next"
+msgstr "Келесі"
+
+#: tform_player.offequalizer.caption
+msgctxt "tform_player.offequalizer.caption"
+msgid "Off Equalizer"
+msgstr "Эквалайзер өшірулі"
+
+#: tform_player.openfiles.caption
+msgid "OpenFiles"
+msgstr "Файлдарды ашу"
+
+#: tform_player.openplaylist.caption
+msgctxt "tform_player.openplaylist.caption"
+msgid "Open PlayList"
+msgstr "Ойнату тізімін ашыңыз"
+
+#: tform_player.party.caption
+msgid "Party"
+msgstr "Party"
+
+#: tform_player.pausemenu.caption
+msgctxt "tform_player.pausemenu.caption"
+msgid "Pause"
+msgstr "Кідірту"
+
+#: tform_player.pb1.hint
+msgid "43Hz"
+msgstr ""
+
+#: tform_player.pb10.hint
+msgid "1kHz"
+msgstr ""
+
+#: tform_player.pb11.hint
+msgid "1.5kHz"
+msgstr ""
+
+#: tform_player.pb12.hint
+msgid "2kHz"
+msgstr ""
+
+#: tform_player.pb13.hint
+msgid "2.8kHz"
+msgstr ""
+
+#: tform_player.pb14.hint
+msgid "4kHz"
+msgstr ""
+
+#: tform_player.pb15.hint
+msgid "5.6kHz"
+msgstr ""
+
+#: tform_player.pb16.hint
+msgid "8kHz"
+msgstr ""
+
+#: tform_player.pb17.hint
+msgid "11.2kHz"
+msgstr ""
+
+#: tform_player.pb18.hint
+msgid "16kHz"
+msgstr ""
+
+#: tform_player.pb2.hint
+msgid "63Hz"
+msgstr ""
+
+#: tform_player.pb3.hint
+msgid "86Hz"
+msgstr ""
+
+#: tform_player.pb4.hint
+msgid "125Hz"
+msgstr ""
+
+#: tform_player.pb5.hint
+msgid "175Hz"
+msgstr ""
+
+#: tform_player.pb6.hint
+msgid "250Hz"
+msgstr ""
+
+#: tform_player.pb7.hint
+msgid "350Hz"
+msgstr ""
+
+#: tform_player.pb8.hint
+msgid "500Hz"
+msgstr ""
+
+#: tform_player.pb9.hint
+msgid "700Hz"
+msgstr ""
+
+#: tform_player.playlists.caption
+msgid "Play Lists"
+msgstr "Ойнату тізімдері"
+
+#: tform_player.playmenu.caption
+msgid "Play"
+msgstr "Ойнау"
+
+#: tform_player.pop.caption
+msgid "Pop"
+msgstr "Pop"
+
+#: tform_player.presets.caption
+msgctxt "tform_player.presets.caption"
+msgid "Presets"
+msgstr "Алдын ала орнатулар"
+
+#: tform_player.previousmenu.caption
+msgid "Previous"
+msgstr "Алдыңғы"
+
+#: tform_player.rap.caption
+msgid "Rap"
+msgstr "Rap"
+
+#: tform_player.reggae.caption
+msgid "Reggae"
+msgstr "Reggae"
+
+#: tform_player.rightover.caption
+msgid "RightOver"
+msgstr ""
+
+#: tform_player.rock.caption
+msgid "Rock"
+msgstr "Rock"
+
+#: tform_player.s125.caption
+msgid "1.25"
+msgstr ""
+
+#: tform_player.s150.caption
+msgid "1.5"
+msgstr ""
+
+#: tform_player.s175.caption
+msgid "1.75"
+msgstr ""
+
+#: tform_player.s200.caption
+msgid "2.0"
+msgstr ""
+
+#: tform_player.s225.caption
+msgid "2.25"
+msgstr ""
+
+#: tform_player.s250.caption
+msgid "2.50"
+msgstr ""
+
+#: tform_player.s275.caption
+msgid "2.75"
+msgstr ""
+
+#: tform_player.s300.caption
+msgid "3.0"
+msgstr ""
+
+#: tform_player.saveplaylist.caption
+msgctxt "tform_player.saveplaylist.caption"
+msgid "Save PlayList"
+msgstr "Ойнату тізімін сақтау"
+
+#: tform_player.scrollbar1.hint
+msgid "Play Position"
+msgstr "Ойнату орны"
+
+#: tform_player.showlist.caption
+msgid "Show List"
+msgstr "Тізімді көрсету"
+
+#: tform_player.showplayermenu.caption
+msgid "Show Player"
+msgstr "SW-AMP көрсету"
+
+#: tform_player.ska.caption
+msgid "Ska"
+msgstr "Ska"
+
+#: tform_player.snormal.caption
+msgctxt "tform_player.snormal.caption"
+msgid "Normal"
+msgstr "Қалыпты"
+
+#: tform_player.soft.caption
+msgid "Soft"
+msgstr "Soft"
+
+#: tform_player.softbass.caption
+msgid "Soft Bass"
+msgstr "Soft Bass"
+
+#: tform_player.softrock.caption
+msgid "Soft Rock"
+msgstr "Soft Rock"
+
+#: tform_player.stopmenu.caption
+msgctxt "tform_player.stopmenu.caption"
+msgid "Stop"
+msgstr "Тоқта"
+
+#: tform_player.techno.caption
+msgid "Techno"
+msgstr "Techno"
+
+#: tform_player.trackbar1.hint
+msgctxt "tform_player.trackbar1.hint"
+msgid "Volume"
+msgstr "Көлемі"
+
+#: tform_player.trackbar12.hint
+msgid "Balance"
+msgstr "Баланс"
+
+#: tform_player.trackspeed.caption
+msgid "Audiotrack Speed"
+msgstr "Аудиотрек жылдамдығы"
+
+#: tform_player.vocal.caption
+msgid "Vocal"
+msgstr "Vocal"
+
+#: tfrm_effects.bgrashape17.caption
+msgctxt "tfrm_effects.bgrashape17.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.bgrashape19.caption
+msgid "BGRAShape19"
+msgstr ""
+
+#: tfrm_effects.bgrashape20.caption
+msgctxt "tfrm_effects.bgrashape20.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape22.caption
+msgctxt "tfrm_effects.bgrashape22.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape23.caption
+msgctxt "tfrm_effects.bgrashape23.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape25.caption
+msgctxt "tfrm_effects.bgrashape25.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.bgrashape26.caption
+msgctxt "tfrm_effects.bgrashape26.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.bgrashape28.caption
+msgctxt "tfrm_effects.bgrashape28.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.bgrashape30.caption
+msgctxt "tfrm_effects.bgrashape30.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape31.caption
+msgctxt "tfrm_effects.bgrashape31.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.bgrashape32.caption
+msgctxt "tfrm_effects.bgrashape32.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape33.caption
+msgctxt "tfrm_effects.bgrashape33.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.bgrashape34.caption
+msgctxt "tfrm_effects.bgrashape34.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape35.caption
+msgctxt "tfrm_effects.bgrashape35.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape36.caption
+msgctxt "tfrm_effects.bgrashape36.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.bgrashape37.caption
+msgctxt "tfrm_effects.bgrashape37.caption"
+msgid "BGRAShape20"
+msgstr ""
+
+#: tfrm_effects.bgrashape38.caption
+msgctxt "tfrm_effects.bgrashape38.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: tfrm_effects.caption
+msgctxt "tfrm_effects.caption"
+msgid "Effects"
+msgstr "Әсер"
+
+#: tfrm_effects.checkbox10.hint
+msgctxt "tfrm_effects.checkbox10.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox11.hint
+msgctxt "tfrm_effects.checkbox11.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox12.hint
+msgctxt "tfrm_effects.checkbox12.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox13.hint
+msgctxt "tfrm_effects.checkbox13.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox14.hint
+msgctxt "tfrm_effects.checkbox14.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox15.hint
+msgctxt "tfrm_effects.checkbox15.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox3.hint
+msgctxt "tfrm_effects.checkbox3.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox5.hint
+msgctxt "tfrm_effects.checkbox5.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox6.hint
+msgctxt "tfrm_effects.checkbox6.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox7.hint
+msgctxt "tfrm_effects.checkbox7.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox8.hint
+msgctxt "tfrm_effects.checkbox8.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.checkbox9.hint
+msgctxt "tfrm_effects.checkbox9.hint"
+msgid "Effect Enable"
+msgstr "Әсерге рұқсат ету"
+
+#: tfrm_effects.combobox1.hint
+msgctxt "tfrm_effects.combobox1.hint"
+msgid "Presets"
+msgstr "Алдын ала орнатулар"
+
+#: tfrm_effects.ef2name1.caption
+msgctxt "tfrm_effects.ef2name1.caption"
+msgid "Compressor"
+msgstr "Компрессор"
+
+#: tfrm_effects.ef3name2.caption
+msgctxt "tfrm_effects.ef3name2.caption"
+msgid "Echo"
+msgstr "Эхо"
+
+#: tfrm_effects.ef5name1.caption
+msgctxt "tfrm_effects.ef5name1.caption"
+msgid "Peak Equalizer"
+msgstr "Ең жоғары эквалайзер"
+
+#: tfrm_effects.ef5name2.caption
+msgctxt "tfrm_effects.ef5name2.caption"
+msgid "Chorus/Flanger"
+msgstr "Хор/Флангер"
+
+#: tfrm_effects.ef5name3.caption
+msgctxt "tfrm_effects.ef5name3.caption"
+msgid "FreeVerb"
+msgstr ""
+
+#: tfrm_effects.ef6name1.caption
+msgctxt "tfrm_effects.ef6name1.caption"
+msgid "Stereo Expander"
+msgstr "Стерео кеңейткіш"
+
+#: tfrm_effects.ef8name1.caption
+msgctxt "tfrm_effects.ef8name1.caption"
+msgid "Temp & Pitch"
+msgstr "Қарқын және беру"
+
+#: tfrm_effects.label1.caption
+msgctxt "tfrm_effects.label1.caption"
+msgid "L"
+msgstr ""
+
+#: tfrm_effects.label15.caption
+msgctxt "tfrm_effects.label15.caption"
+msgid "L"
+msgstr ""
+
+#: tfrm_effects.label16.caption
+msgctxt "tfrm_effects.label16.caption"
+msgid "Delay for left channel"
+msgstr "Сол жақ арна үшін кідіріс"
+
+#: tfrm_effects.label17.caption
+msgctxt "tfrm_effects.label17.caption"
+msgid "Delay for right channel"
+msgstr "Оң арна үшін кідіріс"
+
+#: tfrm_effects.label18.caption
+msgctxt "tfrm_effects.label18.caption"
+msgid "Delayed/Direct"
+msgstr "Кешіктірілген/Тікелей"
+
+#: tfrm_effects.label19.caption
+msgctxt "tfrm_effects.label19.caption"
+msgid "Feedback"
+msgstr "Кері байланыс"
+
+#: tfrm_effects.label28.caption
+msgctxt "tfrm_effects.label28.caption"
+msgid "Release Time"
+msgstr "Шығару уақыты"
+
+#: tfrm_effects.label29.caption
+msgctxt "tfrm_effects.label29.caption"
+msgid "Compression threshold"
+msgstr "Қысу шегі"
+
+#: tfrm_effects.label30.caption
+msgctxt "tfrm_effects.label30.caption"
+msgid "Attac Time"
+msgstr "Шабуыл уақыты"
+
+#: tfrm_effects.label31.caption
+msgctxt "tfrm_effects.label31.caption"
+msgid "Compression ratio"
+msgstr "Қысу коэффициенті"
+
+#: tfrm_effects.label32.caption
+#, fuzzy
+#| msgctxt "tform_player.label3.caption"
+#| msgid "0"
+msgctxt "tfrm_effects.label32.caption"
+msgid "0%"
+msgstr "0"
+
+#: tfrm_effects.label33.caption
+#, fuzzy
+#| msgctxt "tform_player.label3.caption"
+#| msgid "0"
+msgctxt "tfrm_effects.label33.caption"
+msgid "0"
+msgstr "0"
+
+#: tfrm_effects.label34.caption
+msgctxt "tfrm_effects.label34.caption"
+msgid "Temp"
+msgstr "Қарқын"
+
+#: tfrm_effects.label35.caption
+msgctxt "tfrm_effects.label35.caption"
+msgid "Pitch"
+msgstr "Жіберу"
+
+#: tfrm_effects.label36.caption
+msgctxt "tfrm_effects.label36.caption"
+msgid "R"
+msgstr ""
+
+#: tfrm_effects.label39.caption
+msgid "Filter 1"
+msgstr "Сүзгі 1"
+
+#: tfrm_effects.label40.caption
+msgctxt "tfrm_effects.label40.caption"
+msgid "Level Filter 1"
+msgstr "Деңгей сүзгісі 1"
+
+#: tfrm_effects.label42.caption
+msgid "Filter 2"
+msgstr "Сүзгі 2"
+
+#: tfrm_effects.label43.caption
+msgctxt "tfrm_effects.label43.caption"
+msgid "Level Filter 2"
+msgstr "Деңгей сүзгісі 2"
+
+#: tfrm_effects.label46.caption
+msgctxt "tfrm_effects.label46.caption"
+msgid "Band width of the filter"
+msgstr "Сүзгінің жолақ ені"
+
+#: tfrm_effects.label48.caption
+msgctxt "tfrm_effects.label48.caption"
+msgid "Expand Level"
+msgstr "Деңгейді кеңейту"
+
+#: tfrm_effects.label49.caption
+msgctxt "tfrm_effects.label49.caption"
+msgid "Band width of the filter"
+msgstr "Сүзгінің жолақ ені"
+
+#: tfrm_effects.label52.caption
+msgctxt "tfrm_effects.label52.caption"
+msgid "Direct Signal"
+msgstr "Тікелей сигнал"
+
+#: tfrm_effects.label53.caption
+msgctxt "tfrm_effects.label53.caption"
+msgid "Processed signal"
+msgstr "Өңделген сигнал"
+
+#: tfrm_effects.label56.caption
+msgid "Minimum Sweep"
+msgstr "Минималды тазалау"
+
+#: tfrm_effects.label57.caption
+msgid "Maximum Sweep"
+msgstr "Максималды тазалау"
+
+#: tfrm_effects.label59.caption
+msgctxt "tfrm_effects.label59.caption"
+msgid "Rate"
+msgstr "Бағалау"
+
+#: tfrm_effects.label61.caption
+msgid "Feedback into input"
+msgstr "Кірістегі кері байланыс"
+
+#: tfrm_effects.label64.caption
+msgctxt "tfrm_effects.label64.caption"
+msgid "Direct Signal"
+msgstr "Тікелей сигнал"
+
+#: tfrm_effects.label65.caption
+msgctxt "tfrm_effects.label65.caption"
+msgid "Processed signal"
+msgstr "Өңделген сигнал"
+
+#: tfrm_effects.label68.caption
+msgid "Damp"
+msgstr "Амортизатор"
+
+#: tfrm_effects.label69.caption
+msgid "Stereo Width"
+msgstr "Стерео ені"
+
+#: tfrm_effects.label7.caption
+msgctxt "tfrm_effects.label7.caption"
+msgid "R"
+msgstr ""
+
+#: tfrm_effects.label73.caption
+msgid "Room Size"
+msgstr "Бөлме өлшемі"
+
+#: tfrm_effects.panel1.caption
+msgid "Panel1"
+msgstr ""
+
+#: tfrm_effects.tabsheet10.caption
+msgctxt "tfrm_effects.tabsheet10.caption"
+msgid "Reverberation"
+msgstr "Реверберация"
+
+#: tfrm_effects.tabsheet2.caption
+msgctxt "tfrm_effects.tabsheet2.caption"
+msgid "Compressor"
+msgstr "Компрессор"
+
+#: tfrm_effects.tabsheet4.caption
+msgctxt "tfrm_effects.tabsheet4.caption"
+msgid "Echo"
+msgstr "Эхо"
+
+#: tfrm_effects.tabsheet6.caption
+msgctxt "tfrm_effects.tabsheet6.caption"
+msgid "Temp & Pitch"
+msgstr "Қарқын және беру"
+
+#: tfrm_effects.tabsheet7.caption
+msgctxt "tfrm_effects.tabsheet7.caption"
+msgid "Peak Equalizer"
+msgstr "Ең жоғары эквалайзер"
+
+#: tfrm_effects.tabsheet8.caption
+msgctxt "tfrm_effects.tabsheet8.caption"
+msgid "Stereo Expander"
+msgstr "Стерео кеңейткіш"
+
+#: tfrm_effects.tabsheet9.caption
+msgctxt "tfrm_effects.tabsheet9.caption"
+msgid "Chorus/Flanger"
+msgstr "Хор/Флангер"
+
+#: tfrm_list.bgrashape11.caption
+msgctxt "tfrm_list.bgrashape11.caption"
+msgid "BGRAShape11"
+msgstr ""
+
+#: tfrm_list.bgrashape14.caption
+msgctxt "tfrm_list.bgrashape14.caption"
+msgid "BGRAShape14"
+msgstr ""
+
+#: tfrm_list.caption
+msgid "list"
+msgstr ""
+
+#: tfrm_list.statusbar1.hint
+msgid "Current playlist file"
+msgstr "Ағымдағы ойнату тізімінің файлы"
+
+#: toptions_frm.bgrashape14.caption
+msgctxt "toptions_frm.bgrashape14.caption"
+msgid "BGRAShape14"
+msgstr ""
+
+#: toptions_frm.bgrashape15.caption
+msgctxt "toptions_frm.bgrashape15.caption"
+msgid "BGRAShape14"
+msgstr ""
+
+#: toptions_frm.bgrashape17.caption
+msgctxt "toptions_frm.bgrashape17.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape18.caption
+msgctxt "toptions_frm.bgrashape18.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape19.caption
+msgctxt "toptions_frm.bgrashape19.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape20.caption
+msgctxt "toptions_frm.bgrashape20.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape21.caption
+msgctxt "toptions_frm.bgrashape21.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape23.caption
+msgctxt "toptions_frm.bgrashape23.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape24.caption
+msgctxt "toptions_frm.bgrashape24.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape25.caption
+msgctxt "toptions_frm.bgrashape25.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape26.caption
+msgctxt "toptions_frm.bgrashape26.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.bgrashape27.caption
+msgctxt "toptions_frm.bgrashape27.caption"
+msgid "BGRAShape17"
+msgstr ""
+
+#: toptions_frm.caption
+msgctxt "toptions_frm.caption"
+msgid "Options"
+msgstr "Опциялар"
+
+#: toptions_frm.cbox7.caption
+msgid "Collapse playlist with the player"
+msgstr "Ойнатқышпен ойнату тізімін жию"
+
+#: toptions_frm.checkbox1.caption
+msgctxt "toptions_frm.checkbox1.caption"
+msgid "Logarithmic volume control"
+msgstr "Логарифмдік дыбыс деңгейін реттеу"
+
+#: toptions_frm.checkbox2.caption
+msgctxt "toptions_frm.checkbox2.caption"
+msgid "Loudly compensated volume control"
+msgstr "Қатты компенсацияланған дыбыс деңгейін басқару"
+
+#: toptions_frm.checkbox3.caption
+msgctxt "toptions_frm.checkbox3.caption"
+msgid "Turn OFF Analizer"
+msgstr "Анализаторды өшіріңіз"
+
+#: toptions_frm.checkbox4.caption
+msgctxt "toptions_frm.checkbox4.caption"
+msgid "Hide Equalizer"
+msgstr "Hide Equalizer"
+
+#: toptions_frm.checkbox5.caption
+msgid "Equalizer OFF"
+msgstr "Эквалайзер ӨШІРУЛІ"
+
+#: toptions_frm.checkbox6.caption
+msgctxt "toptions_frm.checkbox6.caption"
+msgid "Auto Play"
+msgstr "Авто ойнату"
+
+#: toptions_frm.combobox1.hint
+msgid "Sampling frequency"
+msgstr "Іріктеу жиілігі"
+
+#: toptions_frm.combobox3.hint
+msgid "Quantization"
+msgstr "Кванттау"
+
+#: toptions_frm.combobox3.text
+msgid "32(float)"
+msgstr ""
+
+#: toptions_frm.combobox4.hint
+msgctxt "toptions_frm.combobox4.hint"
+msgid "Mode"
+msgstr "Режим"
+
+#: toptions_frm.combobox4.text
+msgctxt "toptions_frm.combobox4.text"
+msgid "Stereo"
+msgstr "Стерео"
+
+#: toptions_frm.combobox5.hint
+msgid "The sample rate conversion quality..."
+msgstr "Үлгі жылдамдығының түрлендіру сапасы..."
+
+#: toptions_frm.combobox5.text
+msgid "Interpolation: Sinc 64 point"
+msgstr "Интерполяция: Синк 64 ұпай"
+
+#: toptions_frm.label2.caption
+msgctxt "toptions_frm.label2.caption"
+msgid "Count Bands Analizer"
+msgstr "Санақ жолақтары анализаторы"
+
+#: toptions_frm.label3.caption
+msgctxt "toptions_frm.label3.caption"
+msgid "Contrast"
+msgstr "Контраст"
+
+#: toptions_frm.label4.caption
+msgid "ABC"
+msgstr ""
+
+#: toptions_frm.panel10.caption
+msgctxt "toptions_frm.panel10.caption"
+msgid "PlayList"
+msgstr "Ойнату тізімдері"
+
+#: toptions_frm.panel12.caption
+msgctxt "toptions_frm.panel12.caption"
+msgid "Params"
+msgstr "Парам"
+
+#: toptions_frm.panel4.caption
+msgctxt "toptions_frm.panel4.caption"
+msgid "Spectrum Analizer"
+msgstr "Спектр анализаторы"
+
+#: toptions_frm.panel6.caption
+msgid "Equalizer"
+msgstr "Эквалайзер"
+
+#: toptions_frm.panel9.caption
+msgctxt "toptions_frm.panel9.caption"
+msgid "Player"
+msgstr "Ойыншы"
+
+#~ msgctxt "tfrm_effects.checkbox1.hint"
+#~ msgid "Effect Enable"
+#~ msgstr "Әсерге рұқсат ету"
+
+#~ msgctxt "tfrm_effects.checkbox2.hint"
+#~ msgid "Effect Enable"
+#~ msgstr "Әсерге рұқсат ету"
+
+#~ msgctxt "tfrm_effects.checkbox4.hint"
+#~ msgid "Effect Enable"
+#~ msgstr "Әсерге рұқсат ету"
+
+#~ msgctxt "tfrm_effects.combobox1.text"
+#~ msgid "Flanger"
+#~ msgstr "Флангер"
+
+#~ msgctxt "tfrm_effects.ef1name.caption"
+#~ msgid "Chorus"
+#~ msgstr "Хор"
+
+#~ msgctxt "tfrm_effects.ef3name1.caption"
+#~ msgid "Flanger"
+#~ msgstr "Флангер"
+
+#~ msgctxt "tfrm_effects.ef7name1.caption"
+#~ msgid "Reverberation"
+#~ msgstr "Реверберация"
+
+#~ msgctxt "tfrm_effects.label12.caption"
+#~ msgid "Frequency modulation"
+#~ msgstr "Frequency modulation"
+
+#~ msgctxt "tfrm_effects.label2.caption"
+#~ msgid "Reverberation Time"
+#~ msgstr "Реверберация уақыты"
+
+#~ msgctxt "tfrm_effects.label26.caption"
+#~ msgid "Depth"
+#~ msgstr "Тереңдігі"
+
+#~ msgctxt "tfrm_effects.label27.caption"
+#~ msgid "Frequency modulation"
+#~ msgstr "Жиілік модуляциясы"
+
+#~ msgctxt "tfrm_effects.label3.caption"
+#~ msgid "Reverberation Mix"
+#~ msgstr "Реверберация қоспасы"
+
+#~ msgctxt "tfrm_effects.label5.caption"
+#~ msgid "Depth"
+#~ msgstr "Тереңдігі"
+
+#~ msgctxt "tfrm_effects.tabsheet1.caption"
+#~ msgid "Chorus"
+#~ msgstr "Хор"
+
+#~ msgctxt "tfrm_effects.tabsheet3.caption"
+#~ msgid "Flanger"
+#~ msgstr "Флангер"
+
+#, fuzzy
+#~| msgctxt "tfrm_effects.tabsheet5.caption"
+#~| msgid "Reverberation"
+#~ msgctxt "tfrm_effects.tabsheet5.caption"
+#~ msgid "ReverberationDepr"
+#~ msgstr "Реверберация"
+
+#~ msgid "44100"
+#~ msgstr "44100"
+
+#~ msgctxt "toptions_frm.label3.caption"
+#~ msgid "Bright"
+#~ msgstr "Жарқын"
+
+#~ msgctxt "toptions_frm.label1.caption"
+#~ msgid "Params"
+#~ msgstr "Парам"
+
+#~ msgctxt "tfrm_effects.panel10.caption"
+#~ msgid "Echo"
+#~ msgstr "Эхо"
+
+#~ msgctxt "tfrm_effects.panel11.caption"
+#~ msgid "Chorus"
+#~ msgstr "Хор"
+
+#~ msgctxt "tfrm_effects.panel12.caption"
+#~ msgid "Flanger"
+#~ msgstr "Флангер"
+
+#~ msgctxt "tfrm_effects.panel9.caption"
+#~ msgid "Reverberation"
+#~ msgstr "Реверберация"
+
+#~ msgctxt "tform_player.label4.caption"
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgctxt "tform_player.label5.caption"
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgctxt "tform_player.label6.caption"
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgctxt "tfrm_effects.label25.caption"
+#~ msgid "Delay for left channel"
+#~ msgstr "Delay for left channel"
+
+#~ msgctxt "tfrm_effects.label28.caption"
+#~ msgid "Feedback"
+#~ msgstr "Feedback"
+
+#~ msgctxt "tform_player.menuitem1.caption"
+#~ msgid "Hide Equalizer"
+#~ msgstr "Hide Equalizer"
+
+#~ msgctxt "tform_player.menuitem2.caption"
+#~ msgid "Off Equalizer"
+#~ msgstr "Off Equalizer"
+
+#~ msgctxt "toptions_frm.combobox4.text"
+#~ msgid "Mono"
+#~ msgstr "Mono"
+
+#~ msgid "Lang10"
+#~ msgstr "Lang10"
+
+#~ msgctxt "tfrm_effects.label1.caption"
+#~ msgid "Reverberation"
+#~ msgstr "Reverberation"
+
+#~ msgctxt "tfrm_effects.label15.caption"
+#~ msgid "Echo"
+#~ msgstr "Echo"
+
+#~ msgctxt "tfrm_effects.label24.caption"
+#~ msgid "Flanger"
+#~ msgstr "Flanger"
+
+#~ msgctxt "tfrm_effects.label7.caption"
+#~ msgid "Chorus"
+#~ msgstr "Chorus"

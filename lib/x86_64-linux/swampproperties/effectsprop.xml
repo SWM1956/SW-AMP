@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIG>
+  <TApplication>
+    <Frm_Effects XTB18_Max="18000" XTB18_Min="40" XTB3_Position="1000" XTB6_Position="0" XTB7_Position="200" XTB8_Position="0" XTB10_Position="200" XTB12_Position="-150" XTB13_Position="150" XTB14_Position="30" XTB18_Position="200" XTB19_Position="150" XTB20_Position="200" XTB21_Position="150" XTB22_Position="150" XTB23_Position="50" XTB24_Position="150" XTB25_Position="100" XTB26_Position="35" XTB27_Position="1" XTB28_Position="5" XTB29_Position="1" XTB30_Position="50" XTB31_Position="100" XTB32_Position="150" XTB33_Position="50" XTB34_Position="80" XTB36_Position="35" CheckBox3_Checked="0" CheckBox5_Checked="0" CheckBox6_Checked="0" CheckBox7_Checked="0" CheckBox8_Checked="0" CheckBox9_Checked="0" CheckBox10_Checked="0" CheckBox11_Checked="0" CheckBox12_Checked="0" CheckBox13_Checked="0" CheckBox14_Checked="0" CheckBox15_Checked="0" ComboBox1_ItemIndex="-1" PageControl1_TabIndex="3">
+      <ComboBox1_Items Count="9" Item0="Flanger" Item1="Exaggerated chorus leads to multiple pitch shifted voices" Item2="Motocycle" Item3="Devil" Item4="Who say that there're not many voices?" Item5="Back chipmunk" Item6="Water" Item7="This is the airplane" Item8=" "/>
+    </Frm_Effects>
+  </TApplication>
+</CONFIG>

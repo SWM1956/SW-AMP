@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":128342572,"name":"tform_addurl.caption","sourcebytes":[65,100,100,32,85,82,76],"value":"Add URL"},
+{"hash":162442791,"name":"tform_addurl.bgrashape21.caption","sourcebytes":[66,71,82,65,83,104,97,112,101,49,55],"value":"BGRAShape17"},
+{"hash":162442788,"name":"tform_addurl.bgrashape15.caption","sourcebytes":[66,71,82,65,83,104,97,112,101,49,52],"value":"BGRAShape14"},
+{"hash":23148,"name":"tform_addurl.label1.caption","sourcebytes":[85,82,76],"value":"URL"},
+{"hash":95468325,"name":"tform_addurl.label2.caption","sourcebytes":[84,105,116,116,108,101],"value":"Tittle"},
+{"hash":1371,"name":"tform_addurl.button1.caption","sourcebytes":[79,107],"value":"Ok"},
+{"hash":77089212,"name":"tform_addurl.button2.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"}
+]}
