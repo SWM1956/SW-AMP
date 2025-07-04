@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-# Lazarus / Free Pascal: ігноруємо бінарники та кеш
-
->>>>>>> 2b0ec62 (Temp)
-keyboard.log
->>>>>>> c2deec6 (Remove pict)
-keyboard.log
+# FPC / Lazarus build artefacts
+*.o
+*.ppu
+*.compiled
+lib/
+backup/
