@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CONFIG>
   <TApplication>
-    <Frm_List LB1_Tag="0" LB2_Tag="0" LB1_Columns="0" LB1_FontName="default" LB1_FontSize="10" Frm_List_Left="1010" LB1_FontColor="536870912" LB1_FontPitch="fpFixed" LB1_FontStyle="[]" LB1_ItemIndex="0" LB2_ItemIndex="0" LB3_ItemIndex="0" LB4_ItemIndex="0" LB1_FontHeight="-13" LB1_ItemHeight="26" LB1_FontCharSet="1" LB1_FontQuality="fqDefault" LB1_FontOrientation="0" XMLPropStorage1_StoredValues.Count="0">
+    <Frm_List LB1_Tag="0" LB2_Tag="0" LB1_Columns="0" LB1_FontName="default" LB1_FontSize="10" Frm_List_Left="1010" LB1_FontColor="536870912" LB1_FontPitch="fpFixed" LB1_FontStyle="[]" LB1_ItemIndex="0" LB2_ItemIndex="-1" LB3_ItemIndex="-1" LB4_ItemIndex="-1" LB1_FontHeight="-13" LB1_ItemHeight="26" LB1_FontCharSet="1" LB1_FontQuality="fqDefault" LB1_FontOrientation="0" XMLPropStorage1_StoredValues.Count="0">
       <LB1_Items Count="2" Item0="001 - Imagine Dragons - Natural.flac.&#xD;&#x9;&#x9;(1543kbps 44100 24bit)" Item1="002 - KOZAK SYSTEM - Лють (official video).flac.&#xD;&#x9;&#x9;(1572kbps 44100 24bit)"/>
       <LB2_Items Count="2" Item0="/home/slawa/Музика/Imagine Dragons - Natural.flac" Item1="/home/slawa/Музика/KOZAK SYSTEM - Лють (official video).flac"/>
       <LB3_Items Count="2" Item0="" Item1=""/>
