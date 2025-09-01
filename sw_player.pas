@@ -1671,6 +1671,8 @@ procedure TForm_player.FormClose(Sender: TObject);
 i:integer;
 Fil: File of Single;
 begin
+  BGRAShape2Click(self);
+  sleep(50);
  AssignFile(fil, './swampproperties/customEq.dat');
  Rewrite(fil);
  for i:=0 to 19 do
@@ -1691,21 +1693,24 @@ begin
 // Free objects before closing
    frm_list.Close;
 Timer1.Enabled:=False;
-mode:=stop;
-Bass_Stop(); //stop playback
+TimerRender.Enabled:=false;
+//mode:=stop;
+//Bass_Stop(); //stop playback
+
   BASS_StreamFree(channel); // free the audio channel
   Bass_Free; //free resources used by Bass
   frm_effects.Close;
    frm_effects.free;
   options_frm.Close;
-
- // Spectrum.BackBmp.Free;
+  Spectrum.VisBuff.Free;
+  Spectrum.BackBmp.Free;
 //  Spectrum.VisBuff.Free;
-// Spectrum.free;
+if Assigned(DBusKeys) then
+    FreeAndNil(DBusKeys);
+ //Spectrum.free;
 
   form1.Close;
-  if Assigned(DBusKeys) then
-    FreeAndNil(DBusKeys);
+
 end;
 
 procedure TForm_player.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
@@ -2489,7 +2494,7 @@ koef, i, offset : integer;
 begin
 // panel5.Caption:='SW-AMP';
 with Form_Player.paintBox1.Canvas  do Begin
- Form_Player.paintBox1.Canvas.lock;
+ //Form_Player.paintBox1.Canvas.lock;
 try
  offset:=1;
         Pen.Color:=clBtnShadow;
@@ -2530,7 +2535,7 @@ try
           lineTo((offset+Form_Player.paintBox1.width-2), koef*i);
             End;
 finally
-  Form_Player.paintBox1.Canvas.Unlock;
+//  Form_Player.paintBox1.Canvas.Unlock;
 end;
 
 end;
@@ -2554,13 +2559,13 @@ is_Background:=true;
   end;
 
  if spectrum.ifend and isBack then begin
-  paintBox1.Canvas.Lock;
+//  paintBox1.Canvas.Lock;
   try
  if spectrum.ifend then
  paintBox1.Canvas.CopyRect(Rect(0, 0, Spectrum.BackBmp.Width, Spectrum.BackBmp.Height), Spectrum.VisBuff.Canvas, Rect(0, 0, Spectrum.BackBmp.Width, Spectrum.BackBmp.Height));
  // draw;
   finally
-      paintBox1.Canvas.UnLock;
+ //     paintBox1.Canvas.UnLock;
     end;
  end;
 

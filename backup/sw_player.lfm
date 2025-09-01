@@ -1,8 +1,8 @@
 object Form_player: TForm_player
-  Left = 387
+  Left = 385
   Height = 509
   Top = 85
-  Width = 436
+  Width = 438
   HorzScrollBar.Increment = 1
   HorzScrollBar.Visible = False
   VertScrollBar.Position = 1
@@ -15,7 +15,7 @@ object Form_player: TForm_player
   Caption = 'SW-AMP'
   ChildSizing.Layout = cclLeftToRightThenTopToBottom
   ClientHeight = 509
-  ClientWidth = 436
+  ClientWidth = 438
   DefaultMonitor = dmDesktop
   DragMode = dmAutomatic
   FormStyle = fsStayOnTop
@@ -2159,7 +2159,7 @@ object Form_player: TForm_player
     Left = 1
     Height = 507
     Top = 1
-    Width = 434
+    Width = 436
     Align = alClient
     Angle = 45
     BorderColor = clHighlight
@@ -2191,7 +2191,7 @@ object Form_player: TForm_player
     Left = 2
     Height = 106
     Top = 172
-    Width = 432
+    Width = 434
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 1
     BorderSpacing.Top = 1
@@ -2199,7 +2199,7 @@ object Form_player: TForm_player
     BevelColor = clHighlight
     BevelOuter = bvNone
     ClientHeight = 106
-    ClientWidth = 432
+    ClientWidth = 434
     ParentBackground = False
     ParentColor = False
     PopupMenu = PopupMenu1
@@ -2212,7 +2212,7 @@ object Form_player: TForm_player
       Left = 1
       Height = 105
       Top = 0
-      Width = 430
+      Width = 432
       Align = alClient
       Angle = 45
       BorderColor = clActiveCaption
@@ -2981,14 +2981,14 @@ object Form_player: TForm_player
     Left = 2
     Height = 64
     Top = 107
-    Width = 432
+    Width = 434
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 1
     BorderSpacing.Right = 1
     BevelColor = clHighlight
     BevelOuter = bvNone
     ClientHeight = 64
-    ClientWidth = 432
+    ClientWidth = 434
     ParentBackground = False
     ParentColor = False
     TabOrder = 2
@@ -2998,7 +2998,7 @@ object Form_player: TForm_player
       Left = 1
       Height = 64
       Top = 0
-      Width = 430
+      Width = 432
       Align = alClient
       Angle = 45
       BorderColor = clActiveCaption
@@ -3593,13 +3593,13 @@ object Form_player: TForm_player
     Left = 2
     Height = 105
     Top = 2
-    Width = 432
+    Width = 434
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 1
     BorderSpacing.Top = 1
     BorderSpacing.Right = 1
     ClientHeight = 105
-    ClientWidth = 432
+    ClientWidth = 434
     DoubleBuffered = True
     Font.Color = clGradientActiveCaption
     Font.Height = -43
@@ -3621,7 +3621,7 @@ object Form_player: TForm_player
       Left = 1
       Height = 103
       Top = 1
-      Width = 430
+      Width = 432
       Align = alClient
       Angle = 45
       BorderColor = clActiveCaption
@@ -3655,7 +3655,7 @@ object Form_player: TForm_player
       Left = 53
       Height = 85
       Top = 3
-      Width = 320
+      Width = 322
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Left = 52
       BorderSpacing.Top = 2
@@ -3714,7 +3714,7 @@ object Form_player: TForm_player
       AnchorSideTop.Control = Panel5
       AnchorSideRight.Control = Panel5
       AnchorSideRight.Side = asrBottom
-      Left = 388
+      Left = 390
       Height = 16
       Hint = 'End Time position'
       Top = 2
@@ -3753,7 +3753,7 @@ object Form_player: TForm_player
       AnchorSideTop.Control = Label6
       AnchorSideRight.Control = Panel5
       AnchorSideRight.Side = asrBottom
-      Left = 381
+      Left = 383
       Height = 16
       Hint = 'Current track bitrate kbps'
       Top = 45
@@ -3774,7 +3774,7 @@ object Form_player: TForm_player
       AnchorSideTop.Control = Label4
       AnchorSideRight.Control = Panel5
       AnchorSideRight.Side = asrBottom
-      Left = 383
+      Left = 385
       Height = 16
       Hint = 'Current track sampling frequency '
       Top = 58
@@ -3795,7 +3795,7 @@ object Form_player: TForm_player
       AnchorSideTop.Control = Panel5
       AnchorSideRight.Control = Panel5
       AnchorSideRight.Side = asrBottom
-      Left = 382
+      Left = 384
       Height = 16
       Hint = 'CPU usage by decoder %'
       Top = 32
@@ -3817,7 +3817,7 @@ object Form_player: TForm_player
       AnchorSideTop.Control = Label5
       AnchorSideRight.Control = Panel5
       AnchorSideRight.Side = asrBottom
-      Left = 383
+      Left = 385
       Height = 16
       Hint = 'Bit depth'
       Top = 71

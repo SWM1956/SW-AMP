@@ -14,7 +14,6 @@
         <CursorPos Y="40"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="sw_player.pas"/>
@@ -24,12 +23,11 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="9"/>
-        <TopLine Value="4678"/>
-        <CursorPos X="3" Y="4691"/>
+        <TopLine Value="1245"/>
+        <CursorPos X="6" Y="1259"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="effects.pas"/>
@@ -43,7 +41,6 @@
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
       <Unit3>
         <Filename Value="list.pas"/>
@@ -57,7 +54,6 @@
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit3>
       <Unit4>
         <Filename Value="Cover.pas"/>
@@ -70,7 +66,6 @@
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit4>
       <Unit5>
         <Filename Value="options1.pas"/>
@@ -84,7 +79,6 @@
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit5>
       <Unit6>
         <Filename Value="add_url.pas"/>
@@ -97,7 +91,6 @@
         <CursorPos X="47" Y="53"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit6>
       <Unit7>
         <Filename Value="url_dialog.pas"/>
@@ -148,11 +141,10 @@
       <Unit12>
         <Filename Value="spectrum_vis.pas"/>
         <EditorIndex Value="14"/>
-        <TopLine Value="25"/>
-        <CursorPos X="51" Y="38"/>
+        <TopLine Value="191"/>
+        <CursorPos X="27" Y="209"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit12>
       <Unit13>
         <Filename Value="..\..\..\..\..\usr\share\lazarus\2.2.4\lcl\include\menuitem.inc"/>
@@ -184,7 +176,7 @@
         <EditorIndex Value="10"/>
         <TopLine Value="82"/>
         <CursorPos Y="97"/>
-        <UsageCount Value="96"/>
+        <UsageCount Value="97"/>
         <Loaded Value="True"/>
       </Unit16>
       <Unit17>
@@ -276,7 +268,6 @@
         <CursorPos X="2" Y="51"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit28>
       <Unit29>
         <Filename Value="..\..\..\.lazarus\onlinepackagemanager\packages\BGRABitmap\bgrabitmap\bgragtkbitmap.pas"/>
@@ -376,7 +367,7 @@
         <EditorIndex Value="7"/>
         <TopLine Value="730"/>
         <CursorPos X="27" Y="743"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit41>
       <Unit42>
@@ -397,35 +388,34 @@
         <EditorIndex Value="11"/>
         <TopLine Value="60"/>
         <CursorPos Y="81"/>
-        <UsageCount Value="26"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit44>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="list.pas"/>
-        <Caret Line="11" Column="38"/>
+        <Caret Line="117" Column="65" TopLine="100"/>
       </Position1>
       <Position2>
-        <Filename Value="sw_player.pas"/>
-        <Caret Line="5" Column="20"/>
+        <Filename Value="list.pas"/>
+        <Caret Line="243" Column="53" TopLine="219"/>
       </Position2>
       <Position3>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="1263" Column="34" TopLine="1245"/>
+        <Caret Line="700" Column="70" TopLine="685"/>
       </Position3>
       <Position4>
-        <Filename Value="Cover.pas"/>
-        <Caret Line="77" Column="27" TopLine="64"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="701" Column="68" TopLine="685"/>
       </Position4>
       <Position5>
-        <Filename Value="list.pas"/>
-        <Caret Line="718" Column="6" TopLine="714"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="702" Column="68" TopLine="685"/>
       </Position5>
       <Position6>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="3577" Column="15" TopLine="3563"/>
+        <Caret Line="1998" Column="32" TopLine="1974"/>
       </Position6>
       <Position7>
         <Filename Value="sw_player.pas"/>
@@ -441,87 +431,87 @@
       </Position9>
       <Position10>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="1998" Column="32" TopLine="1983"/>
+        <Caret Line="1998" Column="32" TopLine="1980"/>
       </Position10>
       <Position11>
-        <Filename Value="list.pas"/>
-        <Caret Line="9" Column="47"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="4700" Column="51" TopLine="4685"/>
       </Position11>
       <Position12>
-        <Filename Value="list.pas"/>
-        <Caret Line="115" Column="70" TopLine="91"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1358" TopLine="1330"/>
       </Position12>
       <Position13>
-        <Filename Value="list.pas"/>
-        <Caret Line="117" Column="65" TopLine="93"/>
+        <Filename Value="spectrum_vis.pas"/>
+        <Caret Line="38" Column="51" TopLine="25"/>
       </Position13>
       <Position14>
-        <Filename Value="list.pas"/>
-        <Caret Line="243" Column="53" TopLine="219"/>
+        <Filename Value="swamp.lpr"/>
+        <Caret Line="40" TopLine="9"/>
       </Position14>
       <Position15>
-        <Filename Value="list.pas"/>
-        <Caret Line="791" Column="32" TopLine="776"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="4690" Column="79" TopLine="4678"/>
       </Position15>
       <Position16>
-        <Filename Value="list.pas"/>
-        <Caret Line="115" Column="70" TopLine="100"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1696" TopLine="1682"/>
       </Position16>
       <Position17>
-        <Filename Value="list.pas"/>
-        <Caret Line="117" Column="65" TopLine="100"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="3569" Column="39" TopLine="3565"/>
       </Position17>
       <Position18>
-        <Filename Value="list.pas"/>
-        <Caret Line="243" Column="53" TopLine="219"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="1674" Column="21" TopLine="1666"/>
       </Position18>
       <Position19>
-        <Filename Value="sw_player.pas"/>
-        <Caret Line="700" Column="70" TopLine="685"/>
+        <Filename Value="spectrum_vis.pas"/>
+        <Caret Line="38" Column="51" TopLine="22"/>
       </Position19>
       <Position20>
-        <Filename Value="sw_player.pas"/>
-        <Caret Line="701" Column="68" TopLine="685"/>
+        <Filename Value="spectrum_vis.pas"/>
+        <Caret Line="198" Column="32" TopLine="174"/>
       </Position20>
       <Position21>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="702" Column="68" TopLine="685"/>
+        <Caret Line="1709" Column="19" TopLine="1693"/>
       </Position21>
       <Position22>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="1998" Column="32" TopLine="1974"/>
+        <Caret Line="1704" Column="18" TopLine="1689"/>
       </Position22>
       <Position23>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="700" Column="70" TopLine="685"/>
+        <Caret Line="1696" Column="6" TopLine="1682"/>
       </Position23>
       <Position24>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="701" Column="68" TopLine="685"/>
+        <Caret Line="1706" Column="24" TopLine="1682"/>
       </Position24>
       <Position25>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="702" Column="68" TopLine="685"/>
+        <Caret Line="8" Column="45"/>
       </Position25>
       <Position26>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="1998" Column="32" TopLine="1980"/>
+        <Caret Line="1259" Column="6" TopLine="1250"/>
       </Position26>
       <Position27>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="4700" Column="51" TopLine="4685"/>
+        <Caret Line="1387" Column="48" TopLine="1375"/>
       </Position27>
       <Position28>
         <Filename Value="sw_player.pas"/>
-        <Caret Line="1358" TopLine="1330"/>
+        <Caret Line="2538" Column="3" TopLine="2526"/>
       </Position28>
       <Position29>
-        <Filename Value="spectrum_vis.pas"/>
-        <Caret Line="38" Column="51" TopLine="25"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="2563" Column="6" TopLine="2549"/>
       </Position29>
       <Position30>
-        <Filename Value="swamp.lpr"/>
-        <Caret Line="40" TopLine="9"/>
+        <Filename Value="sw_player.pas"/>
+        <Caret Line="3521" Column="5" TopLine="3506"/>
       </Position30>
     </JumpHistory>
     <RunParams>
@@ -562,14 +552,14 @@
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="sw_player.pas"/>
-        <Line Value="1984"/>
+        <Line Value="1989"/>
       </Item>
       <Item>
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="sw_player.pas"/>
-        <Line Value="4845"/>
+        <Line Value="4850"/>
       </Item>
       <Item>
         <Kind Value="bpkSource"/>
