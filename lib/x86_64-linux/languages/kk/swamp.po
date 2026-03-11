@@ -12,83 +12,93 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: sw_player.acancel
-msgctxt "sw_player.acancel"
+#: swamp_strings.acancel
+msgctxt "swamp_strings.acancel"
 msgid "Cancel"
 msgstr "Болдырмау"
 
-#: sw_player.actualbitrate
+#: swamp_strings.actualbitrate
+msgctxt "swamp_strings.actualbitrate"
 msgid "Actual Track Bitrate"
 msgstr "Нақты трек бит жылдамдығы"
 
-#: sw_player.adelete
+#: swamp_strings.adelete
+msgctxt "swamp_strings.adelete"
 msgid "Are you sure you want to delete this "
 msgstr "Сіз мұны шынымен жойғыңыз келе ме"
 
-#: sw_player.afile
+#: swamp_strings.afile
+msgctxt "swamp_strings.afile"
 msgid "The file "
 msgstr "Файл "
 
-#: sw_player.afileerror
+#: swamp_strings.afileerror
+msgctxt "swamp_strings.afileerror"
 msgid "File upload error"
-msgstr "Файлды жүктеп салу қатесі"
+msgstr "Файлды жүктеу қатесі"
 
-#: sw_player.autoplay
-msgctxt "sw_player.autoplay"
+#: swamp_strings.autoplay
+msgctxt "swamp_strings.autoplay"
 msgid "Auto Play"
 msgstr "Авто ойнату"
 
-#: sw_player.balance
+#: swamp_strings.balance
+msgctxt "swamp_strings.balance"
 msgid "Balanсe"
 msgstr "Баланс"
 
-#: sw_player.bandanalizer
-msgctxt "sw_player.bandanalizer"
+#: swamp_strings.bandanalizer
+msgctxt "swamp_strings.bandanalizer"
 msgid "Count Bands Analizer"
 msgstr "Санақ жолақтары анализаторы"
 
-#: sw_player.bargraph
+#: swamp_strings.bargraph
+msgctxt "swamp_strings.bargraph"
 msgid "Bar Graph"
-msgstr "Bar Graph"
+msgstr "Бағаналық график"
 
-#: sw_player.bfile
+#: swamp_strings.bfile
+msgctxt "swamp_strings.bfile"
 msgid "file?"
 msgstr "файл?"
 
-#: sw_player.bright
-msgctxt "sw_player.bright"
+#: swamp_strings.bright
+msgctxt "swamp_strings.bright"
 msgid "Bright"
 msgstr "Жарқын"
 
-#: sw_player.chorus
-msgctxt "sw_player.chorus"
+#: swamp_strings.chorus
+msgctxt "swamp_strings.chorus"
 msgid "Chorus"
 msgstr "Хор"
 
-#: sw_player.clearyesno
+#: swamp_strings.clearyesno
+msgctxt "swamp_strings.clearyesno"
 msgid "Are you sure you want to clear the playlist?"
 msgstr "Ойнату тізімін шынымен өшіргіңіз келе ме?"
 
-#: sw_player.confirm
+#: swamp_strings.confirm
+msgctxt "swamp_strings.confirm"
 msgid "Confirm"
 msgstr "Растау"
 
-#: sw_player.delayleft
-msgctxt "sw_player.delayleft"
+#: swamp_strings.delayleft
+msgctxt "swamp_strings.delayleft"
 msgid "Delay for left channel"
 msgstr "Сол жақ арна үшін кідіріс"
 
-#: sw_player.delayright
-msgctxt "sw_player.delayright"
+#: swamp_strings.delayright
+msgctxt "swamp_strings.delayright"
 msgid "Delay for right channel"
 msgstr "Оң арна үшін кідіріс"
 
-#: sw_player.depth
-msgctxt "sw_player.depth"
+#: swamp_strings.depth
+msgctxt "swamp_strings.depth"
 msgid "Depth"
 msgstr "Тереңдігі"
 
-#: sw_player.ebass_error_codec
+#: swamp_strings.ebass_error_codec
+msgctxt "swamp_strings.ebass_error_codec"
 msgid ""
 "The file uses a codec that is not available/supported. This can apply to WAV "
 "and AIFF files."
@@ -96,52 +106,63 @@ msgstr ""
 "Файл қол жетімді емес/қолдау көрсетілмейтін кодектерді пайдаланады. Бұл WAV "
 "және AIFF файлдарына қолданылуы мүмкін."
 
-#: sw_player.ebass_error_denied
+#: swamp_strings.ebass_error_denied
+msgctxt "swamp_strings.ebass_error_denied"
 msgid "A valid username/password is required."
-msgstr ""
+msgstr "Жарамды пайдаланушы аты/құпия сөз қажет."
 
-#: sw_player.ebass_error_fileform
+#: swamp_strings.ebass_error_fileform
+msgctxt "swamp_strings.ebass_error_fileform"
 msgid "The files format is not recognised/supported."
 msgstr "Файл пішімі танылмайды/қолдау көрсетілмейді."
 
-#: sw_player.ebass_error_fileopen
+#: swamp_strings.ebass_error_fileopen
+msgctxt "swamp_strings.ebass_error_fileopen"
 msgid "The file could not be opened."
 msgstr "Файлды ашу мүмкін болмады."
 
-#: sw_player.ebass_error_format
+#: swamp_strings.ebass_error_format
+msgctxt "swamp_strings.ebass_error_format"
 msgid "The sample format is not supported."
 msgstr "Үлгі пішіміне қолдау көрсетілмейді."
 
-#: sw_player.ebass_error_illparam
+#: swamp_strings.ebass_error_illparam
+msgctxt "swamp_strings.ebass_error_illparam"
 msgid "url is not a valid URL."
 msgstr "URL жарамды URL мекенжайы емес."
 
-#: sw_player.ebass_error_init
+#: swamp_strings.ebass_error_init
+msgctxt "swamp_strings.ebass_error_init"
 msgid "BASS_Init has not been successfully called."
 msgstr "BASS_Init сәтті шақырылмады."
 
-#: sw_player.ebass_error_mem
+#: swamp_strings.ebass_error_mem
+msgctxt "swamp_strings.ebass_error_mem"
 msgid "There is insufficient memory."
 msgstr "Жад жеткіліксіз."
 
-#: sw_player.ebass_error_no3d
+#: swamp_strings.ebass_error_no3d
+msgctxt "swamp_strings.ebass_error_no3d"
 msgid "Could not initialize 3D support."
 msgstr "3D қолдауын инициализациялау мүмкін болмады."
 
-#: sw_player.ebass_error_nonet
+#: swamp_strings.ebass_error_nonet
+msgctxt "swamp_strings.ebass_error_nonet"
 msgid ""
 "No internet connection could be opened. Can be caused by a bad proxy setting."
 msgstr ""
 "Ешқандай интернет байланысы ашылмады. Нашар прокси параметрінен туындауы "
 "мүмкін."
 
-#: sw_player.ebass_error_notaudio
+#: swamp_strings.ebass_error_notaudio
+msgctxt "swamp_strings.ebass_error_notaudio"
 msgid ""
 "The file does not contain audio, or it also contains video and videos are "
 "disabled."
 msgstr "Файлда дыбыс жоқ немесе бейне және бейнелер өшірілген."
 
-#: sw_player.ebass_error_notavail
+#: swamp_strings.ebass_error_notavail
+msgctxt "swamp_strings.ebass_error_notavail"
 msgid ""
 "The BASS_STREAM_AUTOFREE flag cannot be combined with the BASS_STREAM_DECODE "
 "flag."
@@ -149,19 +170,23 @@ msgstr ""
 "BASS_STREAM_AUTOFREE жалауын BASS_STREAM_DECODE жалаушасымен біріктіру "
 "мүмкін емес."
 
-#: sw_player.ebass_error_protocol
+#: swamp_strings.ebass_error_protocol
+msgctxt "swamp_strings.ebass_error_protocol"
 msgid "The protocol in url is not supported."
 msgstr "URL мекенжайындағы протоколға қолдау көрсетілмейді."
 
-#: sw_player.ebass_error_speaker
+#: swamp_strings.ebass_error_speaker
+msgctxt "swamp_strings.ebass_error_speaker"
 msgid "The specified SPEAKER flags are invalid."
 msgstr "Көрсетілген SPEAKER жалаушалары жарамсыз."
 
-#: sw_player.ebass_error_ssl
+#: swamp_strings.ebass_error_ssl
+msgctxt "swamp_strings.ebass_error_ssl"
 msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
 msgstr "SSL/HTTPS қолдауы қолжетімді емес. BASS_CONFIG_LIBSSL қараңыз."
 
-#: sw_player.ebass_error_timeout
+#: swamp_strings.ebass_error_timeout
+msgctxt "swamp_strings.ebass_error_timeout"
 msgid ""
 "The server did not respond to the request within the timeout period, as set "
 "with the BASS_CONFIG_NET_TIMEOUT config option."
@@ -169,11 +194,13 @@ msgstr ""
 "BASS_CONFIG_NET_TIMEOUT конфигурациялау опциясымен орнатылған күту уақытында "
 "сервер сұрауға жауап бермеді."
 
-#: sw_player.ebass_error_unknown
+#: swamp_strings.ebass_error_unknown
+msgctxt "swamp_strings.ebass_error_unknown"
 msgid "Some other mystery problem!"
 msgstr "Басқа жұмбақ мәселе!"
 
-#: sw_player.ebass_error_unstreamable
+#: swamp_strings.ebass_error_unstreamable
+msgctxt "swamp_strings.ebass_error_unstreamable"
 msgid ""
 "The file cannot be streamed. This could be because an MP4 files mdat atom "
 "comes before its \"moov\" atom."
@@ -181,211 +208,352 @@ msgstr ""
 "Файлды ағынмен жіберу мүмкін емес. Бұл MP4 файлдарының атомының \"moov\" "
 "атомынан бұрын келуіне байланысты болуы мүмкін."
 
-#: sw_player.echo
-msgctxt "sw_player.echo"
+#: swamp_strings.echo
+msgctxt "swamp_strings.echo"
 msgid "Echo"
 msgstr "Эхо"
 
-#: sw_player.efects
-msgctxt "sw_player.efects"
+#: swamp_strings.efects
+msgctxt "swamp_strings.efects"
 msgid "Effects"
 msgstr "Әсер"
 
-#: sw_player.effenable
-msgctxt "sw_player.effenable"
+#: swamp_strings.effenable
+msgctxt "swamp_strings.effenable"
 msgid "Effect Enable"
 msgstr "Әсерге рұқсат ету"
 
-#: sw_player.equalizer
+#: swamp_strings.equalizer
+msgctxt "swamp_strings.equalizer"
 msgid "Equalazer"
 msgstr "Эквалайзер"
 
-#: sw_player.feedback
-msgctxt "sw_player.feedback"
+#: swamp_strings.feedback
+msgctxt "swamp_strings.feedback"
 msgid "Feedback"
 msgstr "Кері байланыс"
 
-#: sw_player.flanger
-msgctxt "sw_player.flanger"
+#: swamp_strings.flanger
+msgctxt "swamp_strings.flanger"
 msgid "Flanger"
-msgstr "Флангер"
+msgstr "Фланжер"
 
-#: sw_player.flchor0
-#, fuzzy
-#| msgctxt "sw_player.flanger"
-#| msgid "Flanger"
-msgctxt "sw_player.flchor0"
+#: swamp_strings.flchor0
+msgctxt "swamp_strings.flchor0"
 msgid "Flanger"
-msgstr "Флангер"
+msgstr "Фланжер"
 
-#: sw_player.flchor1
+#: swamp_strings.flchor1
+msgctxt "swamp_strings.flchor1"
 msgid "Exaggerated chorus leads to multiple pitch shifted voices"
 msgstr "Шамадан тыс хор бірнеше дыбыс деңгейінің ауысуына әкеледі"
 
-#: sw_player.flchor2
+#: swamp_strings.flchor2
+msgctxt "swamp_strings.flchor2"
 msgid "Motocycle"
 msgstr "Мотоцикл"
 
-#: sw_player.flchor3
+#: swamp_strings.flchor3
+msgctxt "swamp_strings.flchor3"
 msgid "Devil"
 msgstr "Ібіліс"
 
-#: sw_player.flchor4
+#: swamp_strings.flchor4
+msgctxt "swamp_strings.flchor4"
 msgid "Who say that there are not many voices?"
 msgstr "Дауыс көп емес деп кім айтты?"
 
-#: sw_player.flchor5
+#: swamp_strings.flchor5
+msgctxt "swamp_strings.flchor5"
 msgid "Back chipmunk"
 msgstr "Артқы бурундук"
 
-#: sw_player.flchor6
+#: swamp_strings.flchor6
+msgctxt "swamp_strings.flchor6"
 msgid "Water"
 msgstr "Су"
 
-#: sw_player.flchor7
+#: swamp_strings.flchor7
+msgctxt "swamp_strings.flchor7"
 msgid "This is the airplane"
 msgstr "Бұл ұшақ"
 
-#: sw_player.frequency
-msgctxt "sw_player.frequency"
+#: swamp_strings.frequency
+msgctxt "swamp_strings.frequency"
 msgid "Frequency modulation"
 msgstr "Жиілік модуляциясы"
 
-#: sw_player.hideq
-msgctxt "sw_player.hideq"
+#: swamp_strings.hideq
+msgctxt "swamp_strings.hideq"
 msgid "Hide Equalizer"
 msgstr "Эквалайзерді жасыру"
 
-#: sw_player.interpolat0
+#: swamp_strings.interpolat0
+msgctxt "swamp_strings.interpolat0"
 msgid "Interpolation: Linear"
 msgstr "Интерполяция: сызықтық"
 
-#: sw_player.interpolat1
+#: swamp_strings.interpolat1
+msgctxt "swamp_strings.interpolat1"
 msgid "Interpolation: Sync 8 point"
 msgstr "Интерполяция: Синк 8 ұпай"
 
-#: sw_player.interpolat2
+#: swamp_strings.interpolat2
+msgctxt "swamp_strings.interpolat2"
 msgid "Interpolation: Sync 16 point"
 msgstr "Интерполяция: Синк 16 ұпай"
 
-#: sw_player.interpolat3
+#: swamp_strings.interpolat3
+msgctxt "swamp_strings.interpolat3"
 msgid "Interpolation: Sync 32 point "
 msgstr "Интерполяция: Синк 32 ұпай"
 
-#: sw_player.interpolat4
+#: swamp_strings.interpolat4
+msgctxt "swamp_strings.interpolat4"
 msgid "Interpolation: Sync 64 point"
 msgstr "Интерполяция: Синк 64 ұпай"
 
-#: sw_player.languages
+#: swamp_strings.languages
+msgctxt "swamp_strings.languages"
 msgid "Languages"
 msgstr "Тілдер"
 
-#: sw_player.line
+#: swamp_strings.line
+msgctxt "swamp_strings.line"
 msgid "Line"
-msgstr "Line"
+msgstr "Сызық"
 
-#: sw_player.logvol
-msgctxt "sw_player.logvol"
+#: swamp_strings.logvol
+msgctxt "swamp_strings.logvol"
 msgid "Logarithmic volume control"
 msgstr "Логарифмдік дыбыс деңгейін реттеу"
 
-#: sw_player.mono
+#: swamp_strings.mono
+msgctxt "swamp_strings.mono"
 msgid "Mono"
 msgstr "Моно"
 
-#: sw_player.nosuch
+#: swamp_strings.nosuch
+msgctxt "swamp_strings.nosuch"
 msgid " does not exist"
-msgstr " does not exist"
+msgstr "жоқ"
 
-#: sw_player.ofeq
-msgctxt "sw_player.ofeq"
+#: swamp_strings.ofeq
+msgctxt "swamp_strings.ofeq"
 msgid "Off Equalizer"
 msgstr "Эквалайзер өшірулі"
 
-#: sw_player.offanalizer
-msgctxt "sw_player.offanalizer"
+#: swamp_strings.offanalizer
+msgctxt "swamp_strings.offanalizer"
 msgid "Turn OFF Analizer"
 msgstr "Анализаторды өшіріңіз"
 
-#: sw_player.oneq
+#: swamp_strings.oneq
+msgctxt "swamp_strings.oneq"
 msgid "On Equalizer"
 msgstr "Эквалайзерде"
 
-#: sw_player.openplaylistcaption
-msgctxt "sw_player.openplaylistcaption"
+#: swamp_strings.openplaylistcaption
+msgctxt "swamp_strings.openplaylistcaption"
 msgid "Open Playlist"
 msgstr "Ойнату тізімін ашыңыз"
 
-#: sw_player.params
-msgctxt "sw_player.params"
+#: swamp_strings.params
+msgctxt "swamp_strings.params"
 msgid "Params"
-msgstr "Парам"
+msgstr "Параметрлер"
 
-#: sw_player.player
-msgctxt "sw_player.player"
+#: swamp_strings.player
+msgctxt "swamp_strings.player"
 msgid "Player"
 msgstr "Ойыншы"
 
-#: sw_player.playlist
-msgctxt "sw_player.playlist"
+#: swamp_strings.playlist
+msgctxt "swamp_strings.playlist"
 msgid "PlayList"
 msgstr "Ойнату тізімдері"
 
-#: sw_player.reverberation
-msgctxt "sw_player.reverberation"
+#: swamp_strings.reverberation
+msgctxt "swamp_strings.reverberation"
 msgid "Reverberation"
 msgstr "Реверберация"
 
-#: sw_player.reverbmix
-msgctxt "sw_player.reverbmix"
+#: swamp_strings.reverbmix
+msgctxt "swamp_strings.reverbmix"
 msgid "Reverberation Mix"
 msgstr "Реверберация қоспасы"
 
-#: sw_player.reverbtime
-msgctxt "sw_player.reverbtime"
+#: swamp_strings.reverbtime
+msgctxt "swamp_strings.reverbtime"
 msgid "Reverberation Time"
 msgstr "Реверберация уақыты"
 
-#: sw_player.rsdb
+#: swamp_strings.rsalbum
+msgid "Album:"
+msgstr "Альбом:"
+
+#: swamp_strings.rsartist
+msgid "Artist:"
+msgstr "Суретші:"
+
+#: swamp_strings.rsbitrate
+msgid "Bitrate:"
+msgstr "Битрейт:"
+
+#: swamp_strings.rscannotopen
+msgid "(failed to open file)"
+msgstr ""
+
+#: swamp_strings.rschannels
+msgid "Channels:"
+msgstr "Арналар:"
+
+#: swamp_strings.rschmono
+msgid "1 (Mono)"
+msgstr "1 (Моно)"
+
+#: swamp_strings.rschstereo
+msgid "2 (Stereo)"
+msgstr "2 (Стерео)"
+
+#: swamp_strings.rsclose
+msgid "Close"
+msgstr "Жабу"
+
+#: swamp_strings.rscomment
+msgid "Comment:"
+msgstr "Түсініктеме:"
+
+#: swamp_strings.rsdb
+msgctxt "swamp_strings.rsdb"
 msgid " dB"
 msgstr ""
 
-#: sw_player.sheq
-msgctxt "sw_player.sheq"
+#: swamp_strings.rsduration
+msgid "Duration:"
+msgstr "Ұзақтығы:"
+
+#: swamp_strings.rserrorload
+msgid "Error load"
+msgstr ""
+
+#: swamp_strings.rsfileinfocaption
+msgid "Track Information"
+msgstr "Жол туралы ақпарат"
+
+#: swamp_strings.rsfilename
+msgid "File name:"
+msgstr ""
+
+#: swamp_strings.rsfilenotfound
+msgid "File not found:"
+msgstr ""
+
+#: swamp_strings.rsfilesize
+msgid "Size:"
+msgstr ""
+
+#: swamp_strings.rsformat
+msgid "Format:"
+msgstr "Пішім:"
+
+#: swamp_strings.rsgenre
+msgid "Genre:"
+msgstr "Жанр:"
+
+#: swamp_strings.rsmodified
+msgid "Modified:"
+msgstr "Өзгертілген:"
+
+#: swamp_strings.rsnhappend
+msgid "won't happen!"
+msgstr "болмайды!"
+
+#: swamp_strings.rsnocover
+msgid "No cover image"
+msgstr "Мұқаба суреті жоқ"
+
+#: swamp_strings.rsnostreamprops
+msgid "Properties are not available for internet streams."
+msgstr "Интернет ағындары үшін мүліктер қолжетімді емес."
+
+#: swamp_strings.rsonlystream
+msgid "This List only for stream's"
+msgstr "Бұл тізім тек ағындарға арналған"
+
+#: swamp_strings.rsplaybackerror
+msgid "File playback error"
+msgstr "Файлды ойнату қатесі"
+
+#: swamp_strings.rssamplerate
+msgid "Sample rate:"
+msgstr "Үлгі алу жиілігі:"
+
+#: swamp_strings.rstabaudio
+msgid "Audio"
+msgstr "Аудио"
+
+#: swamp_strings.rstabcover
+msgid "Cover"
+msgstr "Мұқаба"
+
+#: swamp_strings.rstabfile
+msgid "File"
+msgstr "Файл"
+
+#: swamp_strings.rstabtags
+msgid "Tags"
+msgstr "Тегтер"
+
+#: swamp_strings.rstitle
+msgid "Title:"
+msgstr "Тақырыбы:"
+
+#: swamp_strings.rstrackno
+msgid "Track #:"
+msgstr "Трек №:"
+
+#: swamp_strings.rsyear
+msgid "Year:"
+msgstr "Жыл:"
+
+#: swamp_strings.sheq
+msgctxt "swamp_strings.sheq"
 msgid "Show Equalizer"
 msgstr "Эквалайзерді көрсету"
 
-#: sw_player.spanalizer
-msgctxt "sw_player.spanalizer"
+#: swamp_strings.spanalizer
+msgctxt "swamp_strings.spanalizer"
 msgid "Spectrum Analizer"
 msgstr "Спектр анализаторы"
 
-#: sw_player.startanalizer
+#: swamp_strings.startanalizer
+msgctxt "swamp_strings.startanalizer"
 msgid "Start Analizer"
 msgstr "Анализаторды іске қосыңыз"
 
-#: sw_player.stereo
-msgctxt "sw_player.stereo"
+#: swamp_strings.stereo
+msgctxt "swamp_strings.stereo"
 msgid "Stereo"
 msgstr "Стерео"
 
-#: sw_player.stopanalizer
-msgctxt "sw_player.stopanalizer"
+#: swamp_strings.stopanalizer
+msgctxt "swamp_strings.stopanalizer"
 msgid "Stop Analizer"
 msgstr "Анализаторды тоқтату"
 
-#: sw_player.tonvol
-msgctxt "sw_player.tonvol"
+#: swamp_strings.tonvol
+msgctxt "swamp_strings.tonvol"
 msgid "Loudly compensated volume control"
 msgstr "Қатты компенсацияланған дыбыс деңгейін басқару"
 
-#: sw_player.volume
-msgctxt "sw_player.volume"
+#: swamp_strings.volume
+msgctxt "swamp_strings.volume"
 msgid "Volume"
 msgstr "Көлемі"
 
-#: sw_player.wet
-msgctxt "sw_player.wet"
+#: swamp_strings.wet
+msgctxt "swamp_strings.wet"
 msgid "Delayed/Direct"
 msgstr "Кешіктірілген/Тікелей"
 
@@ -433,11 +601,11 @@ msgstr ""
 
 #: tform_addurl.label2.caption
 msgid "Tittle"
-msgstr "Атау"
+msgstr "Атауы"
 
 #: tform_player.acoustic.caption
 msgid "Acoustic"
-msgstr "Acoustic"
+msgstr "Акустикалық"
 
 #: tform_player.addurl.caption
 msgctxt "tform_player.addurl.caption"
@@ -446,7 +614,7 @@ msgstr "URL қосу"
 
 #: tform_player.alternative.caption
 msgid "Alternative"
-msgstr "Alternative"
+msgstr "Балама"
 
 #: tform_player.ballad.caption
 msgid "Ballad"
@@ -486,6 +654,10 @@ msgstr ""
 msgctxt "tform_player.bgrashape14.caption"
 msgid "BGRAShape14"
 msgstr ""
+
+#: tform_player.bgrashape14.hint
+msgid "Stream Write"
+msgstr "Ағын жазу"
 
 #: tform_player.bgrashape16.caption
 msgctxt "tform_player.bgrashape16.caption"
@@ -571,7 +743,7 @@ msgstr "SW-AMP"
 
 #: tform_player.classic.caption
 msgid "Classic"
-msgstr ""
+msgstr "Классикалық"
 
 #: tform_player.clearlist.caption
 msgctxt "tform_player.clearlist.caption"
@@ -594,7 +766,7 @@ msgstr "SW-AMP жабыңыз"
 
 #: tform_player.club.caption
 msgid "Club"
-msgstr ""
+msgstr "Клуб"
 
 #: tform_player.copytocustomeq.caption
 msgctxt "tform_player.copytocustomeq.caption"
@@ -603,11 +775,11 @@ msgstr "Custom көшіру"
 
 #: tform_player.custom.caption
 msgid "Custom"
-msgstr ""
+msgstr "Тапсырыс бойынша"
 
 #: tform_player.dance.caption
 msgid "Dance"
-msgstr "Dance"
+msgstr "Би"
 
 #: tform_player.deleteplaylist.caption
 msgid "Delete PlayList"
@@ -623,27 +795,27 @@ msgstr "Electronic"
 
 #: tform_player.flat.caption
 msgid "Flat"
-msgstr "Flat"
+msgstr "Тегіс"
 
 #: tform_player.fullbass.caption
 msgid "Full Bass"
-msgstr "Full Bass"
+msgstr "Толық бас"
 
 #: tform_player.fullbassandtreble.caption
 msgid "Full Bass And Treble"
-msgstr "Full Bass And Treble"
+msgstr "Толық бас және жоғары жиіліктер"
 
 #: tform_player.fulltreble.caption
 msgid "Full Treble"
-msgstr "Full Treble"
+msgstr "Толық жоғары жиіліктер"
 
 #: tform_player.headphones.caption
 msgid "Headphones"
-msgstr "Headphones"
+msgstr "Құлаққаптар"
 
 #: tform_player.heavymetal.caption
 msgid "Heavy Metal"
-msgstr "Heavy Metal"
+msgstr "Хэви-метал"
 
 #: tform_player.hideeq.caption
 msgctxt "tform_player.hideeq.caption"
@@ -777,7 +949,7 @@ msgstr "Тіл"
 
 #: tform_player.largehall.caption
 msgid "Large Hall"
-msgstr "Large Hall"
+msgstr "Үлкен зал"
 
 #: tform_player.lbleq1.caption
 msgctxt "tform_player.lbleq1.caption"
@@ -875,11 +1047,11 @@ msgstr ""
 
 #: tform_player.live.caption
 msgid "Live"
-msgstr "Live"
+msgstr "Тікелей эфир"
 
 #: tform_player.menuitem3.caption
 msgid "Bar graph"
-msgstr "Bar graph"
+msgstr "Бағаналық график"
 
 #: tform_player.menuitem5.caption
 msgid "Delete Selected"
@@ -922,7 +1094,7 @@ msgstr "Ойнату тізімін ашыңыз"
 
 #: tform_player.party.caption
 msgid "Party"
-msgstr "Party"
+msgstr "Кеш"
 
 #: tform_player.pausemenu.caption
 msgctxt "tform_player.pausemenu.caption"
@@ -1024,7 +1196,7 @@ msgstr "Алдыңғы"
 
 #: tform_player.rap.caption
 msgid "Rap"
-msgstr "Rap"
+msgstr "Рэп"
 
 #: tform_player.reggae.caption
 msgid "Reggae"
@@ -1036,7 +1208,7 @@ msgstr ""
 
 #: tform_player.rock.caption
 msgid "Rock"
-msgstr "Rock"
+msgstr "Рок"
 
 #: tform_player.s125.caption
 msgid "1.25"
@@ -1089,7 +1261,7 @@ msgstr "SW-AMP көрсету"
 
 #: tform_player.ska.caption
 msgid "Ska"
-msgstr "Ska"
+msgstr "Ска"
 
 #: tform_player.snormal.caption
 msgctxt "tform_player.snormal.caption"
@@ -1126,13 +1298,17 @@ msgstr "Көлемі"
 msgid "Balance"
 msgstr "Баланс"
 
+#: tform_player.trackproperties.caption
+msgid "Властивості треку..."
+msgstr "Мүліктерді бақылау..."
+
 #: tform_player.trackspeed.caption
 msgid "Audiotrack Speed"
 msgstr "Аудиотрек жылдамдығы"
 
 #: tform_player.vocal.caption
 msgid "Vocal"
-msgstr "Vocal"
+msgstr "Вокал"
 
 #: tfrm_effects.bgrashape17.caption
 msgctxt "tfrm_effects.bgrashape17.caption"
@@ -1306,7 +1482,7 @@ msgstr "Ең жоғары эквалайзер"
 #: tfrm_effects.ef5name2.caption
 msgctxt "tfrm_effects.ef5name2.caption"
 msgid "Chorus/Flanger"
-msgstr "Хор/Флангер"
+msgstr "Хор/Фланжер"
 
 #: tfrm_effects.ef5name3.caption
 msgctxt "tfrm_effects.ef5name3.caption"
@@ -1374,12 +1550,9 @@ msgid "Compression ratio"
 msgstr "Қысу коэффициенті"
 
 #: tfrm_effects.label32.caption
-#, fuzzy
-#| msgctxt "tform_player.label3.caption"
-#| msgid "0"
 msgctxt "tfrm_effects.label32.caption"
 msgid "0%"
-msgstr "0"
+msgstr "0%"
 
 #: tfrm_effects.label33.caption
 #, fuzzy
@@ -1528,7 +1701,7 @@ msgstr "Стерео кеңейткіш"
 #: tfrm_effects.tabsheet9.caption
 msgctxt "tfrm_effects.tabsheet9.caption"
 msgid "Chorus/Flanger"
-msgstr "Хор/Флангер"
+msgstr "Хор/Фланжер"
 
 #: tfrm_list.bgrashape11.caption
 msgctxt "tfrm_list.bgrashape11.caption"
@@ -1542,7 +1715,7 @@ msgstr ""
 
 #: tfrm_list.caption
 msgid "list"
-msgstr ""
+msgstr "тізім"
 
 #: tfrm_list.statusbar1.hint
 msgid "Current playlist file"
@@ -1635,7 +1808,7 @@ msgstr "Анализаторды өшіріңіз"
 #: toptions_frm.checkbox4.caption
 msgctxt "toptions_frm.checkbox4.caption"
 msgid "Hide Equalizer"
-msgstr "Hide Equalizer"
+msgstr "Эквалайзерді жасыру"
 
 #: toptions_frm.checkbox5.caption
 msgid "Equalizer OFF"
@@ -1698,7 +1871,7 @@ msgstr "Ойнату тізімдері"
 #: toptions_frm.panel12.caption
 msgctxt "toptions_frm.panel12.caption"
 msgid "Params"
-msgstr "Парам"
+msgstr "Параметрлер"
 
 #: toptions_frm.panel4.caption
 msgctxt "toptions_frm.panel4.caption"
@@ -1713,6 +1886,13 @@ msgstr "Эквалайзер"
 msgctxt "toptions_frm.panel9.caption"
 msgid "Player"
 msgstr "Ойыншы"
+
+#, fuzzy
+#~| msgctxt "sw_player.flanger"
+#~| msgid "Flanger"
+#~ msgctxt "sw_player.flchor0"
+#~ msgid "Flanger"
+#~ msgstr "Флангер"
 
 #~ msgctxt "tfrm_effects.checkbox1.hint"
 #~ msgid "Effect Enable"

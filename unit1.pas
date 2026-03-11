@@ -30,7 +30,7 @@ implementation
 
 { TForm1 }
 
-uses  sw_player, options1, effects, list, cover, add_url ;
+uses  sw_player, options1, effects, list, add_url, cover;
 
 procedure TForm1.Timer2Timer(Sender: TObject);
 begin

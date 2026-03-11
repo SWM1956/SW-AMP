@@ -9,9 +9,9 @@ unit CommonTypes;
 
 interface
 
-
-  Type TWaveData = array [ 0..2048] of DWORD;
-  Type TFFTData  = array [0..1024] of Single;
+type
+  TWaveData = array[0..2048] of DWORD;
+  TFFTData  = array[0..1024] of Single;
 
 implementation
 

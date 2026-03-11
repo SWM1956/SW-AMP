@@ -17,7 +17,7 @@ object Frm_List: TFrm_List
   OnDropFiles = FormDropFiles
   OnShow = FormShow
   Position = poDefaultPosOnly
-  SessionProperties = 'LB1.Columns;LB1.Font;LB1.ItemHeight;LB1.ItemIndex;LB1.Items;LB1.Tag;LB2.ItemIndex;LB2.Items;LB2.Tag;LB3.ItemIndex;LB3.Items;LB4.ItemIndex;LB4.Items;Left;XMLPropStorage1.StoredValues'
+  SessionProperties = 'LB1.Columns;LB1.Font;LB1.ItemHeight;LB1.ItemIndex;LB1.Items;LB1.Tag;LB2.ItemIndex;LB2.Items;LB2.Tag;LB3.ItemIndex;LB3.Items;LB4.ItemIndex;LB4.Items;XMLPropStorage1.StoredValues'
   LCLVersion = '2.2.0.4'
   object BGRAShape11: TBGRAShape
     Left = 0
@@ -93,7 +93,7 @@ object Frm_List: TFrm_List
       AnchorSideRight.Control = Panel4
       AnchorSideBottom.Control = Panel4
       Left = 1
-      Height = 328
+      Height = 322
       Top = 0
       Width = 432
       Align = alClient
@@ -127,7 +127,7 @@ object Frm_List: TFrm_List
       AnchorSideRight.Control = Panel4
       AnchorSideBottom.Control = Panel4
       Left = 5
-      Height = 322
+      Height = 316
       Top = 3
       Width = 424
       Align = alClient
@@ -164,9 +164,9 @@ object Frm_List: TFrm_List
     end
     object StatusBar1: TStatusBar
       Left = 0
-      Height = 18
+      Height = 24
       Hint = 'Current playlist file'
-      Top = 328
+      Top = 322
       Width = 433
       Panels = <      
         item

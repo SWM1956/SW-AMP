@@ -1,7 +1,7 @@
 object Cover_Form: TCover_Form
-  Left = 926
+  Left = 696
   Height = 383
-  Top = 476
+  Top = 299
   Width = 444
   AlphaBlend = True
   AlphaBlendValue = 254

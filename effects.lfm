@@ -1,5 +1,5 @@
 object Frm_Effects: TFrm_Effects
-  Left = 823
+  Left = 841
   Height = 272
   Top = 114
   Width = 411

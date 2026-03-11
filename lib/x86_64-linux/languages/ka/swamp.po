@@ -12,83 +12,93 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: sw_player.acancel
-msgctxt "sw_player.acancel"
+#: swamp_strings.acancel
+msgctxt "swamp_strings.acancel"
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: sw_player.actualbitrate
+#: swamp_strings.actualbitrate
+msgctxt "swamp_strings.actualbitrate"
 msgid "Actual Track Bitrate"
-msgstr "ტრეკის რეალური ბიტრეიტი"
+msgstr " ტრეკის რეალური ბიტრეიტი"
 
-#: sw_player.adelete
+#: swamp_strings.adelete
+msgctxt "swamp_strings.adelete"
 msgid "Are you sure you want to delete this "
-msgstr "დარწმუნებული ხართ, რომ გსურთ წაშალოთ ეს"
+msgstr " დარწმუნებული ხართ, რომ გსურთ წაშალოთ ეს"
 
-#: sw_player.afile
+#: swamp_strings.afile
+msgctxt "swamp_strings.afile"
 msgid "The file "
 msgstr "აილი"
 
-#: sw_player.afileerror
+#: swamp_strings.afileerror
+msgctxt "swamp_strings.afileerror"
 msgid "File upload error"
 msgstr "ფაილის ატვირთვის შეცდომა"
 
-#: sw_player.autoplay
-msgctxt "sw_player.autoplay"
+#: swamp_strings.autoplay
+msgctxt "swamp_strings.autoplay"
 msgid "Auto Play"
 msgstr "ტრეკის ავტომატური დაწყება"
 
-#: sw_player.balance
+#: swamp_strings.balance
+msgctxt "swamp_strings.balance"
 msgid "Balanсe"
 msgstr "სტერეო ბალანსი"
 
-#: sw_player.bandanalizer
-msgctxt "sw_player.bandanalizer"
+#: swamp_strings.bandanalizer
+msgctxt "swamp_strings.bandanalizer"
 msgid "Count Bands Analizer"
 msgstr "დათვლის ზოლების ანალიზატორი"
 
-#: sw_player.bargraph
+#: swamp_strings.bargraph
+msgctxt "swamp_strings.bargraph"
 msgid "Bar Graph"
-msgstr "Bar Graph"
+msgstr "სვეტოვანი დიაგრამა"
 
-#: sw_player.bfile
+#: swamp_strings.bfile
+msgctxt "swamp_strings.bfile"
 msgid "file?"
 msgstr "ფაილი?"
 
-#: sw_player.bright
-msgctxt "sw_player.bright"
+#: swamp_strings.bright
+msgctxt "swamp_strings.bright"
 msgid "Bright"
 msgstr "სიკაშკაშე"
 
-#: sw_player.chorus
-msgctxt "sw_player.chorus"
+#: swamp_strings.chorus
+msgctxt "swamp_strings.chorus"
 msgid "Chorus"
 msgstr "გუნდები"
 
-#: sw_player.clearyesno
+#: swamp_strings.clearyesno
+msgctxt "swamp_strings.clearyesno"
 msgid "Are you sure you want to clear the playlist?"
-msgstr "დარწმუნებული ხართ, რომ გსურთ დასაკრავი სიის გასუფთავება?"
+msgstr " დარწმუნებული ხართ, რომ გსურთ დასაკრავი სიის გასუფთავება?"
 
-#: sw_player.confirm
+#: swamp_strings.confirm
+msgctxt "swamp_strings.confirm"
 msgid "Confirm"
 msgstr "დადასტურება"
 
-#: sw_player.delayleft
-msgctxt "sw_player.delayleft"
+#: swamp_strings.delayleft
+msgctxt "swamp_strings.delayleft"
 msgid "Delay for left channel"
 msgstr "დაგვიანებით მარცხენა არხისთვის"
 
-#: sw_player.delayright
-msgctxt "sw_player.delayright"
+#: swamp_strings.delayright
+msgctxt "swamp_strings.delayright"
 msgid "Delay for right channel"
 msgstr "შეფერხება მარჯვენა არხისთვის"
 
-#: sw_player.depth
-msgctxt "sw_player.depth"
+#: swamp_strings.depth
+msgctxt "swamp_strings.depth"
 msgid "Depth"
 msgstr "სიღრმე"
 
-#: sw_player.ebass_error_codec
+#: swamp_strings.ebass_error_codec
+msgctxt "swamp_strings.ebass_error_codec"
 msgid ""
 "The file uses a codec that is not available/supported. This can apply to WAV "
 "and AIFF files."
@@ -96,53 +106,64 @@ msgstr ""
 "ფაილი იყენებს კოდეკს, რომელიც არ არის ხელმისაწვდომი/მხარდაჭერილი. ეს "
 "შეიძლება ეხებოდეს WAV და AIFF ფაილებს."
 
-#: sw_player.ebass_error_denied
+#: swamp_strings.ebass_error_denied
+msgctxt "swamp_strings.ebass_error_denied"
 msgid "A valid username/password is required."
-msgstr ""
+msgstr "საჭიროა მოქმედი მომხმარებლის სახელი/პაროლი."
 
-#: sw_player.ebass_error_fileform
+#: swamp_strings.ebass_error_fileform
+msgctxt "swamp_strings.ebass_error_fileform"
 msgid "The files format is not recognised/supported."
 msgstr "ფაილის ფორმატი არ არის აღიარებული/მხარდაჭერილი."
 
-#: sw_player.ebass_error_fileopen
+#: swamp_strings.ebass_error_fileopen
+msgctxt "swamp_strings.ebass_error_fileopen"
 msgid "The file could not be opened."
 msgstr "ფაილის გახსნა ვერ მოხერხდა."
 
-#: sw_player.ebass_error_format
+#: swamp_strings.ebass_error_format
+msgctxt "swamp_strings.ebass_error_format"
 msgid "The sample format is not supported."
 msgstr "ნიმუშის ფორმატი არ არის მხარდაჭერილი."
 
-#: sw_player.ebass_error_illparam
+#: swamp_strings.ebass_error_illparam
+msgctxt "swamp_strings.ebass_error_illparam"
 msgid "url is not a valid URL."
 msgstr "url არ არის სწორი URL."
 
-#: sw_player.ebass_error_init
+#: swamp_strings.ebass_error_init
+msgctxt "swamp_strings.ebass_error_init"
 msgid "BASS_Init has not been successfully called."
 msgstr "BASS_Init წარმატებით არ გამოძახებულა."
 
-#: sw_player.ebass_error_mem
+#: swamp_strings.ebass_error_mem
+msgctxt "swamp_strings.ebass_error_mem"
 msgid "There is insufficient memory."
 msgstr "არასაკმარისი მეხსიერებაა."
 
-#: sw_player.ebass_error_no3d
+#: swamp_strings.ebass_error_no3d
+msgctxt "swamp_strings.ebass_error_no3d"
 msgid "Could not initialize 3D support."
 msgstr "3D მხარდაჭერის ინიციალიზაცია ვერ მოხერხდა."
 
-#: sw_player.ebass_error_nonet
+#: swamp_strings.ebass_error_nonet
+msgctxt "swamp_strings.ebass_error_nonet"
 msgid ""
 "No internet connection could be opened. Can be caused by a bad proxy setting."
 msgstr ""
 "ინტერნეტ კავშირის გახსნა ვერ მოხერხდა. შეიძლება გამოწვეული იყოს პროქსის ცუდი "
 "პარამეტრით."
 
-#: sw_player.ebass_error_notaudio
+#: swamp_strings.ebass_error_notaudio
+msgctxt "swamp_strings.ebass_error_notaudio"
 msgid ""
 "The file does not contain audio, or it also contains video and videos are "
 "disabled."
 msgstr ""
 "ფაილი არ შეიცავს აუდიოს, ან ასევე შეიცავს ვიდეოს და ვიდეოები გამორთულია."
 
-#: sw_player.ebass_error_notavail
+#: swamp_strings.ebass_error_notavail
+msgctxt "swamp_strings.ebass_error_notavail"
 msgid ""
 "The BASS_STREAM_AUTOFREE flag cannot be combined with the BASS_STREAM_DECODE "
 "flag."
@@ -150,19 +171,23 @@ msgstr ""
 "BASS_STREAM_AUTOFREE დროშა არ შეიძლება გაერთიანდეს BASS_STREAM_DECODE "
 "დროშასთან."
 
-#: sw_player.ebass_error_protocol
+#: swamp_strings.ebass_error_protocol
+msgctxt "swamp_strings.ebass_error_protocol"
 msgid "The protocol in url is not supported."
 msgstr "პროტოკოლი url-ში არ არის მხარდაჭერილი."
 
-#: sw_player.ebass_error_speaker
+#: swamp_strings.ebass_error_speaker
+msgctxt "swamp_strings.ebass_error_speaker"
 msgid "The specified SPEAKER flags are invalid."
 msgstr "მითითებული SPEAKER დროშები არასწორია."
 
-#: sw_player.ebass_error_ssl
+#: swamp_strings.ebass_error_ssl
+msgctxt "swamp_strings.ebass_error_ssl"
 msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
-msgstr ""
+msgstr "SSL/HTTPS მხარდაჭერა მიუწვდომელია. იხილეთ BASS_CONFIG_LIBSSL."
 
-#: sw_player.ebass_error_timeout
+#: swamp_strings.ebass_error_timeout
+msgctxt "swamp_strings.ebass_error_timeout"
 msgid ""
 "The server did not respond to the request within the timeout period, as set "
 "with the BASS_CONFIG_NET_TIMEOUT config option."
@@ -170,11 +195,13 @@ msgstr ""
 "სერვერმა არ უპასუხა მოთხოვნას დროის ამოწურვის პერიოდში, როგორც დაყენებულია "
 "BASS_CONFIG_NET_TIMEOUT კონფიგურაციის პარამეტრით."
 
-#: sw_player.ebass_error_unknown
+#: swamp_strings.ebass_error_unknown
+msgctxt "swamp_strings.ebass_error_unknown"
 msgid "Some other mystery problem!"
 msgstr "კიდევ რაღაც საიდუმლო პრობლემა!"
 
-#: sw_player.ebass_error_unstreamable
+#: swamp_strings.ebass_error_unstreamable
+msgctxt "swamp_strings.ebass_error_unstreamable"
 msgid ""
 "The file cannot be streamed. This could be because an MP4 files mdat atom "
 "comes before its \"moov\" atom."
@@ -182,208 +209,352 @@ msgstr ""
 "ფაილის სტრიმინგი შეუძლებელია. ეს შეიძლება იყოს იმის გამო, რომ MP4 ფაილი mdat "
 "ატომი დგება მის \"moov\" ატომზე წინ."
 
-#: sw_player.echo
-msgctxt "sw_player.echo"
+#: swamp_strings.echo
+msgctxt "swamp_strings.echo"
 msgid "Echo"
 msgstr "ექო"
 
-#: sw_player.efects
-msgctxt "sw_player.efects"
+#: swamp_strings.efects
+msgctxt "swamp_strings.efects"
 msgid "Effects"
 msgstr "ეფექტები"
 
-#: sw_player.effenable
-msgctxt "sw_player.effenable"
+#: swamp_strings.effenable
+msgctxt "swamp_strings.effenable"
 msgid "Effect Enable"
 msgstr "ეფექტის ჩართვა"
 
-#: sw_player.equalizer
+#: swamp_strings.equalizer
+msgctxt "swamp_strings.equalizer"
 msgid "Equalazer"
 msgstr "ექვალაიზერი"
 
-#: sw_player.feedback
-msgctxt "sw_player.feedback"
+#: swamp_strings.feedback
+msgctxt "swamp_strings.feedback"
 msgid "Feedback"
 msgstr "კავშირი"
 
-#: sw_player.flanger
-msgctxt "sw_player.flanger"
+#: swamp_strings.flanger
+msgctxt "swamp_strings.flanger"
 msgid "Flanger"
 msgstr "ფლანგერი"
 
-#: sw_player.flchor0
-msgctxt "sw_player.flchor0"
+#: swamp_strings.flchor0
+msgctxt "swamp_strings.flchor0"
 msgid "Flanger"
 msgstr "ფლანგერი"
 
-#: sw_player.flchor1
+#: swamp_strings.flchor1
+msgctxt "swamp_strings.flchor1"
 msgid "Exaggerated chorus leads to multiple pitch shifted voices"
 msgstr "გაზვიადებული გუნდი იწვევს მრავალჯერადი სიმაღლის ცვალებად ხმებს"
 
-#: sw_player.flchor2
+#: swamp_strings.flchor2
+msgctxt "swamp_strings.flchor2"
 msgid "Motocycle"
 msgstr "მოტოციკლი"
 
-#: sw_player.flchor3
+#: swamp_strings.flchor3
+msgctxt "swamp_strings.flchor3"
 msgid "Devil"
 msgstr "ეშმაკი"
 
-#: sw_player.flchor4
+#: swamp_strings.flchor4
+msgctxt "swamp_strings.flchor4"
 msgid "Who say that there are not many voices?"
 msgstr "ვინ ამბობს, რომ ბევრი ხმა არ არის?"
 
-#: sw_player.flchor5
+#: swamp_strings.flchor5
+msgctxt "swamp_strings.flchor5"
 msgid "Back chipmunk"
 msgstr "უკან მომღერალი"
 
-#: sw_player.flchor6
+#: swamp_strings.flchor6
+msgctxt "swamp_strings.flchor6"
 msgid "Water"
 msgstr "წყალი"
 
-#: sw_player.flchor7
+#: swamp_strings.flchor7
+msgctxt "swamp_strings.flchor7"
 msgid "This is the airplane"
 msgstr "ეს არის თვითმფრინავი"
 
-#: sw_player.frequency
-msgctxt "sw_player.frequency"
+#: swamp_strings.frequency
+msgctxt "swamp_strings.frequency"
 msgid "Frequency modulation"
 msgstr "სიხშირის მოდულაცია"
 
-#: sw_player.hideq
-msgctxt "sw_player.hideq"
+#: swamp_strings.hideq
+msgctxt "swamp_strings.hideq"
 msgid "Hide Equalizer"
 msgstr "ექვალაიზერის დამალვა"
 
-#: sw_player.interpolat0
+#: swamp_strings.interpolat0
+msgctxt "swamp_strings.interpolat0"
 msgid "Interpolation: Linear"
 msgstr "ინტერპოლაცია: ხაზოვანი"
 
-#: sw_player.interpolat1
+#: swamp_strings.interpolat1
+msgctxt "swamp_strings.interpolat1"
 msgid "Interpolation: Sync 8 point"
 msgstr "ინტერპოლაცია: 8 ქულა"
 
-#: sw_player.interpolat2
+#: swamp_strings.interpolat2
+msgctxt "swamp_strings.interpolat2"
 msgid "Interpolation: Sync 16 point"
 msgstr "ინტერპოლაცია: 16 ქულა"
 
-#: sw_player.interpolat3
+#: swamp_strings.interpolat3
+msgctxt "swamp_strings.interpolat3"
 msgid "Interpolation: Sync 32 point "
 msgstr "ინტერპოლაცია: 32 ქულა"
 
-#: sw_player.interpolat4
+#: swamp_strings.interpolat4
+msgctxt "swamp_strings.interpolat4"
 msgid "Interpolation: Sync 64 point"
 msgstr "ინტერპოლაცია: 64 ქულა"
 
-#: sw_player.languages
+#: swamp_strings.languages
+msgctxt "swamp_strings.languages"
 msgid "Languages"
 msgstr "ენები"
 
-#: sw_player.line
+#: swamp_strings.line
+msgctxt "swamp_strings.line"
 msgid "Line"
-msgstr "Line"
+msgstr "ხაზი"
 
-#: sw_player.logvol
-msgctxt "sw_player.logvol"
+#: swamp_strings.logvol
+msgctxt "swamp_strings.logvol"
 msgid "Logarithmic volume control"
 msgstr "ლოგარითმული მოცულობის კონტროლი"
 
-#: sw_player.mono
+#: swamp_strings.mono
+msgctxt "swamp_strings.mono"
 msgid "Mono"
 msgstr "მონო"
 
-#: sw_player.nosuch
+#: swamp_strings.nosuch
+msgctxt "swamp_strings.nosuch"
 msgid " does not exist"
-msgstr "არ არსებობს"
+msgstr " არ არსებობს"
 
-#: sw_player.ofeq
-msgctxt "sw_player.ofeq"
+#: swamp_strings.ofeq
+msgctxt "swamp_strings.ofeq"
 msgid "Off Equalizer"
 msgstr "გამორთული ექვალაიზერი"
 
-#: sw_player.offanalizer
-msgctxt "sw_player.offanalizer"
+#: swamp_strings.offanalizer
+msgctxt "swamp_strings.offanalizer"
 msgid "Turn OFF Analizer"
 msgstr "გამორთეთ ანალიზატორი"
 
-#: sw_player.oneq
+#: swamp_strings.oneq
+msgctxt "swamp_strings.oneq"
 msgid "On Equalizer"
 msgstr "ექვალაიზერზე"
 
-#: sw_player.openplaylistcaption
-msgctxt "sw_player.openplaylistcaption"
+#: swamp_strings.openplaylistcaption
+msgctxt "swamp_strings.openplaylistcaption"
 msgid "Open Playlist"
 msgstr "გახსენით დასაკრავი სია"
 
-#: sw_player.params
-msgctxt "sw_player.params"
+#: swamp_strings.params
+msgctxt "swamp_strings.params"
 msgid "Params"
 msgstr "პარამები"
 
-#: sw_player.player
-msgctxt "sw_player.player"
+#: swamp_strings.player
+msgctxt "swamp_strings.player"
 msgid "Player"
 msgstr "მოთამაშე"
 
-#: sw_player.playlist
-msgctxt "sw_player.playlist"
+#: swamp_strings.playlist
+msgctxt "swamp_strings.playlist"
 msgid "PlayList"
 msgstr "დასაკრავი სია"
 
-#: sw_player.reverberation
-msgctxt "sw_player.reverberation"
+#: swamp_strings.reverberation
+msgctxt "swamp_strings.reverberation"
 msgid "Reverberation"
 msgstr "რევერბერაცია"
 
-#: sw_player.reverbmix
-msgctxt "sw_player.reverbmix"
+#: swamp_strings.reverbmix
+msgctxt "swamp_strings.reverbmix"
 msgid "Reverberation Mix"
 msgstr "რევერბერაციის მიქსი"
 
-#: sw_player.reverbtime
-msgctxt "sw_player.reverbtime"
+#: swamp_strings.reverbtime
+msgctxt "swamp_strings.reverbtime"
 msgid "Reverberation Time"
 msgstr "რევერბერაციის დრო"
 
-#: sw_player.rsdb
+#: swamp_strings.rsalbum
+msgid "Album:"
+msgstr "ალბომი:"
+
+#: swamp_strings.rsartist
+msgid "Artist:"
+msgstr "მხატვარი:"
+
+#: swamp_strings.rsbitrate
+msgid "Bitrate:"
+msgstr "ბიტრეიტი:"
+
+#: swamp_strings.rscannotopen
+msgid "(failed to open file)"
+msgstr ""
+
+#: swamp_strings.rschannels
+msgid "Channels:"
+msgstr "არხები:"
+
+#: swamp_strings.rschmono
+msgid "1 (Mono)"
+msgstr "1 (მონო)"
+
+#: swamp_strings.rschstereo
+msgid "2 (Stereo)"
+msgstr "2 (სტერეო)"
+
+#: swamp_strings.rsclose
+msgid "Close"
+msgstr "დახურვა"
+
+#: swamp_strings.rscomment
+msgid "Comment:"
+msgstr "კომენტარი:"
+
+#: swamp_strings.rsdb
+msgctxt "swamp_strings.rsdb"
 msgid " dB"
 msgstr ""
 
-#: sw_player.sheq
-msgctxt "sw_player.sheq"
+#: swamp_strings.rsduration
+msgid "Duration:"
+msgstr "ხანგრძლივობა:"
+
+#: swamp_strings.rserrorload
+msgid "Error load"
+msgstr "შეცდომა ჩატვირთვისას"
+
+#: swamp_strings.rsfileinfocaption
+msgid "Track Information"
+msgstr "ტრეკის ინფორმაცია"
+
+#: swamp_strings.rsfilename
+msgid "File name:"
+msgstr "ფაილის სახელი:"
+
+#: swamp_strings.rsfilenotfound
+msgid "File not found:"
+msgstr "ფაილი ვერ მოიძებნა:"
+
+#: swamp_strings.rsfilesize
+msgid "Size:"
+msgstr "ზომა:"
+
+#: swamp_strings.rsformat
+msgid "Format:"
+msgstr "ფორმატი:"
+
+#: swamp_strings.rsgenre
+msgid "Genre:"
+msgstr "ჟანრი:"
+
+#: swamp_strings.rsmodified
+msgid "Modified:"
+msgstr "შეცვლილია:"
+
+#: swamp_strings.rsnhappend
+msgid "won't happen!"
+msgstr "არ მოხდება!"
+
+#: swamp_strings.rsnocover
+msgid "No cover image"
+msgstr "ყდის სურათი არ არის"
+
+#: swamp_strings.rsnostreamprops
+msgid "Properties are not available for internet streams."
+msgstr "ინტერნეტ ნაკადებისთვის თვისებები მიუწვდომელია."
+
+#: swamp_strings.rsonlystream
+msgid "This List only for stream's"
+msgstr "ეს სია მხოლოდ სტრიმებისთვისაა"
+
+#: swamp_strings.rsplaybackerror
+msgid "File playback error"
+msgstr "ფაილის დაკვრის შეცდომა"
+
+#: swamp_strings.rssamplerate
+msgid "Sample rate:"
+msgstr "ნიმუშის სიხშირე:"
+
+#: swamp_strings.rstabaudio
+msgid "Audio"
+msgstr "აუდიო"
+
+#: swamp_strings.rstabcover
+msgid "Cover"
+msgstr "ყდა"
+
+#: swamp_strings.rstabfile
+msgid "File"
+msgstr "ფაილი"
+
+#: swamp_strings.rstabtags
+msgid "Tags"
+msgstr "თეგები"
+
+#: swamp_strings.rstitle
+msgid "Title:"
+msgstr "სათაური:"
+
+#: swamp_strings.rstrackno
+msgid "Track #:"
+msgstr "ტრეკის #:"
+
+#: swamp_strings.rsyear
+msgid "Year:"
+msgstr "წელი:"
+
+#: swamp_strings.sheq
+msgctxt "swamp_strings.sheq"
 msgid "Show Equalizer"
 msgstr "ეკვალაიზერის ჩვენება"
 
-#: sw_player.spanalizer
-msgctxt "sw_player.spanalizer"
+#: swamp_strings.spanalizer
+msgctxt "swamp_strings.spanalizer"
 msgid "Spectrum Analizer"
 msgstr "სპექტრის ანალიზატორი"
 
-#: sw_player.startanalizer
+#: swamp_strings.startanalizer
+msgctxt "swamp_strings.startanalizer"
 msgid "Start Analizer"
 msgstr "ანალიზატორის დაწყება"
 
-#: sw_player.stereo
-msgctxt "sw_player.stereo"
+#: swamp_strings.stereo
+msgctxt "swamp_strings.stereo"
 msgid "Stereo"
 msgstr "სტერეო"
 
-#: sw_player.stopanalizer
-msgctxt "sw_player.stopanalizer"
+#: swamp_strings.stopanalizer
+msgctxt "swamp_strings.stopanalizer"
 msgid "Stop Analizer"
 msgstr "ანალიზატორის გაჩერება"
 
-#: sw_player.tonvol
-msgctxt "sw_player.tonvol"
+#: swamp_strings.tonvol
+msgctxt "swamp_strings.tonvol"
 msgid "Loudly compensated volume control"
 msgstr "ხმამაღლა კომპენსირებული ხმის კონტროლი"
 
-#: sw_player.volume
-msgctxt "sw_player.volume"
+#: swamp_strings.volume
+msgctxt "swamp_strings.volume"
 msgid "Volume"
 msgstr "მოცულობა"
 
-#: sw_player.wet
-msgctxt "sw_player.wet"
+#: swamp_strings.wet
+msgctxt "swamp_strings.wet"
 msgid "Delayed/Direct"
 msgstr "დაგვიანებული/პირდაპირი"
 
@@ -399,7 +570,7 @@ msgstr ""
 
 #: tcover_form.caption
 msgid "Cover_Form"
-msgstr ""
+msgstr "საფარის_ფორმა"
 
 #: tform_addurl.bgrashape15.caption
 msgctxt "tform_addurl.bgrashape15.caption"
@@ -435,7 +606,7 @@ msgstr "ტიტლი"
 
 #: tform_player.acoustic.caption
 msgid "Acoustic"
-msgstr "Acoustic"
+msgstr "აკუსტიკური"
 
 #: tform_player.addurl.caption
 msgctxt "tform_player.addurl.caption"
@@ -444,7 +615,7 @@ msgstr "URL-ის დამატება"
 
 #: tform_player.alternative.caption
 msgid "Alternative"
-msgstr "Alternative"
+msgstr "ალტერნატივა"
 
 #: tform_player.ballad.caption
 msgid "Ballad"
@@ -484,6 +655,10 @@ msgstr ""
 msgctxt "tform_player.bgrashape14.caption"
 msgid "BGRAShape14"
 msgstr ""
+
+#: tform_player.bgrashape14.hint
+msgid "Stream Write"
+msgstr "ნაკადის ჩაწერა"
 
 #: tform_player.bgrashape16.caption
 msgctxt "tform_player.bgrashape16.caption"
@@ -592,7 +767,7 @@ msgstr "დახურეთ SW-AMP"
 
 #: tform_player.club.caption
 msgid "Club"
-msgstr "Club"
+msgstr "კლუბი"
 
 #: tform_player.copytocustomeq.caption
 msgctxt "tform_player.copytocustomeq.caption"
@@ -601,11 +776,11 @@ msgstr "დააკოპირეთ Custom"
 
 #: tform_player.custom.caption
 msgid "Custom"
-msgstr ""
+msgstr "მორგებული"
 
 #: tform_player.dance.caption
 msgid "Dance"
-msgstr "Dance"
+msgstr "ცეკვა"
 
 #: tform_player.deleteplaylist.caption
 msgid "Delete PlayList"
@@ -617,19 +792,19 @@ msgstr "არჩეული რედაქტირება"
 
 #: tform_player.electronic.caption
 msgid "Electronic"
-msgstr "Electronic"
+msgstr "ელექტრონული"
 
 #: tform_player.flat.caption
 msgid "Flat"
-msgstr "Flat"
+msgstr "ბრტყელი"
 
 #: tform_player.fullbass.caption
 msgid "Full Bass"
-msgstr "Full Bass"
+msgstr "სრული ბასი"
 
 #: tform_player.fullbassandtreble.caption
 msgid "Full Bass And Treble"
-msgstr "Full Bass And Treble"
+msgstr "სრული ბასი და მაღალი ტემპი"
 
 #: tform_player.fulltreble.caption
 msgid "Full Treble"
@@ -637,11 +812,11 @@ msgstr "Full Treble"
 
 #: tform_player.headphones.caption
 msgid "Headphones"
-msgstr "Headphones"
+msgstr "ყურსასმენები"
 
 #: tform_player.heavymetal.caption
 msgid "Heavy Metal"
-msgstr "Heavy Metal"
+msgstr "მძიმე მეტალი"
 
 #: tform_player.hideeq.caption
 msgctxt "tform_player.hideeq.caption"
@@ -659,15 +834,15 @@ msgstr "სიის დამალვა"
 
 #: tform_player.hiphop.caption
 msgid "Hip-Hop"
-msgstr "Hip-Hop"
+msgstr "ჰიპ-ჰოპი"
 
 #: tform_player.industrial.caption
 msgid "Industrial"
-msgstr "Industrial"
+msgstr "სამრეწველო"
 
 #: tform_player.jazz.caption
 msgid "Jazz"
-msgstr "Jazz"
+msgstr "ჯაზი"
 
 #: tform_player.label1.caption
 msgctxt "tform_player.label1.caption"
@@ -775,7 +950,7 @@ msgstr "ენები"
 
 #: tform_player.largehall.caption
 msgid "Large Hall"
-msgstr "Large Hall"
+msgstr "დიდი დარბაზი"
 
 #: tform_player.lbleq1.caption
 msgctxt "tform_player.lbleq1.caption"
@@ -873,11 +1048,11 @@ msgstr ""
 
 #: tform_player.live.caption
 msgid "Live"
-msgstr "Live"
+msgstr "პირდაპირი ეთერი"
 
 #: tform_player.menuitem3.caption
 msgid "Bar graph"
-msgstr "Bar graph"
+msgstr "სვეტოვანი დიაგრამა"
 
 #: tform_player.menuitem5.caption
 msgid "Delete Selected"
@@ -1009,7 +1184,7 @@ msgstr "ითამაშეთ"
 
 #: tform_player.pop.caption
 msgid "Pop"
-msgstr "Pop"
+msgstr "პოპი"
 
 #: tform_player.presets.caption
 msgctxt "tform_player.presets.caption"
@@ -1022,7 +1197,7 @@ msgstr "წინა"
 
 #: tform_player.rap.caption
 msgid "Rap"
-msgstr "Rap"
+msgstr "რეპი"
 
 #: tform_player.reggae.caption
 msgid "Reggae"
@@ -1034,7 +1209,7 @@ msgstr ""
 
 #: tform_player.rock.caption
 msgid "Rock"
-msgstr "Rock"
+msgstr "როკი"
 
 #: tform_player.s125.caption
 msgid "1.25"
@@ -1087,7 +1262,7 @@ msgstr "SW-AMP-ის ჩვენება"
 
 #: tform_player.ska.caption
 msgid "Ska"
-msgstr "Ska"
+msgstr "სკა"
 
 #: tform_player.snormal.caption
 msgctxt "tform_player.snormal.caption"
@@ -1096,15 +1271,15 @@ msgstr "ნორმალური"
 
 #: tform_player.soft.caption
 msgid "Soft"
-msgstr "Soft"
+msgstr "რბილი"
 
 #: tform_player.softbass.caption
 msgid "Soft Bass"
-msgstr "Soft Bass"
+msgstr "რბილი ბასი"
 
 #: tform_player.softrock.caption
 msgid "Soft Rock"
-msgstr "Soft Rock"
+msgstr "რბილი როკი"
 
 #: tform_player.stopmenu.caption
 msgctxt "tform_player.stopmenu.caption"
@@ -1113,7 +1288,7 @@ msgstr "გაჩერდი"
 
 #: tform_player.techno.caption
 msgid "Techno"
-msgstr "Techno"
+msgstr "ტექნო"
 
 #: tform_player.trackbar1.hint
 msgctxt "tform_player.trackbar1.hint"
@@ -1124,13 +1299,17 @@ msgstr "მოცულობა"
 msgid "Balance"
 msgstr "სტერეო ბალანსი"
 
+#: tform_player.trackproperties.caption
+msgid "Властивості треку..."
+msgstr "თვისებების თვალყურის დევნება..."
+
 #: tform_player.trackspeed.caption
 msgid "Audiotrack Speed"
-msgstr "აუდიოტრეკის სიჩქარე"
+msgstr " აუდიოტრეკის სიჩქარე"
 
 #: tform_player.vocal.caption
 msgid "Vocal"
-msgstr "Vocal"
+msgstr "ვოკალი"
 
 #: tfrm_effects.bgrashape17.caption
 msgctxt "tfrm_effects.bgrashape17.caption"
@@ -1364,7 +1543,7 @@ msgstr "შეკუმშვის ბარიერი"
 #: tfrm_effects.label30.caption
 msgctxt "tfrm_effects.label30.caption"
 msgid "Attac Time"
-msgstr "შეტევის დრო"
+msgstr " შეტევის დრო"
 
 #: tfrm_effects.label31.caption
 msgctxt "tfrm_effects.label31.caption"
@@ -1372,12 +1551,9 @@ msgid "Compression ratio"
 msgstr "შეკუმშვის კოეფიციენტი"
 
 #: tfrm_effects.label32.caption
-#, fuzzy
-#| msgctxt "tform_player.label3.caption"
-#| msgid "0"
 msgctxt "tfrm_effects.label32.caption"
 msgid "0%"
-msgstr "0"
+msgstr "0%"
 
 #: tfrm_effects.label33.caption
 #, fuzzy
@@ -1477,8 +1653,6 @@ msgid "Damp"
 msgstr "ნესტიანი"
 
 #: tfrm_effects.label69.caption
-#, fuzzy
-#| msgid "Stereo Witdth"
 msgid "Stereo Width"
 msgstr "სტერეო სიგანე"
 
@@ -1542,7 +1716,7 @@ msgstr ""
 
 #: tfrm_list.caption
 msgid "list"
-msgstr ""
+msgstr "სია"
 
 #: tfrm_list.statusbar1.hint
 msgid "Current playlist file"
@@ -1713,6 +1887,10 @@ msgstr "ექვალაიზერი"
 msgctxt "toptions_frm.panel9.caption"
 msgid "Player"
 msgstr "მოთამაშე"
+
+#~ msgctxt "sw_player.flchor0"
+#~ msgid "Flanger"
+#~ msgstr "ფლანგერი"
 
 #~ msgctxt "tfrm_effects.checkbox1.hint"
 #~ msgid "Effect Enable"

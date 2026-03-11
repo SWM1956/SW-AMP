@@ -20,6 +20,7 @@ interface
         DrawRes  : Double;
         DrawType : Integer;
         Paused   : Boolean;
+        // Викликається після завершення малювання кадру.
      private
      BkgColor : TColor;
         SpecHeight : Integer;
@@ -186,12 +187,9 @@ VisBuff.Canvas.CopyRect(Rect(0, 0, VisBuff.Width, VisBuff.Height), BackBmp.Canva
                         if ShowPeak then VisBuff.Canvas.Pixels[X + i, Y + VisBuff.Height - FFTPeacks[i]] := Pen;
                      end;
                  1 :  begin
-                                //   PeakFall :=1;
-                                //     LineFall :=4 ;
                                   if ShowPeak then begin
                                   VisBuff.Canvas.Pen.Color :=  PeakColor;
-                                    Form_player.PaintBox1.Canvas.Pen.Color :=  PeakColor;
-                                       VisBuff.Canvas.MoveTo(X + i * (ColWidth + 1 )-ColWidth, Y + VisBuff.Height - FFTPeacks[i]);
+                                     VisBuff.Canvas.MoveTo(X + i * (ColWidth + 1 )-ColWidth, Y + VisBuff.Height - FFTPeacks[i]);
                                     VisBuff.Canvas.LineTo(X + i * (ColWidth + 1 ), Y + VisBuff.Height - FFTPeacks[i]);
                                end;
            VisBuff.Canvas.Pen.Color := PenColor;
@@ -206,12 +204,7 @@ VisBuff.Canvas.CopyRect(Rect(0, 0, VisBuff.Width, VisBuff.Height), BackBmp.Canva
 
 
   ifend:=True;
-Form_player.PaintBox1Paint(self);
-{             if sw_player.mode=stop then  begin
-            for i:=0 to 128 do
-        FFTFallOff[i]:=0;
-           Form_player.PaintBox1Paint(self);
-             end; }
+  Form_player.PaintBox1Paint(self);
 end;
 
  end.

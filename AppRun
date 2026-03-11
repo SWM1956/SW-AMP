@@ -1,0 +1,8 @@
+#!/bin/bash
+HERE="$(dirname "$(readlink -f "${0}")")"
+APPPATH="$(dirname $APPIMAGE)"
+EXEC="${HERE}/usr/bin"
+mkdir -p $APPPATH/swampproperties
+mkdir -p $APPPATH/swampproperties/PlayLists
+cd $APPPATH
+exec "${EXEC}"/swamp "$@"

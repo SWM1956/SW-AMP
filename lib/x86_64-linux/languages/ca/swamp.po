@@ -12,83 +12,93 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: sw_player.acancel
-msgctxt "sw_player.acancel"
+#: swamp_strings.acancel
+msgctxt "swamp_strings.acancel"
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: sw_player.actualbitrate
+#: swamp_strings.actualbitrate
+msgctxt "swamp_strings.actualbitrate"
 msgid "Actual Track Bitrate"
 msgstr "Taxa de bits de la pista real"
 
-#: sw_player.adelete
+#: swamp_strings.adelete
+msgctxt "swamp_strings.adelete"
 msgid "Are you sure you want to delete this "
 msgstr "Esteu segur que voleu suprimir això "
 
-#: sw_player.afile
+#: swamp_strings.afile
+msgctxt "swamp_strings.afile"
 msgid "The file "
 msgstr "L'arxiu "
 
-#: sw_player.afileerror
+#: swamp_strings.afileerror
+msgctxt "swamp_strings.afileerror"
 msgid "File upload error"
 msgstr "Error de pujada del fitxer"
 
-#: sw_player.autoplay
-msgctxt "sw_player.autoplay"
+#: swamp_strings.autoplay
+msgctxt "swamp_strings.autoplay"
 msgid "Auto Play"
 msgstr "Reproducció automàtica"
 
-#: sw_player.balance
+#: swamp_strings.balance
+msgctxt "swamp_strings.balance"
 msgid "Balanсe"
 msgstr "Balanсe"
 
-#: sw_player.bandanalizer
-msgctxt "sw_player.bandanalizer"
+#: swamp_strings.bandanalizer
+msgctxt "swamp_strings.bandanalizer"
 msgid "Count Bands Analizer"
 msgstr "Analitzador de recompte de bandes"
 
-#: sw_player.bargraph
+#: swamp_strings.bargraph
+msgctxt "swamp_strings.bargraph"
 msgid "Bar Graph"
 msgstr "Gràfic de barres"
 
-#: sw_player.bfile
+#: swamp_strings.bfile
+msgctxt "swamp_strings.bfile"
 msgid "file?"
 msgstr "fitxer?"
 
-#: sw_player.bright
-msgctxt "sw_player.bright"
+#: swamp_strings.bright
+msgctxt "swamp_strings.bright"
 msgid "Bright"
 msgstr "Lluminós"
 
-#: sw_player.chorus
-msgctxt "sw_player.chorus"
+#: swamp_strings.chorus
+msgctxt "swamp_strings.chorus"
 msgid "Chorus"
 msgstr "Cor"
 
-#: sw_player.clearyesno
+#: swamp_strings.clearyesno
+msgctxt "swamp_strings.clearyesno"
 msgid "Are you sure you want to clear the playlist?"
 msgstr "Confirmes que vols esborrar la llista de reproducció?"
 
-#: sw_player.confirm
+#: swamp_strings.confirm
+msgctxt "swamp_strings.confirm"
 msgid "Confirm"
 msgstr "Confirmació"
 
-#: sw_player.delayleft
-msgctxt "sw_player.delayleft"
+#: swamp_strings.delayleft
+msgctxt "swamp_strings.delayleft"
 msgid "Delay for left channel"
 msgstr "Retard per al canal esquerre"
 
-#: sw_player.delayright
-msgctxt "sw_player.delayright"
+#: swamp_strings.delayright
+msgctxt "swamp_strings.delayright"
 msgid "Delay for right channel"
 msgstr "Retard per al canal dret"
 
-#: sw_player.depth
-msgctxt "sw_player.depth"
+#: swamp_strings.depth
+msgctxt "swamp_strings.depth"
 msgid "Depth"
 msgstr "Profunditat"
 
-#: sw_player.ebass_error_codec
+#: swamp_strings.ebass_error_codec
+msgctxt "swamp_strings.ebass_error_codec"
 msgid ""
 "The file uses a codec that is not available/supported. This can apply to WAV "
 "and AIFF files."
@@ -96,53 +106,64 @@ msgstr ""
 "El fitxer utilitza un còdec que no està disponible/no és compatible. Això es "
 "pot aplicar als fitxers WAV i AIFF."
 
-#: sw_player.ebass_error_denied
+#: swamp_strings.ebass_error_denied
+msgctxt "swamp_strings.ebass_error_denied"
 msgid "A valid username/password is required."
 msgstr ""
 
-#: sw_player.ebass_error_fileform
+#: swamp_strings.ebass_error_fileform
+msgctxt "swamp_strings.ebass_error_fileform"
 msgid "The files format is not recognised/supported."
 msgstr "El format dels fitxers no és reconegut/admès."
 
-#: sw_player.ebass_error_fileopen
+#: swamp_strings.ebass_error_fileopen
+msgctxt "swamp_strings.ebass_error_fileopen"
 msgid "The file could not be opened."
 msgstr "No s'ha pogut obrir el fitxer."
 
-#: sw_player.ebass_error_format
+#: swamp_strings.ebass_error_format
+msgctxt "swamp_strings.ebass_error_format"
 msgid "The sample format is not supported."
 msgstr "El protocol a l'URL no és compatible."
 
-#: sw_player.ebass_error_illparam
+#: swamp_strings.ebass_error_illparam
+msgctxt "swamp_strings.ebass_error_illparam"
 msgid "url is not a valid URL."
 msgstr "url no és un URL vàlid."
 
-#: sw_player.ebass_error_init
+#: swamp_strings.ebass_error_init
+msgctxt "swamp_strings.ebass_error_init"
 msgid "BASS_Init has not been successfully called."
 msgstr "BASS_Init no s'ha cridat correctament."
 
-#: sw_player.ebass_error_mem
+#: swamp_strings.ebass_error_mem
+msgctxt "swamp_strings.ebass_error_mem"
 msgid "There is insufficient memory."
 msgstr "No hi ha prou memòria."
 
-#: sw_player.ebass_error_no3d
+#: swamp_strings.ebass_error_no3d
+msgctxt "swamp_strings.ebass_error_no3d"
 msgid "Could not initialize 3D support."
 msgstr "No s'ha pogut inicialitzar el suport 3D."
 
-#: sw_player.ebass_error_nonet
+#: swamp_strings.ebass_error_nonet
+msgctxt "swamp_strings.ebass_error_nonet"
 msgid ""
 "No internet connection could be opened. Can be caused by a bad proxy setting."
 msgstr ""
 "No s'ha pogut obrir cap connexió a Internet. Pot ser causat per una "
 "configuració de proxy incorrecta."
 
-#: sw_player.ebass_error_notaudio
+#: swamp_strings.ebass_error_notaudio
+msgctxt "swamp_strings.ebass_error_notaudio"
 msgid ""
 "The file does not contain audio, or it also contains video and videos are "
 "disabled."
 msgstr ""
 "El fitxer no conté àudio o també conté vídeo i els vídeos estan desactivats."
 
-#: sw_player.ebass_error_notavail
+#: swamp_strings.ebass_error_notavail
+msgctxt "swamp_strings.ebass_error_notavail"
 msgid ""
 "The BASS_STREAM_AUTOFREE flag cannot be combined with the BASS_STREAM_DECODE "
 "flag."
@@ -150,19 +171,23 @@ msgstr ""
 "El senyalador BASS_STREAM_AUTOFREE no es pot combinar amb el senyalador "
 "BASS_STREAM_DECODE."
 
-#: sw_player.ebass_error_protocol
+#: swamp_strings.ebass_error_protocol
+msgctxt "swamp_strings.ebass_error_protocol"
 msgid "The protocol in url is not supported."
 msgstr "El protocol a l'URL no és compatible."
 
-#: sw_player.ebass_error_speaker
+#: swamp_strings.ebass_error_speaker
+msgctxt "swamp_strings.ebass_error_speaker"
 msgid "The specified SPEAKER flags are invalid."
 msgstr "Els indicadors SPEAKER especificats no són vàlids."
 
-#: sw_player.ebass_error_ssl
+#: swamp_strings.ebass_error_ssl
+msgctxt "swamp_strings.ebass_error_ssl"
 msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
 msgstr "El suport SSL/HTTPS no està disponible. Vegeu BASS_CONFIG_LIBSSL."
 
-#: sw_player.ebass_error_timeout
+#: swamp_strings.ebass_error_timeout
+msgctxt "swamp_strings.ebass_error_timeout"
 msgid ""
 "The server did not respond to the request within the timeout period, as set "
 "with the BASS_CONFIG_NET_TIMEOUT config option."
@@ -171,11 +196,13 @@ msgstr ""
 "d'espera, tal com s'estableix amb l'opció de configuració "
 "BASS_CONFIG_NET_TIMEOUT."
 
-#: sw_player.ebass_error_unknown
+#: swamp_strings.ebass_error_unknown
+msgctxt "swamp_strings.ebass_error_unknown"
 msgid "Some other mystery problem!"
 msgstr "Un altre problema de misteri!"
 
-#: sw_player.ebass_error_unstreamable
+#: swamp_strings.ebass_error_unstreamable
+msgctxt "swamp_strings.ebass_error_unstreamable"
 msgid ""
 "The file cannot be streamed. This could be because an MP4 files mdat atom "
 "comes before its \"moov\" atom."
@@ -183,208 +210,352 @@ msgstr ""
 "No es pot reproduir el fitxer. Això podria ser perquè un àtom mdat de "
 "fitxers MP4 arriba abans del seu àtom \"moov\"."
 
-#: sw_player.echo
-msgctxt "sw_player.echo"
+#: swamp_strings.echo
+msgctxt "swamp_strings.echo"
 msgid "Echo"
 msgstr "Ressò"
 
-#: sw_player.efects
-msgctxt "sw_player.efects"
+#: swamp_strings.efects
+msgctxt "swamp_strings.efects"
 msgid "Effects"
 msgstr "Efectes"
 
-#: sw_player.effenable
-msgctxt "sw_player.effenable"
+#: swamp_strings.effenable
+msgctxt "swamp_strings.effenable"
 msgid "Effect Enable"
 msgstr "Efecte Habilita"
 
-#: sw_player.equalizer
+#: swamp_strings.equalizer
+msgctxt "swamp_strings.equalizer"
 msgid "Equalazer"
-msgstr "Equalazer"
+msgstr "Equalitzador"
 
-#: sw_player.feedback
-msgctxt "sw_player.feedback"
+#: swamp_strings.feedback
+msgctxt "swamp_strings.feedback"
 msgid "Feedback"
 msgstr "Feedback"
 
-#: sw_player.flanger
-msgctxt "sw_player.flanger"
+#: swamp_strings.flanger
+msgctxt "swamp_strings.flanger"
 msgid "Flanger"
 msgstr "Flanger"
 
-#: sw_player.flchor0
-msgctxt "sw_player.flchor0"
+#: swamp_strings.flchor0
+msgctxt "swamp_strings.flchor0"
 msgid "Flanger"
 msgstr "Flanger"
 
-#: sw_player.flchor1
+#: swamp_strings.flchor1
+msgctxt "swamp_strings.flchor1"
 msgid "Exaggerated chorus leads to multiple pitch shifted voices"
 msgstr "Un cor exagerat condueix a múltiples veus canviades de to"
 
-#: sw_player.flchor2
+#: swamp_strings.flchor2
+msgctxt "swamp_strings.flchor2"
 msgid "Motocycle"
 msgstr "Motocicleta"
 
-#: sw_player.flchor3
+#: swamp_strings.flchor3
+msgctxt "swamp_strings.flchor3"
 msgid "Devil"
 msgstr "Diable"
 
-#: sw_player.flchor4
+#: swamp_strings.flchor4
+msgctxt "swamp_strings.flchor4"
 msgid "Who say that there are not many voices?"
 msgstr "Qui diu que no hi ha moltes veus?"
 
-#: sw_player.flchor5
+#: swamp_strings.flchor5
+msgctxt "swamp_strings.flchor5"
 msgid "Back chipmunk"
 msgstr "Esquirol d'esquena"
 
-#: sw_player.flchor6
+#: swamp_strings.flchor6
+msgctxt "swamp_strings.flchor6"
 msgid "Water"
 msgstr "Aigua"
 
-#: sw_player.flchor7
+#: swamp_strings.flchor7
+msgctxt "swamp_strings.flchor7"
 msgid "This is the airplane"
 msgstr "Aquest és l'avió"
 
-#: sw_player.frequency
-msgctxt "sw_player.frequency"
+#: swamp_strings.frequency
+msgctxt "swamp_strings.frequency"
 msgid "Frequency modulation"
 msgstr "Modulació de freqüència"
 
-#: sw_player.hideq
-msgctxt "sw_player.hideq"
+#: swamp_strings.hideq
+msgctxt "swamp_strings.hideq"
 msgid "Hide Equalizer"
 msgstr "Amaga l'equalitzador"
 
-#: sw_player.interpolat0
+#: swamp_strings.interpolat0
+msgctxt "swamp_strings.interpolat0"
 msgid "Interpolation: Linear"
 msgstr "Interpolació: lineal"
 
-#: sw_player.interpolat1
+#: swamp_strings.interpolat1
+msgctxt "swamp_strings.interpolat1"
 msgid "Interpolation: Sync 8 point"
 msgstr "Interpolació: Des de 8 punts"
 
-#: sw_player.interpolat2
+#: swamp_strings.interpolat2
+msgctxt "swamp_strings.interpolat2"
 msgid "Interpolation: Sync 16 point"
 msgstr "Interpolació: Des de 16 punts"
 
-#: sw_player.interpolat3
+#: swamp_strings.interpolat3
+msgctxt "swamp_strings.interpolat3"
 msgid "Interpolation: Sync 32 point "
 msgstr "Interpolació: Des de 32 punts "
 
-#: sw_player.interpolat4
+#: swamp_strings.interpolat4
+msgctxt "swamp_strings.interpolat4"
 msgid "Interpolation: Sync 64 point"
 msgstr "Interpolació: Des de 64 punts"
 
-#: sw_player.languages
+#: swamp_strings.languages
+msgctxt "swamp_strings.languages"
 msgid "Languages"
 msgstr "Idiomes"
 
-#: sw_player.line
+#: swamp_strings.line
+msgctxt "swamp_strings.line"
 msgid "Line"
 msgstr "Línia"
 
-#: sw_player.logvol
-msgctxt "sw_player.logvol"
+#: swamp_strings.logvol
+msgctxt "swamp_strings.logvol"
 msgid "Logarithmic volume control"
 msgstr "Control de volum logarítmic"
 
-#: sw_player.mono
+#: swamp_strings.mono
+msgctxt "swamp_strings.mono"
 msgid "Mono"
 msgstr "Mono"
 
-#: sw_player.nosuch
+#: swamp_strings.nosuch
+msgctxt "swamp_strings.nosuch"
 msgid " does not exist"
 msgstr " no existeix"
 
-#: sw_player.ofeq
-msgctxt "sw_player.ofeq"
+#: swamp_strings.ofeq
+msgctxt "swamp_strings.ofeq"
 msgid "Off Equalizer"
 msgstr "Equalitzador desactivat"
 
-#: sw_player.offanalizer
-msgctxt "sw_player.offanalizer"
+#: swamp_strings.offanalizer
+msgctxt "swamp_strings.offanalizer"
 msgid "Turn OFF Analizer"
 msgstr "Apagueu l'analitzador"
 
-#: sw_player.oneq
+#: swamp_strings.oneq
+msgctxt "swamp_strings.oneq"
 msgid "On Equalizer"
-msgstr "On Equalizer"
+msgstr "Equalitzador encès"
 
-#: sw_player.openplaylistcaption
-msgctxt "sw_player.openplaylistcaption"
+#: swamp_strings.openplaylistcaption
+msgctxt "swamp_strings.openplaylistcaption"
 msgid "Open Playlist"
 msgstr "Obriu la llista de reproducció"
 
-#: sw_player.params
-msgctxt "sw_player.params"
+#: swamp_strings.params
+msgctxt "swamp_strings.params"
 msgid "Params"
 msgstr "Opcions"
 
-#: sw_player.player
-msgctxt "sw_player.player"
+#: swamp_strings.player
+msgctxt "swamp_strings.player"
 msgid "Player"
 msgstr "Reproductor d'àudio"
 
-#: sw_player.playlist
-msgctxt "sw_player.playlist"
+#: swamp_strings.playlist
+msgctxt "swamp_strings.playlist"
 msgid "PlayList"
 msgstr "Llista de reproducció"
 
-#: sw_player.reverberation
-msgctxt "sw_player.reverberation"
+#: swamp_strings.reverberation
+msgctxt "swamp_strings.reverberation"
 msgid "Reverberation"
 msgstr "Reverberació"
 
-#: sw_player.reverbmix
-msgctxt "sw_player.reverbmix"
+#: swamp_strings.reverbmix
+msgctxt "swamp_strings.reverbmix"
 msgid "Reverberation Mix"
 msgstr "Mescla de reverberació"
 
-#: sw_player.reverbtime
-msgctxt "sw_player.reverbtime"
+#: swamp_strings.reverbtime
+msgctxt "swamp_strings.reverbtime"
 msgid "Reverberation Time"
 msgstr "Temps de reverberació"
 
-#: sw_player.rsdb
+#: swamp_strings.rsalbum
+msgid "Album:"
+msgstr ""
+
+#: swamp_strings.rsartist
+msgid "Artist:"
+msgstr "Artista:"
+
+#: swamp_strings.rsbitrate
+msgid "Bitrate:"
+msgstr "Taxa de bits:"
+
+#: swamp_strings.rscannotopen
+msgid "(failed to open file)"
+msgstr ""
+
+#: swamp_strings.rschannels
+msgid "Channels:"
+msgstr "Canals:"
+
+#: swamp_strings.rschmono
+msgid "1 (Mono)"
+msgstr "1 (Mono)"
+
+#: swamp_strings.rschstereo
+msgid "2 (Stereo)"
+msgstr "2 (Estèreo)"
+
+#: swamp_strings.rsclose
+msgid "Close"
+msgstr "Tanca"
+
+#: swamp_strings.rscomment
+msgid "Comment:"
+msgstr "Comentari:"
+
+#: swamp_strings.rsdb
+msgctxt "swamp_strings.rsdb"
 msgid " dB"
 msgstr ""
 
-#: sw_player.sheq
-msgctxt "sw_player.sheq"
+#: swamp_strings.rsduration
+msgid "Duration:"
+msgstr "Durada:"
+
+#: swamp_strings.rserrorload
+msgid "Error load"
+msgstr "Càrrega d'errors"
+
+#: swamp_strings.rsfileinfocaption
+msgid "Track Information"
+msgstr "Informació de la pista"
+
+#: swamp_strings.rsfilename
+msgid "File name:"
+msgstr "Nom del fitxer:"
+
+#: swamp_strings.rsfilenotfound
+msgid "File not found:"
+msgstr "No s'ha trobat el fitxer:"
+
+#: swamp_strings.rsfilesize
+msgid "Size:"
+msgstr "Mida:"
+
+#: swamp_strings.rsformat
+msgid "Format:"
+msgstr "Format:"
+
+#: swamp_strings.rsgenre
+msgid "Genre:"
+msgstr "Gènere:"
+
+#: swamp_strings.rsmodified
+msgid "Modified:"
+msgstr "Modificat:"
+
+#: swamp_strings.rsnhappend
+msgid "won't happen!"
+msgstr "no passarà!"
+
+#: swamp_strings.rsnocover
+msgid "No cover image"
+msgstr "Sense imatge de portada"
+
+#: swamp_strings.rsnostreamprops
+msgid "Properties are not available for internet streams."
+msgstr "Les propietats no estan disponibles per a transmissions per Internet."
+
+#: swamp_strings.rsonlystream
+msgid "This List only for stream's"
+msgstr "Aquesta llista només per a streams"
+
+#: swamp_strings.rsplaybackerror
+msgid "File playback error"
+msgstr "Error de pujada del fitxer"
+
+#: swamp_strings.rssamplerate
+msgid "Sample rate:"
+msgstr "Freqüència de mostreig:"
+
+#: swamp_strings.rstabaudio
+msgid "Audio"
+msgstr "Àudio"
+
+#: swamp_strings.rstabcover
+msgid "Cover"
+msgstr "Coberta"
+
+#: swamp_strings.rstabfile
+msgid "File"
+msgstr "Fitxer"
+
+#: swamp_strings.rstabtags
+msgid "Tags"
+msgstr "Etiquetes"
+
+#: swamp_strings.rstitle
+msgid "Title:"
+msgstr "Títol:"
+
+#: swamp_strings.rstrackno
+msgid "Track #:"
+msgstr "Pista núm.:"
+
+#: swamp_strings.rsyear
+msgid "Year:"
+msgstr "Any:"
+
+#: swamp_strings.sheq
+msgctxt "swamp_strings.sheq"
 msgid "Show Equalizer"
 msgstr "Mostra l'equalitzador"
 
-#: sw_player.spanalizer
-msgctxt "sw_player.spanalizer"
+#: swamp_strings.spanalizer
+msgctxt "swamp_strings.spanalizer"
 msgid "Spectrum Analizer"
 msgstr "Analitzador d'espectre"
 
-#: sw_player.startanalizer
+#: swamp_strings.startanalizer
+msgctxt "swamp_strings.startanalizer"
 msgid "Start Analizer"
 msgstr "Inicieu l'analitzador"
 
-#: sw_player.stereo
-msgctxt "sw_player.stereo"
+#: swamp_strings.stereo
+msgctxt "swamp_strings.stereo"
 msgid "Stereo"
 msgstr "Estèreo"
 
-#: sw_player.stopanalizer
-msgctxt "sw_player.stopanalizer"
+#: swamp_strings.stopanalizer
+msgctxt "swamp_strings.stopanalizer"
 msgid "Stop Analizer"
 msgstr "Atura l'analitzador"
 
-#: sw_player.tonvol
-msgctxt "sw_player.tonvol"
+#: swamp_strings.tonvol
+msgctxt "swamp_strings.tonvol"
 msgid "Loudly compensated volume control"
 msgstr "Control de volum ben compensat"
 
-#: sw_player.volume
-msgctxt "sw_player.volume"
+#: swamp_strings.volume
+msgctxt "swamp_strings.volume"
 msgid "Volume"
 msgstr "Volum"
 
-#: sw_player.wet
-msgctxt "sw_player.wet"
+#: swamp_strings.wet
+msgctxt "swamp_strings.wet"
 msgid "Delayed/Direct"
 msgstr "Endarrerit/Directe"
 
@@ -400,7 +571,7 @@ msgstr ""
 
 #: tcover_form.caption
 msgid "Cover_Form"
-msgstr ""
+msgstr "Formulari_de_coberta"
 
 #: tform_addurl.bgrashape15.caption
 msgctxt "tform_addurl.bgrashape15.caption"
@@ -445,11 +616,11 @@ msgstr "Afegeix URL"
 
 #: tform_player.alternative.caption
 msgid "Alternative"
-msgstr "Alternative"
+msgstr "Alternativa"
 
 #: tform_player.ballad.caption
 msgid "Ballad"
-msgstr "Ballad"
+msgstr "Balada"
 
 #: tform_player.bgrashape1.caption
 msgid "BGRAShape1"
@@ -485,6 +656,10 @@ msgstr ""
 msgctxt "tform_player.bgrashape14.caption"
 msgid "BGRAShape14"
 msgstr ""
+
+#: tform_player.bgrashape14.hint
+msgid "Stream Write"
+msgstr "Escriptura en flux"
 
 #: tform_player.bgrashape16.caption
 msgctxt "tform_player.bgrashape16.caption"
@@ -570,7 +745,7 @@ msgstr "SW-AMP"
 
 #: tform_player.classic.caption
 msgid "Classic"
-msgstr "Classic"
+msgstr "Clàssic"
 
 #: tform_player.clearlist.caption
 msgctxt "tform_player.clearlist.caption"
@@ -598,15 +773,15 @@ msgstr "Club"
 #: tform_player.copytocustomeq.caption
 msgctxt "tform_player.copytocustomeq.caption"
 msgid "Copy to Custom Preset"
-msgstr "Copia a Custom"
+msgstr "Copia a la configuració predefinida personalitzada"
 
 #: tform_player.custom.caption
 msgid "Custom"
-msgstr ""
+msgstr "Personalitzat"
 
 #: tform_player.dance.caption
 msgid "Dance"
-msgstr "Dance"
+msgstr "Dansa"
 
 #: tform_player.deleteplaylist.caption
 msgid "Delete PlayList"
@@ -618,31 +793,31 @@ msgstr "Suprimeix el seleccionatEdita la selecció"
 
 #: tform_player.electronic.caption
 msgid "Electronic"
-msgstr "Electronic"
+msgstr "Electrònic"
 
 #: tform_player.flat.caption
 msgid "Flat"
-msgstr "Flat"
+msgstr "Pis"
 
 #: tform_player.fullbass.caption
 msgid "Full Bass"
-msgstr "Full Bass"
+msgstr "Baixos complets"
 
 #: tform_player.fullbassandtreble.caption
 msgid "Full Bass And Treble"
-msgstr "Full Bass And Treble"
+msgstr "Greus i aguts complets"
 
 #: tform_player.fulltreble.caption
 msgid "Full Treble"
-msgstr "Full Treble"
+msgstr "Aguts complets"
 
 #: tform_player.headphones.caption
 msgid "Headphones"
-msgstr "Headphones"
+msgstr "Auriculars"
 
 #: tform_player.heavymetal.caption
 msgid "Heavy Metal"
-msgstr "Heavy Metal"
+msgstr "Metall pesat"
 
 #: tform_player.hideeq.caption
 msgctxt "tform_player.hideeq.caption"
@@ -776,7 +951,7 @@ msgstr "Language"
 
 #: tform_player.largehall.caption
 msgid "Large Hall"
-msgstr "Large Hall"
+msgstr "Sala Gran"
 
 #: tform_player.lbleq1.caption
 msgctxt "tform_player.lbleq1.caption"
@@ -874,7 +1049,7 @@ msgstr ""
 
 #: tform_player.live.caption
 msgid "Live"
-msgstr "Live"
+msgstr "En directe"
 
 #: tform_player.menuitem3.caption
 msgid "Bar graph"
@@ -921,7 +1096,7 @@ msgstr "Obriu la llista de reproducció"
 
 #: tform_player.party.caption
 msgid "Party"
-msgstr "Party"
+msgstr "Festa"
 
 #: tform_player.pausemenu.caption
 msgctxt "tform_player.pausemenu.caption"
@@ -1035,7 +1210,7 @@ msgstr ""
 
 #: tform_player.rock.caption
 msgid "Rock"
-msgstr "Rock"
+msgstr "Roca"
 
 #: tform_player.s125.caption
 msgid "1.25"
@@ -1097,15 +1272,15 @@ msgstr "Normal"
 
 #: tform_player.soft.caption
 msgid "Soft"
-msgstr "Soft"
+msgstr "Suau"
 
 #: tform_player.softbass.caption
 msgid "Soft Bass"
-msgstr "Soft Bass"
+msgstr "baix suau"
 
 #: tform_player.softrock.caption
 msgid "Soft Rock"
-msgstr "Soft Rock"
+msgstr "Roca tova"
 
 #: tform_player.stopmenu.caption
 msgctxt "tform_player.stopmenu.caption"
@@ -1114,7 +1289,7 @@ msgstr "Atura"
 
 #: tform_player.techno.caption
 msgid "Techno"
-msgstr "Techno"
+msgstr "Tecno"
 
 #: tform_player.trackbar1.hint
 msgctxt "tform_player.trackbar1.hint"
@@ -1124,6 +1299,10 @@ msgstr "Volum"
 #: tform_player.trackbar12.hint
 msgid "Balance"
 msgstr "Balance"
+
+#: tform_player.trackproperties.caption
+msgid "Властивості треку..."
+msgstr "Propietats de la pista..."
 
 #: tform_player.trackspeed.caption
 msgid "Audiotrack Speed"
@@ -1373,12 +1552,9 @@ msgid "Compression ratio"
 msgstr "Ratio de compressió"
 
 #: tfrm_effects.label32.caption
-#, fuzzy
-#| msgctxt "tform_player.label3.caption"
-#| msgid "0"
 msgctxt "tfrm_effects.label32.caption"
 msgid "0%"
-msgstr "0"
+msgstr "0%"
 
 #: tfrm_effects.label33.caption
 #, fuzzy
@@ -1541,11 +1717,11 @@ msgstr ""
 
 #: tfrm_list.caption
 msgid "list"
-msgstr ""
+msgstr "llista"
 
 #: tfrm_list.statusbar1.hint
 msgid "Current playlist file"
-msgstr ""
+msgstr "Fitxer de llista de reproducció actual"
 
 #: toptions_frm.bgrashape14.caption
 msgctxt "toptions_frm.bgrashape14.caption"
@@ -1706,12 +1882,16 @@ msgstr "Analitzador d'espectre"
 
 #: toptions_frm.panel6.caption
 msgid "Equalizer"
-msgstr "Equalizer"
+msgstr "Equalitzador"
 
 #: toptions_frm.panel9.caption
 msgctxt "toptions_frm.panel9.caption"
 msgid "Player"
 msgstr "Jugador"
+
+#~ msgctxt "sw_player.flchor0"
+#~ msgid "Flanger"
+#~ msgstr "Flanger"
 
 #~ msgctxt "tfrm_effects.checkbox1.hint"
 #~ msgid "Effect Enable"

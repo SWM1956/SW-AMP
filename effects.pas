@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs,  ComCtrls, ExtCtrls,
  StdCtrls, XMLPropStorage, lazdynamic_bass,
-  DynLibs, Dynamic_BassFX, BGRAShape, Types;
+  DynLibs, Dynamic_BassFX, BGRAShape, Types, swamp_strings;
 
 type
 
@@ -226,6 +226,8 @@ type
     procedure UpdateFreReverb;
     procedure UpdatePeakEqulizer;
     procedure UpdateStereoExpand;
+    // Перевіряє чи змінився слайдер відносно поточного пресету і скидає на "User"
+    procedure CheckPresetChange(SliderIndex: Integer; Value: Integer);
 
   public
 
@@ -236,17 +238,18 @@ type
 
 var
   Frm_Effects: TFrm_Effects;
-   xtb8Pos, xtb7Pos, xtb6Pos, xtb5Pos, xtb4Pos, xtb3Pos, tb1Pos, tb2Pos :Integer;
-   sr:Integer =0;
-  ec:Integer =0;
-  ho: Integer =0;
-  fl: Integer =0;
-  cp: Integer =0;
-  stE: Integer =0;
-  equal: Integer =0;
-  equal1: Integer =0;
-  ChorusFlanger:Integer =0;
-  FreReverb : Integer = 0;
+  xtb8Pos, xtb7Pos, xtb6Pos, xtb5Pos, xtb4Pos, xtb3Pos, tb1Pos, tb2Pos: Integer;
+  // Прапори "ефект вже застосовано до поточного каналу"
+  ecApplied:           Boolean = False;
+  srApplied:           Boolean = False;
+  hoApplied:           Boolean = False;
+  flApplied:           Boolean = False;
+  cpApplied:           Boolean = False;
+  stEApplied:          Boolean = False;
+  equalApplied:        Boolean = False;
+  equal1Applied:       Boolean = False;
+  ChorusFlangerApplied: Boolean = False;
+  FreReverbApplied:    Boolean = False;
   reverbInChannel:bool =false;
   echoInChannel:bool =false;
   chorusInChannel:bool =false;
@@ -344,115 +347,99 @@ end;
 
 procedure TFrm_Effects.RunEffects;
 begin
-      if Channel>0 then begin
- ec:=0;
- sr:=0;
- ho:=0;
- fl:=0;
- cp:=0;
- equal:=0;
- equal1:=0;
- stE:=0;
- //Form_player.Caption:=IntToStr(itt);
-// setReverb();
- setEcho();
-// setChorus();
-// setFlanger();
- setCompressor();
- setPeakEqualizer();
- setStereoExpand();
- setChorusFlanger();
- setFreReverb();
-      end;
+  if Channel > 0 then
+  begin
+    // Скидаємо прапори — ефекти будуть застосовані заново
+    ecApplied           := False;
+    srApplied           := False;
+    hoApplied           := False;
+    flApplied           := False;
+    cpApplied           := False;
+    equalApplied        := False;
+    equal1Applied       := False;
+    stEApplied          := False;
+    ChorusFlangerApplied := False;
+    FreReverbApplied    := False;
+    setEcho();
+    setCompressor();
+    setPeakEqualizer();
+    setStereoExpand();
+    setChorusFlanger();
+    setFreReverb();
+  end;
 end;
 
 
 
 procedure TFrm_Effects.SetEcho;
 var
-  be:integer;
+  be: Integer;
 begin
-  if (OnEcho and (Channel>0) and (ec<1)) then begin
-   ec:=ec+1;
-       BASS_ChannelRemoveFX(Channel,fx[22]);
-    fx[22] := BASS_ChannelSetFX(channel, BASS_FX_DX8_ECHO, 1);
-   be:= BASS_ErrorGetCode;
-  if be=0 then
-     echoInChannel:=true
-     else
-       echoInChannel:=false;
+  if OnEcho and (Channel > 0) and (not ecApplied) then
+  begin
+    ecApplied := True;
+    BASS_ChannelRemoveFX(Channel, fx[22]);
+    fx[22] := BASS_ChannelSetFX(Channel, BASS_FX_DX8_ECHO, 1);
+    be := BASS_ErrorGetCode;
+    echoInChannel := (be = 0);
     UpdateEC();
- end;
-
+  end;
 end;
 
 procedure TFrm_Effects.SetStereoExpand;
 var
-  be:integer;
+  be: Integer;
 begin
-  if (OnStereoExpand and (Channel>0) and (stE<1)) then begin
-   stE:=Ste+1;
-       BASS_ChannelRemoveFX(Channel,fx[30]);
-    fx[30] := BASS_ChannelSetFX(channel, BASS_FX_DX8_ECHO, 1);
-   be:= BASS_ErrorGetCode;
-  if be=0 then
-     stereoExpandInChannel:=true
-     else
-       stereoExpandInChannel:=false;
+  if OnStereoExpand and (Channel > 0) and (not stEApplied) then
+  begin
+    stEApplied := True;
+    BASS_ChannelRemoveFX(Channel, fx[30]);
+    fx[30] := BASS_ChannelSetFX(Channel, BASS_FX_DX8_ECHO, 1);
+    be := BASS_ErrorGetCode;
+    stereoExpandInChannel := (be = 0);
     UpdateStereoExpand();
- end;
-
+  end;
 end;
 
 
 procedure TFrm_Effects.SetCompressor;
 var
-  be:integer;
-
-Begin
-   if (onCompressor and (Channel>0) and (cp<1)) then begin
- //  vers:=BASS_FX_GetVersion();
-   cp:=cp+1;
-       BASS_ChannelRemoveFX(Channel,fx[26]);
-    fx[26] := BASS_ChannelSetFX(channel, BASS_FX_BFX_COMPRESSOR2, 1);
-   be:= BASS_ErrorGetCode;
-  if be=0 then
-     compressorInChannel:=true
-     else
-       compressorInChannel:=false;
+  be: Integer;
+begin
+  if onCompressor and (Channel > 0) and (not cpApplied) then
+  begin
+    cpApplied := True;
+    BASS_ChannelRemoveFX(Channel, fx[26]);
+    fx[26] := BASS_ChannelSetFX(Channel, BASS_FX_BFX_COMPRESSOR2, 1);
+    be := BASS_ErrorGetCode;
+    compressorInChannel := (be = 0);
     UpdateCP();
- end;
+  end;
 end;
 
 procedure TFrm_Effects.SetPeakEqualizer;
 var
-  be:integer;
-
-Begin
-   if (OnPeakEqualizer and (Channel>0) and (equal<1)) then begin
- //  vers:=BASS_FX_GetVersion();
-   equal:=equal+1;
-       BASS_ChannelRemoveFX(Channel,fx[28]);
-    fx[28] := BASS_ChannelSetFX(channel, BASS_FX_BFX_BQF  , 1);
-   be:= BASS_ErrorGetCode;
-  if be=0 then
-     peakEqualizerInChannel:=true
-     else
-       peakEqualizerInChannel:=false;
+  be: Integer;
+begin
+  if OnPeakEqualizer and (Channel > 0) and (not equalApplied) then
+  begin
+    equalApplied := True;
+    BASS_ChannelRemoveFX(Channel, fx[28]);
+    fx[28] := BASS_ChannelSetFX(Channel, BASS_FX_BFX_BQF, 1);
+    be := BASS_ErrorGetCode;
+    peakEqualizerInChannel := (be = 0);
     UpdatePeakEqulizer();
- end;
-      if (OnPeakEqualizer1 and (Channel>0) and (equal1<1)) then begin
-   equal1:=equal1+1;
-       BASS_ChannelRemoveFX(Channel,fx[29]);
-    fx[29] := BASS_ChannelSetFX(channel, BASS_FX_BFX_BQF  , 1);
-   be:= BASS_ErrorGetCode;
-  if be=0 then
-     peakEqualizer1InChannel:=true
-     else
-       peakEqualizer1InChannel:=false;
-  UpdatePeakEqulizer();
- end;
+  end;
 
+  if OnPeakEqualizer1 and (Channel > 0) and (not equal1Applied) then
+  begin
+    equal1Applied := True;
+    BASS_ChannelRemoveFX(Channel, fx[29]);
+    fx[29] := BASS_ChannelSetFX(Channel, BASS_FX_BFX_BQF, 1);
+    be := BASS_ErrorGetCode;
+    peakEqualizer1InChannel := (be = 0);
+    UpdatePeakEqulizer();
+  end;
 end;
 
 
@@ -512,52 +499,47 @@ end;
 
 procedure TFrm_Effects.SetChorusFlanger;
 var
-  be:integer;
-
-Begin
-   if (OnChorusFlanger and (Channel>0) ) then begin
- //  vers:=BASS_FX_GetVersion();
-   ChorusFlanger:=ChorusFlanger+1;
-       BASS_ChannelRemoveFX(Channel,fx[31]);
-        fx[31] := BASS_ChannelSetFX(channel, BASS_FX_BFX_CHORUS, 1);
-   // fx[33] := BASS_ChannelSetFX(channel, BASS_FX_BFX_FLANGER  , 0);
-   be:= BASS_ErrorGetCode;
-  if be=0 then begin
-     ChorusFlangerInChannel:=true;
+  be: Integer;
+begin
+  if OnChorusFlanger and (Channel > 0) then
+  begin
+    ChorusFlangerApplied := True;
+    BASS_ChannelRemoveFX(Channel, fx[31]);
+    fx[31] := BASS_ChannelSetFX(Channel, BASS_FX_BFX_CHORUS, 1);
+    be := BASS_ErrorGetCode;
+    if be = 0 then
+    begin
+      ChorusFlangerInChannel := True;
       BASS_FXGetParameters(fx[31], @pChFl);
- //      pChFl.lChannel:=-1;
- //  BASS_FXSetParameters(fx[31], @pChFl);
-     end
-     else
-       ChorusFlangerInChannel:=false;
-   UpdateChorusFlanger();
- end;
-
+    end
+    else
+      ChorusFlangerInChannel := False;
+    UpdateChorusFlanger();
+  end;
 end;
 
 
 procedure TFrm_Effects.SetFreReverb;
 var
-  be:integer;
-
-Begin
-   if (OnFreReverb and (Channel>0) ) then begin
- //  vers:=BASS_FX_GetVersion();
-   FreReverb:=FreReverb+1;
-       BASS_ChannelRemoveFX(Channel,fx[32]);
-    fx[32] := BASS_ChannelSetFX(channel, BASS_FX_BFX_FREEVERB , 1);
-   be:= BASS_ErrorGetCode;
-  if be=0 then begin
-     FreReverbInChannel:=true;
+  be: Integer;
+begin
+  if OnFreReverb and (Channel > 0) then
+  begin
+    FreReverbApplied := True;
+    BASS_ChannelRemoveFX(Channel, fx[32]);
+    fx[32] := BASS_ChannelSetFX(Channel, BASS_FX_BFX_FREEVERB, 1);
+    be := BASS_ErrorGetCode;
+    if be = 0 then
+    begin
+      FreReverbInChannel := True;
       BASS_FXGetParameters(fx[32], @pFreRev);
-       pFreRev.lChannel:=-1;
-   BASS_FXSetParameters(fx[32], @pFreRev);
-     end
-     else
-       FreReverbInChannel:=false;
-   UpdateFreReverb();
- end;
-
+      pFreRev.lChannel := -1;
+      BASS_FXSetParameters(fx[32], @pFreRev);
+    end
+    else
+      FreReverbInChannel := False;
+    UpdateFreReverb();
+  end;
 end;
 
 
@@ -722,15 +704,17 @@ end;
 
 procedure TFrm_Effects.CheckBox13Change(Sender: TObject);
 begin
-  OnChorusFlanger:=CheckBox13.Checked;
-if OnChorusFlanger then begin
-ChorusFlanger:=0;
-setChorusFlanger;
-end
-else begin
-       BASS_ChannelRemoveFX(Channel,fx[31]);
-       fx[31]:=0;
-    chorusFlangerInChannel:=false;
+  OnChorusFlanger := CheckBox13.Checked;
+  if OnChorusFlanger then
+  begin
+    ChorusFlangerApplied := False;
+    SetChorusFlanger;
+  end
+  else
+  begin
+    BASS_ChannelRemoveFX(Channel, fx[31]);
+    fx[31] := 0;
+    ChorusFlangerInChannel := False;
   end;
 end;
 
@@ -750,14 +734,16 @@ end;
 
 procedure TFrm_Effects.CheckBox14Change(Sender: TObject);
 begin
-    OnFreReverb:=CheckBox14.Checked or CheckBox15.Checked;
-if OnFreReverb then begin
-FreReverb:=0;
-setFreReverb;
-end
-else begin
-       BASS_ChannelRemoveFX(Channel,fx[32]);
-       FreReverbInChannel:=false;
+  OnFreReverb := CheckBox14.Checked or CheckBox15.Checked;
+  if OnFreReverb then
+  begin
+    FreReverbApplied := False;
+    SetFreReverb;
+  end
+  else
+  begin
+    BASS_ChannelRemoveFX(Channel, fx[32]);
+    FreReverbInChannel := False;
   end;
 end;
 
@@ -776,42 +762,35 @@ end;
 
 procedure TFrm_Effects.CheckBox10Change(Sender: TObject);
 begin
-            OnPeakEqualizer1:=CheckBox10.Checked or  CheckBox12.Checked;
-      if OnPeakEqualizer1 then begin
-     equal1:=0;
-      setPeakEqualizer;
-      UpdatePeakEqulizer;
-      end
-      else begin
-             BASS_ChannelRemoveFX(Channel,fx[29]);
-          peakEqualizer1InChannel:=false;
-        end;
+  OnPeakEqualizer1 := CheckBox10.Checked or CheckBox12.Checked;
+  if OnPeakEqualizer1 then
+  begin
+    equal1Applied := False;
+    SetPeakEqualizer;
+    UpdatePeakEqulizer;
+  end
+  else
+  begin
+    BASS_ChannelRemoveFX(Channel, fx[29]);
+    peakEqualizer1InChannel := False;
+  end;
 
 end;
 
 
 procedure TFrm_Effects.CheckBox3Change(Sender: TObject);
 begin
-{OnEcho:=CheckBox3.Checked;
-setEcho;
-
-BASS_ChannelRemoveFX(Channel,fx[22]);
- }
-
-OnEcho:=CheckBox3.Checked;
-if OnEcho then begin
-ec:=0;
-setEcho;
-end
-else begin
-       BASS_ChannelRemoveFX(Channel,fx[22]);
-    echoInChannel:=false;
+  OnEcho := CheckBox3.Checked;
+  if OnEcho then
+  begin
+    ecApplied := False;
+    SetEcho;
+  end
+  else
+  begin
+    BASS_ChannelRemoveFX(Channel, fx[22]);
+    echoInChannel := False;
   end;
-
-
-
-
-
 end;
 
 procedure TFrm_Effects.CheckBox3Click(Sender: TObject);
@@ -824,15 +803,17 @@ end;
 
 procedure TFrm_Effects.CheckBox5Change(Sender: TObject);
 begin
-      OnCompressor:=CheckBox5.Checked;
-      if OnCompressor then begin
-     cp:=0;
-      setCompressor;
-      end
-      else begin
-             BASS_ChannelRemoveFX(Channel,fx[26]);
-          CompressorInChannel:=false;
-        end;
+  OnCompressor := CheckBox5.Checked;
+  if OnCompressor then
+  begin
+    cpApplied := False;
+    SetCompressor;
+  end
+  else
+  begin
+    BASS_ChannelRemoveFX(Channel, fx[26]);
+    CompressorInChannel := False;
+  end;
 end;
 
 procedure TFrm_Effects.CheckBox5Click(Sender: TObject);
@@ -886,14 +867,16 @@ end;
 
 procedure TFrm_Effects.CheckBox8Change(Sender: TObject);
 begin
-  OnStereoExpand:=CheckBox8.Checked;
-if OnStereoExpand then begin
-stE:=0;
-setStereoExpand;
-end
-else begin
-       BASS_ChannelRemoveFX(Channel,fx[30]);
-    StereoExpandInChannel:=false;
+  OnStereoExpand := CheckBox8.Checked;
+  if OnStereoExpand then
+  begin
+    stEApplied := False;
+    SetStereoExpand;
+  end
+  else
+  begin
+    BASS_ChannelRemoveFX(Channel, fx[30]);
+    StereoExpandInChannel := False;
   end;
 
 end;
@@ -905,16 +888,18 @@ end;
 
 procedure TFrm_Effects.CheckBox9Change(Sender: TObject);
 begin
-          OnPeakEqualizer:=CheckBox9.Checked or  CheckBox11.Checked ;
-      if OnPeakEqualizer then begin
-     equal:=0;
-      setPeakEqualizer;
+  OnPeakEqualizer := CheckBox9.Checked or CheckBox11.Checked;
+  if OnPeakEqualizer then
+  begin
+    equalApplied := False;
+    SetPeakEqualizer;
     UpdatePeakEqulizer;
-      end
-      else begin
-             BASS_ChannelRemoveFX(Channel,fx[28]);
-          peakEqualizerInChannel:=false;
-        end;
+  end
+  else
+  begin
+    BASS_ChannelRemoveFX(Channel, fx[28]);
+    peakEqualizerInChannel := False;
+  end;
 
 
 end;
@@ -979,56 +964,56 @@ end;
 
 procedure TFrm_Effects.TabSheet10Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet1Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet2Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet3Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet4Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet5Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet6Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet7Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
@@ -1049,14 +1034,14 @@ end;
 
 procedure TFrm_Effects.TabSheet8Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
 
 procedure TFrm_Effects.TabSheet9Exit(Sender: TObject);
 begin
-  
+
 ActiveControl := nil;
 
 end;
@@ -1130,25 +1115,36 @@ end;
 
 
 
+// Перевіряє, чи відхилився слайдер від поточного пресету.
+// Якщо так — скидає ComboBox на "User" (індекс 8).
+procedure TFrm_Effects.CheckPresetChange(SliderIndex: Integer; Value: Integer);
+// Масив усіх пресетів у порядку індексів ComboBox
+const
+  PresetData: array[0..7, 0..5] of Integer = (
+    (100,  35, 50, 1,   5,   10),   // 0: Flanger
+    ( 70,  25, 50, 1, 200,  500),   // 1: HighChorus
+    ( 90,  45, 50, 1, 100,  250),   // 2: Motocycle
+    ( 90,  35, 50, 1,  50, 2000),   // 3: Devil
+    ( 90,  35, 50, 1, 400, 2000),   // 4: ManyVoices
+    ( 90, -20, 50, 1, 400, 4000),   // 5: BackChipmunk
+    ( 90, -40, 50, 1,   2,   10),   // 6: Water
+    ( 90,  80, 50, 1,  10,   50)    // 7: AirPlane
+  );
+var
+  i: Integer;
+begin
+  for i := 0 to 7 do
+    if (ComboBox1.ItemIndex = i) and (PresetData[i][SliderIndex] <> Value) then
+    begin
+      ComboBox1.ItemIndex := 8;
+      Break;
+    end;
+  UpdateChorusFlanger;
+end;
+
 procedure TFrm_Effects.XTB25Change(Sender: TObject);
 begin
-  if (combobox1.ItemIndex=0) and (aFlanger[0]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=1) and (aHighChorus[0]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=2) and (aMotocycle[0]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=3) and (aDevil[0]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=4) and (aManyVoices[0]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=5) and (aBackChipmunk[0]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=6) and (aWater[0]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=7) and (aAirPlane[0]<>Xtb25.Position) then
-combobox1.ItemIndex:=8;
-  UpdateChorusFlanger;
+  CheckPresetChange(0, (Sender as TTrackBar).Position);
 end;
 
 procedure TFrm_Effects.XTB25Enter(Sender: TObject);
@@ -1158,87 +1154,22 @@ end;
 
 procedure TFrm_Effects.XTB26Change(Sender: TObject);
 begin
- if (combobox1.ItemIndex=0) and (aFlanger[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=1) and (aHighChorus[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=2) and (aMotocycle[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=3) and (aDevil[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=4) and (aManyVoices[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=5) and (aBackChipmunk[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=6) and (aWater[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=7) and (aAirPlane[1]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-  UpdateChorusFlanger;
+  CheckPresetChange(1, (Sender as TTrackBar).Position);
 end;
 
 procedure TFrm_Effects.XTB27Change(Sender: TObject);
 begin
-   if (combobox1.ItemIndex=0) and (aFlanger[3]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=1) and (aHighChorus[3]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=2) and (aMotocycle[3]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=3) and (aDevil[3]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=4) and (aManyVoices[3]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=5) and (aBackChipmunk[3]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=6) and (aWater[3]<>(sender as TTrackBar).Position)then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=7) and (aAirPlane[3]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-  UpdateChorusFlanger;
+  CheckPresetChange(3, (Sender as TTrackBar).Position);
 end;
 
 procedure TFrm_Effects.XTB28Change(Sender: TObject);
 begin
-if (combobox1.ItemIndex=0) and (aFlanger[4]<> (sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=1) and (aHighChorus[4]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=2) and (aMotocycle[4]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=3) and (aDevil[4]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=4) and (aManyVoices[4]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=5) and (aBackChipmunk[4]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=6) and (aWater[4]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=7) and (aAirPlane[4]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-  UpdateChorusFlanger;
+  CheckPresetChange(4, (Sender as TTrackBar).Position);
 end;
 
 procedure TFrm_Effects.XTB29Change(Sender: TObject);
 begin
-if (combobox1.ItemIndex=0) and (aFlanger[5]<> (sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=1) and (aHighChorus[5]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=2) and (aMotocycle[5]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=3) and (aDevil[5]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=4) and (aManyVoices[5]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=5) and (aBackChipmunk[5]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=6) and (aWater[5]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-if (combobox1.ItemIndex=7) and (aAirPlane[5]<>(sender as TTrackBar).Position) then
-combobox1.ItemIndex:=8;
-
-  UpdateChorusFlanger;
+  CheckPresetChange(5, (Sender as TTrackBar).Position);
 end;
 
 

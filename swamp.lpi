@@ -28,7 +28,7 @@
       <UseVersionInfo Value="True"/>
       <MajorVersionNr Value="1"/>
       <MinorVersionNr Value="2"/>
-      <BuildNr Value="47"/>
+      <BuildNr Value="48"/>
       <CharSet Value="04B0"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable CompanyName="SW Tech" OriginalFilename="swamp" ProductName="SWAMP" ProductVersion="1.0"/>
@@ -144,7 +144,7 @@
         <PackageName Value="LazUtils"/>
       </Item5>
     </RequiredPackages>
-    <Units Count="7">
+    <Units Count="8">
       <Unit0>
         <Filename Value="swamp.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -191,6 +191,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="swamp_strings.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit7>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

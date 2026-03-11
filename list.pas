@@ -6,9 +6,9 @@ interface
 
 uses
    Classes, LCLIntf, LCLType, StdCtrls, ExtCtrls, Forms, SysUtils, Controls,
-  Dialogs,
+  Dialogs, Graphics,
   Types, lazdynamic_bass,
-  BGRAShape, XMLPropStorage, ComCtrls;
+  BGRAShape, XMLPropStorage, ComCtrls, swamp_strings;
 type
 
   { TFrm_List }
@@ -45,6 +45,8 @@ type
     procedure XMLPropStorage1RestoreProperties(Sender: TObject);
     procedure ListClear(Sender: TObject);
     function GetPictureFileName(path: string): String;
+    procedure UpdateLB1ItemHeight;
+    procedure UpdateLB1ItemHeightStream;
   private
 
 
@@ -147,43 +149,30 @@ end;
 
 
 
-Function TFrm_List.GetPictureFileName(path:string):String;
- var
- fs : TSearchRec;
- i:Integer;
- ext:array [0..1] of String = ('.jpg', '.png');
- begin
-   Result:='';
-  for i:=0 to 1 do begin
-   if FindFirst(path+'*older*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-      Result:=path+fs.Name
-   else
-    if FindFirst(path+'*over*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-       Result:=path+fs.Name
-   else
-    if FindFirst(path+'*ront*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-       Result:=path+fs.Name
-   else
-    if FindFirst(path+'*ack*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-          Result:=path+fs.Name
-          else
-
-   if FindFirst(path+'/covers/'+'*older*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-      Result:=path+'/covers/'+fs.Name
-   else
-    if FindFirst(path+'/covers/'+'*over*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-       Result:=path+'/covers/'+fs.Name
-   else
-    if FindFirst(path+'/covers/'+'*ront*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-       Result:=path+'/covers/'+fs.Name
-   else
-    if FindFirst(path+'/covers/'+'*ack*'+ext[i],faAnyFile-faDirectory, fs)=0 then
-          Result:=path+'/covers/'+fs.Name ;
-   if result>'' then
-     break;
-  end;
-   SysUtils.FindClose(fs);
-  end;
+// Шукає файл обкладинки альбому в папці треку або в підпапці covers/
+// Підтримує паттерни: folder/cover/front/back у форматах jpg та png
+Function TFrm_List.GetPictureFileName(path: string): String;
+const
+  Patterns: array[0..3] of string = ('*older*', '*over*', '*ront*', '*ack*');
+  SubDirs:  array[0..1] of string = ('', '/covers/');
+  Exts:     array[0..1] of string = ('.jpg', '.png');
+var
+  fs: TSearchRec;
+  sd, p, e: Integer;
+begin
+  Result := '';
+  for sd := 0 to High(SubDirs) do
+    for p := 0 to High(Patterns) do
+      for e := 0 to High(Exts) do
+        if FindFirst(path + SubDirs[sd] + Patterns[p] + Exts[e],
+                     faAnyFile - faDirectory, fs) = 0 then
+        begin
+          Result := path + SubDirs[sd] + fs.Name;
+          SysUtils.FindClose(fs);
+          Exit;
+        end;
+  SysUtils.FindClose(fs);
+end;
 
 
 procedure TFrm_List.LB1DblClick(Sender: TObject);
@@ -354,12 +343,68 @@ end;
 
 procedure TFrm_List.LB1DrawItem(Control: TWinControl; Index: Integer;
   ARect: TRect);
-
+var
+  LB:        TListBox;
+  FullTxt:   string;
+  Line1:     string;
+  Line2:     string;
+  SepPos:    Integer;
+  R1, R2:    TRect;
+  LineH:     Integer;
 begin
-with (Control as TListBox).Canvas do
-DrawText(Handle, PChar(lb1.Items[index]), Length(lb1.Items[index]),
-   ARect, DT_LEFT );
+  LB := Control as TListBox;
+  with LB.Canvas do
+  begin
+    // Кольори відповідно до стану рядка
+    if LB.Selected[Index] then
+    begin
+      Brush.Color := clHighlight;
+      Font.Color  := clHighlightText;
+    end
+    else
+    begin
+      Brush.Color := LB.Color;
+      Font.Color  := LB.Font.Color;
+    end;
 
+    // Очищаємо фон — усуває артефакти при зміні теми
+    FillRect(ARect);
+
+    FullTxt := LB.Items[Index];
+    SepPos  := Pos(#13, FullTxt);
+
+    if SepPos > 0 then
+    begin
+      // Два рядки: назва і бітрейт
+      Line1 := Copy(FullTxt, 1, SepPos - 1);
+      Line2 := Copy(FullTxt, SepPos + 1, MaxInt);
+
+      LineH := (ARect.Bottom - ARect.Top) div 2;
+
+      R1 := ARect;
+      R1.Bottom := ARect.Top + LineH;
+      Inc(R1.Left, 2);
+      DrawText(Handle, PChar(Line1), Length(Line1), R1,
+               DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOPREFIX);
+
+      R2 := ARect;
+      R2.Top := ARect.Top + LineH;
+      Inc(R2.Left, 2);
+      // Другий рядок трохи меншим шрифтом
+      Font.Size := Font.Size - 1;
+      DrawText(Handle, PChar(Line2), Length(Line2), R2,
+               DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOPREFIX or DT_EXPANDTABS);
+      Font.Size := Font.Size + 1;
+    end
+    else
+    begin
+      // Один рядок
+      R1 := ARect;
+      Inc(R1.Left, 2);
+      DrawText(Handle, PChar(FullTxt), Length(FullTxt), R1,
+               DT_LEFT or DT_VCENTER or DT_SINGLELINE or DT_NOPREFIX);
+    end;
+  end;
 end;
 
 procedure TFrm_List.LB1MouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -488,24 +533,6 @@ if  (val = 'COVER.JPG') or (val = 'COVER.TIFF') or (val = 'COVER.PNG') or
 result := true;
 end;
 
-
-
-
-
-{ var
-  fullFileName : string;
-
-begin
-  // Установка полного имени файла с диском и путем
-  fullFileName := 'C:\Program Files\Borland\Delphi7\Projects\Unit1.dcu';
-
-  // Показ составляющих частей этого полного имени
-  ShowMessage('Диск       = '+ExtractFileDrive (fullFileName));
-  ShowMessage('Каталог    = '+ExtractFileDir   (fullFileName));
-  ShowMessage('Путь       = '+ExtractFilePath  (fullFileName));
-  ShowMessage('Имя        = '+ExtractFileName  (fullFileName));
-  ShowMessage('Расширение = '+ExtractFileExt   (fullFileName));
-end; }
 var
 CuePlayList:string;
 
@@ -517,7 +544,10 @@ var
   f: TextFile;
  btc,i, bitrat, ind:integer;
 begin
-
+if isStream then begin
+ShowCenteredMessage(rsOnlyStream, Frm_list);
+exit;
+end;
 for i:=0 to 10 do begin
 lb1.Cursor:=crHourGlass;
 sleep(3);
@@ -659,6 +689,7 @@ if     Counter <= LInd then
   Frm_Effects.XMLPropStorage1.Save;
   XMLPropStorage1.Save;
  lb1.Cursor:=crDefault;
+ UpdateLB1ItemHeight;
  Application.ProcessMessages;
 end;
 
@@ -668,55 +699,31 @@ begin
 end;
 
 procedure TFrm_List.ListClear(Sender: TObject);
-var
-i:integer;
 begin
- form_player.BGRAShape2Click(self);
-// form_player.player;
-  with LB4 do begin
-    i:=Count-1;
-    while i >= 0 do begin
-  lb4.Items.Delete(i);
-  LB3.Items.Delete(i);
-  LB2.Items.Delete(i);
-  LB1.Items.Delete(i);
-    i:=i-1;
-  end;
-   end;
-  {
-    with LB3 do begin
-    i:=Count-1;
-    while i >= 0 do begin
-  Items.Delete(i);
-    i:=i-1;
-  end;
-   end;
-        with LB2 do begin
-    i:=Count-1;
-    while i >= 0 do begin
-  Items.Delete(i);
-    i:=i-1;
-  end;
-   end;
-            with LB1 do begin
-    i:=Count-1;
-    while i >= 0 do begin
-  Items.Delete(i);
-    i:=i-1;
-  end;
-   end;  }
- //  LB2.Tag:=Frm_List.LB2.Tag+1;
-// lb1.ItemIndex:=-1;
-//    lb3.ItemIndex:=lb1.ItemIndex;
-//    lb4.ItemIndex:=lb1.ItemIndex;
-// lb2.ItemIndex:=Lb1.ItemIndex;
-//  form_player.BGRAShape2Click(self);
-if isStream then
-isStream:=not isStream;
-Frm_List.Caption:='';
-    XMLPropStorage1.Save;
+  form_player.BGRAShape2Click(self);
+  LB1.Items.Clear;
+  LB2.Items.Clear;
+  LB3.Items.Clear;
+  LB4.Items.Clear;
+  if isStream then
+    isStream := False;
+  Frm_List.Caption := '';
+  XMLPropStorage1.Save;
 end;
 
+
+procedure TFrm_List.UpdateLB1ItemHeight;
+var
+  FontSize: Integer;
+begin
+  FontSize := LB1.Font.Size;
+  LB1.ItemHeight := FontSize - 4 + FontSize * 2;
+end;
+
+procedure TFrm_List.UpdateLB1ItemHeightStream;
+begin
+  LB1.ItemHeight := LB1.Font.Size + 4;
+end;
 
 procedure TFrm_List.FormShow(Sender: TObject);
 begin
@@ -727,13 +734,13 @@ begin
   isStream:= true
   else
 isStream:= false;
-
-if isStream then
-Frm_List.LB1.ItemHeight:=(Frm_List.LB1.Font.Size+0)
+if not isStream then
+  UpdateLB1ItemHeight
 else
-Frm_List.LB1.ItemHeight:=(Options_frm.UpDown1.Position-4+Options_frm.UpDown1.Position*2);
-options_frm.UpDown1Click(self);
- // Frm_List.LB1.Font.Size:=Options_Frm.UpDown1.Position;
+  UpdateLB1ItemHeightStream;
+//  options_frm.UpDown1Click(self);
+//  Form_player.FormChangeBounds(self);
+
 end;
 
 
@@ -813,7 +820,7 @@ Form_Player.ScrollBar1.Min:=0;
      else
      btc:= bcinfo.origres;
      LB1.Items.Add(Format('%.3d - %s', [Lb2.Items.Count , DirInfo.Name]) +#13#9#9+'('+ IntToStr(GetBitrate(Dir+DirectorySeparator+DirInfo.Name))+'kbps ' + IntToStr(trunc(ATTRIB_FREQ))+' '+ IntToStr(btc)+'bit)');
-      LB3.Items.Add('');
+     LB3.Items.Add('');
     LB4.Items.Add('');
      end;
 

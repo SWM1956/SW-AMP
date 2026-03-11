@@ -13,83 +13,93 @@ msgstr ""
 "|| n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: sw_player.acancel
-msgctxt "sw_player.acancel"
+#: swamp_strings.acancel
+msgctxt "swamp_strings.acancel"
 msgid "Cancel"
 msgstr "Anulować"
 
-#: sw_player.actualbitrate
+#: swamp_strings.actualbitrate
+msgctxt "swamp_strings.actualbitrate"
 msgid "Actual Track Bitrate"
 msgstr "Rzeczywista szybkość transmisji utworu"
 
-#: sw_player.adelete
+#: swamp_strings.adelete
+msgctxt "swamp_strings.adelete"
 msgid "Are you sure you want to delete this "
-msgstr "Czy na pewno chcesz usunąć ten"
+msgstr "Czy na pewno chcesz usunąć ten "
 
-#: sw_player.afile
+#: swamp_strings.afile
+msgctxt "swamp_strings.afile"
 msgid "The file "
 msgstr "Plik "
 
-#: sw_player.afileerror
+#: swamp_strings.afileerror
+msgctxt "swamp_strings.afileerror"
 msgid "File upload error"
 msgstr "Błąd przesyłania pliku"
 
-#: sw_player.autoplay
-msgctxt "sw_player.autoplay"
+#: swamp_strings.autoplay
+msgctxt "swamp_strings.autoplay"
 msgid "Auto Play"
 msgstr "Automatyczne odtwarzanie"
 
-#: sw_player.balance
+#: swamp_strings.balance
+msgctxt "swamp_strings.balance"
 msgid "Balanсe"
 msgstr "Balansować"
 
-#: sw_player.bandanalizer
-msgctxt "sw_player.bandanalizer"
+#: swamp_strings.bandanalizer
+msgctxt "swamp_strings.bandanalizer"
 msgid "Count Bands Analizer"
 msgstr "Analizator pasm zliczania"
 
-#: sw_player.bargraph
+#: swamp_strings.bargraph
+msgctxt "swamp_strings.bargraph"
 msgid "Bar Graph"
 msgstr "Wykres słupkowy"
 
-#: sw_player.bfile
+#: swamp_strings.bfile
+msgctxt "swamp_strings.bfile"
 msgid "file?"
-msgstr "plik?"
+msgstr "Plik "
 
-#: sw_player.bright
-msgctxt "sw_player.bright"
+#: swamp_strings.bright
+msgctxt "swamp_strings.bright"
 msgid "Bright"
 msgstr "Jasny"
 
-#: sw_player.chorus
-msgctxt "sw_player.chorus"
+#: swamp_strings.chorus
+msgctxt "swamp_strings.chorus"
 msgid "Chorus"
 msgstr "Chór"
 
-#: sw_player.clearyesno
+#: swamp_strings.clearyesno
+msgctxt "swamp_strings.clearyesno"
 msgid "Are you sure you want to clear the playlist?"
 msgstr "Czy na pewno chcesz wyczyścić listę odtwarzania?"
 
-#: sw_player.confirm
+#: swamp_strings.confirm
+msgctxt "swamp_strings.confirm"
 msgid "Confirm"
 msgstr "Potwierdzenie"
 
-#: sw_player.delayleft
-msgctxt "sw_player.delayleft"
+#: swamp_strings.delayleft
+msgctxt "swamp_strings.delayleft"
 msgid "Delay for left channel"
 msgstr "Opóźnienie dla lewego kanału"
 
-#: sw_player.delayright
-msgctxt "sw_player.delayright"
+#: swamp_strings.delayright
+msgctxt "swamp_strings.delayright"
 msgid "Delay for right channel"
 msgstr "Opóźnienie dla prawego kanału"
 
-#: sw_player.depth
-msgctxt "sw_player.depth"
+#: swamp_strings.depth
+msgctxt "swamp_strings.depth"
 msgid "Depth"
 msgstr "Głębokość"
 
-#: sw_player.ebass_error_codec
+#: swamp_strings.ebass_error_codec
+msgctxt "swamp_strings.ebass_error_codec"
 msgid ""
 "The file uses a codec that is not available/supported. This can apply to WAV "
 "and AIFF files."
@@ -97,69 +107,87 @@ msgstr ""
 "Plik używa kodeka, który nie jest dostępny/obsługiwany. Może to dotyczyć "
 "plików WAV i AIFF."
 
-#: sw_player.ebass_error_denied
+#: swamp_strings.ebass_error_denied
+msgctxt "swamp_strings.ebass_error_denied"
 msgid "A valid username/password is required."
 msgstr "Wymagana jest prawidłowa nazwa użytkownika i hasło."
 
-#: sw_player.ebass_error_fileform
+#: swamp_strings.ebass_error_fileform
+msgctxt "swamp_strings.ebass_error_fileform"
 msgid "The files format is not recognised/supported."
 msgstr "Format pliku nie jest rozpoznawany/obsługiwany."
 
-#: sw_player.ebass_error_fileopen
+#: swamp_strings.ebass_error_fileopen
+msgctxt "swamp_strings.ebass_error_fileopen"
 msgid "The file could not be opened."
 msgstr "Nie można otworzyć pliku."
 
-#: sw_player.ebass_error_format
+#: swamp_strings.ebass_error_format
+msgctxt "swamp_strings.ebass_error_format"
 msgid "The sample format is not supported."
 msgstr "Format próbki nie jest obsługiwany."
 
-#: sw_player.ebass_error_illparam
+#: swamp_strings.ebass_error_illparam
+msgctxt "swamp_strings.ebass_error_illparam"
 msgid "url is not a valid URL."
-msgstr "Url nie jest prawidłowym adresem URL."
+msgstr "Url nie jest prawidłowym adresem URL. "
 
-#: sw_player.ebass_error_init
+#: swamp_strings.ebass_error_init
+msgctxt "swamp_strings.ebass_error_init"
 msgid "BASS_Init has not been successfully called."
-msgstr ""
+msgstr "Nie udało się pomyślnie wywołać funkcji BASS_Init."
 
-#: sw_player.ebass_error_mem
+#: swamp_strings.ebass_error_mem
+msgctxt "swamp_strings.ebass_error_mem"
 msgid "There is insufficient memory."
 msgstr "Brak wystarczającej ilości pamięci."
 
-#: sw_player.ebass_error_no3d
+#: swamp_strings.ebass_error_no3d
+msgctxt "swamp_strings.ebass_error_no3d"
 msgid "Could not initialize 3D support."
 msgstr "Nie można zainicjować obsługi 3D."
 
-#: sw_player.ebass_error_nonet
+#: swamp_strings.ebass_error_nonet
+msgctxt "swamp_strings.ebass_error_nonet"
 msgid ""
 "No internet connection could be opened. Can be caused by a bad proxy setting."
 msgstr ""
+"Nie można nawiązać połączenia internetowego. Przyczyną mogą być "
+"nieprawidłowe ustawienia serwera proxy."
 
-#: sw_player.ebass_error_notaudio
+#: swamp_strings.ebass_error_notaudio
+msgctxt "swamp_strings.ebass_error_notaudio"
 msgid ""
 "The file does not contain audio, or it also contains video and videos are "
 "disabled."
 msgstr ""
 "Plik nie zawiera dźwięku lub zawiera również wideo, a wideo jest wyłączone."
 
-#: sw_player.ebass_error_notavail
+#: swamp_strings.ebass_error_notavail
+msgctxt "swamp_strings.ebass_error_notavail"
 msgid ""
 "The BASS_STREAM_AUTOFREE flag cannot be combined with the BASS_STREAM_DECODE "
 "flag."
 msgstr ""
+"Flagi BASS_STREAM_AUTOFREE nie można łączyć z flagą BASS_STREAM_DECODE."
 
-#: sw_player.ebass_error_protocol
+#: swamp_strings.ebass_error_protocol
+msgctxt "swamp_strings.ebass_error_protocol"
 msgid "The protocol in url is not supported."
 msgstr "Protokół w adresie URL nie jest obsługiwany."
 
-#: sw_player.ebass_error_speaker
+#: swamp_strings.ebass_error_speaker
+msgctxt "swamp_strings.ebass_error_speaker"
 msgid "The specified SPEAKER flags are invalid."
 msgstr "Określone flagi SPEAKER są nieprawidłowe."
 
-#: sw_player.ebass_error_ssl
+#: swamp_strings.ebass_error_ssl
+msgctxt "swamp_strings.ebass_error_ssl"
 msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
 msgstr "Obsługa SSL/HTTPS nie jest dostępna. Zobacz BASS_CONFIG_LIBSSL."
 
-#: sw_player.ebass_error_timeout
+#: swamp_strings.ebass_error_timeout
+msgctxt "swamp_strings.ebass_error_timeout"
 msgid ""
 "The server did not respond to the request within the timeout period, as set "
 "with the BASS_CONFIG_NET_TIMEOUT config option."
@@ -167,11 +195,13 @@ msgstr ""
 "Serwer nie odpowiedział na żądanie w określonym czasie określonym w opcji "
 "konfiguracyjnej BASS_CONFIG_NET_TIMEOUT."
 
-#: sw_player.ebass_error_unknown
+#: swamp_strings.ebass_error_unknown
+msgctxt "swamp_strings.ebass_error_unknown"
 msgid "Some other mystery problem!"
 msgstr "Jakiś inny tajemniczy problem!"
 
-#: sw_player.ebass_error_unstreamable
+#: swamp_strings.ebass_error_unstreamable
+msgctxt "swamp_strings.ebass_error_unstreamable"
 msgid ""
 "The file cannot be streamed. This could be because an MP4 files mdat atom "
 "comes before its \"moov\" atom."
@@ -179,211 +209,354 @@ msgstr ""
 "Plik nie może być przesyłany strumieniowo. Może to być spowodowane tym, że "
 "atom mdat plików MP4 występuje przed atomem „moov”."
 
-#: sw_player.echo
-msgctxt "sw_player.echo"
+#: swamp_strings.echo
+msgctxt "swamp_strings.echo"
 msgid "Echo"
 msgstr "Echo"
 
-#: sw_player.efects
-msgctxt "sw_player.efects"
+#: swamp_strings.efects
+msgctxt "swamp_strings.efects"
 msgid "Effects"
 msgstr "Efekty"
 
-#: sw_player.effenable
-msgctxt "sw_player.effenable"
+#: swamp_strings.effenable
+msgctxt "swamp_strings.effenable"
 msgid "Effect Enable"
 msgstr "Efekt Włącz"
 
-#: sw_player.equalizer
+#: swamp_strings.equalizer
+msgctxt "swamp_strings.equalizer"
 msgid "Equalazer"
 msgstr "Wyrównywacz"
 
-#: sw_player.feedback
-msgctxt "sw_player.feedback"
+#: swamp_strings.feedback
+msgctxt "swamp_strings.feedback"
 msgid "Feedback"
-msgstr "Feedback"
+msgstr "Informacja zwrotna"
 
-#: sw_player.flanger
-msgctxt "sw_player.flanger"
+#: swamp_strings.flanger
+msgctxt "swamp_strings.flanger"
 msgid "Flanger"
 msgstr "Flanger"
 
-#: sw_player.flchor0
-#, fuzzy
-#| msgctxt "sw_player.flanger"
-#| msgid "Flanger"
-msgctxt "sw_player.flchor0"
+#: swamp_strings.flchor0
+msgctxt "swamp_strings.flchor0"
 msgid "Flanger"
 msgstr "Flanger"
 
-#: sw_player.flchor1
+#: swamp_strings.flchor1
+msgctxt "swamp_strings.flchor1"
 msgid "Exaggerated chorus leads to multiple pitch shifted voices"
 msgstr "Przesadny chór prowadzi do wielu głosów o zmienionej wysokości tonu"
 
-#: sw_player.flchor2
+#: swamp_strings.flchor2
+msgctxt "swamp_strings.flchor2"
 msgid "Motocycle"
 msgstr "Motocykl"
 
-#: sw_player.flchor3
+#: swamp_strings.flchor3
+msgctxt "swamp_strings.flchor3"
 msgid "Devil"
 msgstr "Diabeł"
 
-#: sw_player.flchor4
+#: swamp_strings.flchor4
+msgctxt "swamp_strings.flchor4"
 msgid "Who say that there are not many voices?"
 msgstr "Kto powiedział, że głosów jest mało?"
 
-#: sw_player.flchor5
+#: swamp_strings.flchor5
+msgctxt "swamp_strings.flchor5"
 msgid "Back chipmunk"
 msgstr "Wiewiórka z tyłu"
 
-#: sw_player.flchor6
+#: swamp_strings.flchor6
+msgctxt "swamp_strings.flchor6"
 msgid "Water"
 msgstr "Woda"
 
-#: sw_player.flchor7
+#: swamp_strings.flchor7
+msgctxt "swamp_strings.flchor7"
 msgid "This is the airplane"
 msgstr "To jest samolot"
 
-#: sw_player.frequency
-msgctxt "sw_player.frequency"
+#: swamp_strings.frequency
+msgctxt "swamp_strings.frequency"
 msgid "Frequency modulation"
 msgstr "Modulacja częstotliwości"
 
-#: sw_player.hideq
-msgctxt "sw_player.hideq"
+#: swamp_strings.hideq
+msgctxt "swamp_strings.hideq"
 msgid "Hide Equalizer"
 msgstr "Ukryj korektor"
 
-#: sw_player.interpolat0
+#: swamp_strings.interpolat0
+msgctxt "swamp_strings.interpolat0"
 msgid "Interpolation: Linear"
 msgstr "Interpolacja: liniowa"
 
-#: sw_player.interpolat1
+#: swamp_strings.interpolat1
+msgctxt "swamp_strings.interpolat1"
 msgid "Interpolation: Sync 8 point"
 msgstr "Interpolacja: od 8 pkt"
 
-#: sw_player.interpolat2
+#: swamp_strings.interpolat2
+msgctxt "swamp_strings.interpolat2"
 msgid "Interpolation: Sync 16 point"
 msgstr "Interpolacja: od 16 pkt"
 
-#: sw_player.interpolat3
+#: swamp_strings.interpolat3
+msgctxt "swamp_strings.interpolat3"
 msgid "Interpolation: Sync 32 point "
 msgstr "Interpolacja: od 32 pkt "
 
-#: sw_player.interpolat4
+#: swamp_strings.interpolat4
+msgctxt "swamp_strings.interpolat4"
 msgid "Interpolation: Sync 64 point"
 msgstr "Interpolacja: od 64 pkt"
 
-#: sw_player.languages
+#: swamp_strings.languages
+msgctxt "swamp_strings.languages"
 msgid "Languages"
 msgstr "Języki"
 
-#: sw_player.line
+#: swamp_strings.line
+msgctxt "swamp_strings.line"
 msgid "Line"
 msgstr "Linia"
 
-#: sw_player.logvol
-msgctxt "sw_player.logvol"
+#: swamp_strings.logvol
+msgctxt "swamp_strings.logvol"
 msgid "Logarithmic volume control"
 msgstr "Logarytmiczna regulacja głośności"
 
-#: sw_player.mono
+#: swamp_strings.mono
+msgctxt "swamp_strings.mono"
 msgid "Mono"
 msgstr "Mono"
 
-#: sw_player.nosuch
+#: swamp_strings.nosuch
+msgctxt "swamp_strings.nosuch"
 msgid " does not exist"
 msgstr " nie istnieje"
 
-#: sw_player.ofeq
-msgctxt "sw_player.ofeq"
+#: swamp_strings.ofeq
+msgctxt "swamp_strings.ofeq"
 msgid "Off Equalizer"
 msgstr "Wyłączony korektor"
 
-#: sw_player.offanalizer
-msgctxt "sw_player.offanalizer"
+#: swamp_strings.offanalizer
+msgctxt "swamp_strings.offanalizer"
 msgid "Turn OFF Analizer"
 msgstr "Wyłącz analizator"
 
-#: sw_player.oneq
+#: swamp_strings.oneq
+msgctxt "swamp_strings.oneq"
 msgid "On Equalizer"
 msgstr "Włącz korektor"
 
-#: sw_player.openplaylistcaption
-msgctxt "sw_player.openplaylistcaption"
+#: swamp_strings.openplaylistcaption
+msgctxt "swamp_strings.openplaylistcaption"
 msgid "Open Playlist"
 msgstr "Otwórz listę odtwarzania"
 
-#: sw_player.params
-msgctxt "sw_player.params"
+#: swamp_strings.params
+msgctxt "swamp_strings.params"
 msgid "Params"
 msgstr "Parametry"
 
-#: sw_player.player
-msgctxt "sw_player.player"
+#: swamp_strings.player
+msgctxt "swamp_strings.player"
 msgid "Player"
 msgstr "Gracz"
 
-#: sw_player.playlist
-msgctxt "sw_player.playlist"
+#: swamp_strings.playlist
+msgctxt "swamp_strings.playlist"
 msgid "PlayList"
 msgstr "Listy odtwarzania"
 
-#: sw_player.reverberation
-msgctxt "sw_player.reverberation"
+#: swamp_strings.reverberation
+msgctxt "swamp_strings.reverberation"
 msgid "Reverberation"
 msgstr "Pogłos"
 
-#: sw_player.reverbmix
-msgctxt "sw_player.reverbmix"
+#: swamp_strings.reverbmix
+msgctxt "swamp_strings.reverbmix"
 msgid "Reverberation Mix"
 msgstr "Mieszanka pogłosu"
 
-#: sw_player.reverbtime
-msgctxt "sw_player.reverbtime"
+#: swamp_strings.reverbtime
+msgctxt "swamp_strings.reverbtime"
 msgid "Reverberation Time"
 msgstr "Czas pogłosu"
 
-#: sw_player.rsdb
+#: swamp_strings.rsalbum
+msgid "Album:"
+msgstr ""
+
+#: swamp_strings.rsartist
+msgid "Artist:"
+msgstr "Artysta:"
+
+#: swamp_strings.rsbitrate
+msgid "Bitrate:"
+msgstr "Szybkość transmisji:"
+
+#: swamp_strings.rscannotopen
+msgid "(failed to open file)"
+msgstr ""
+
+#: swamp_strings.rschannels
+msgid "Channels:"
+msgstr "Kanały:"
+
+#: swamp_strings.rschmono
+msgid "1 (Mono)"
+msgstr "1 (Mono)"
+
+#: swamp_strings.rschstereo
+msgid "2 (Stereo)"
+msgstr "2 (Stereo)"
+
+#: swamp_strings.rsclose
+msgid "Close"
+msgstr "Zamknąć"
+
+#: swamp_strings.rscomment
+msgid "Comment:"
+msgstr "Komentarz:"
+
+#: swamp_strings.rsdb
+msgctxt "swamp_strings.rsdb"
 msgid " dB"
 msgstr ""
 
-#: sw_player.sheq
-msgctxt "sw_player.sheq"
+#: swamp_strings.rsduration
+msgid "Duration:"
+msgstr "Czas trwania:"
+
+#: swamp_strings.rserrorload
+msgid "Error load"
+msgstr "Błąd ładowania"
+
+#: swamp_strings.rsfileinfocaption
+msgid "Track Information"
+msgstr "Informacje o utworze"
+
+#: swamp_strings.rsfilename
+msgid "File name:"
+msgstr "Nazwa pliku:"
+
+#: swamp_strings.rsfilenotfound
+msgid "File not found:"
+msgstr "Nie znaleziono pliku:"
+
+#: swamp_strings.rsfilesize
+msgid "Size:"
+msgstr "Rozmiar:"
+
+#: swamp_strings.rsformat
+msgid "Format:"
+msgstr "Format:"
+
+#: swamp_strings.rsgenre
+msgid "Genre:"
+msgstr "Genre:"
+
+#: swamp_strings.rsmodified
+msgid "Modified:"
+msgstr "Zmodyfikowano:"
+
+#: swamp_strings.rsnhappend
+msgid "won't happen!"
+msgstr "nie wydarzy się!"
+
+#: swamp_strings.rsnocover
+msgid "No cover image"
+msgstr "Brak zdjęcia na okładce"
+
+#: swamp_strings.rsnostreamprops
+msgid "Properties are not available for internet streams."
+msgstr "Właściwości nie są dostępne w przypadku strumieni internetowych."
+
+#: swamp_strings.rsonlystream
+msgid "This List only for stream's"
+msgstr "Ta lista dotyczy tylko strumieni"
+
+#: swamp_strings.rsplaybackerror
+#| msgctxt "swamp_strings.afileerror"
+#| msgid "File upload error"
+msgid "File playback error"
+msgstr "Błąd odtwarzania pliku"
+
+#: swamp_strings.rssamplerate
+msgid "Sample rate:"
+msgstr "Częstotliwość próbkowania:"
+
+#: swamp_strings.rstabaudio
+msgid "Audio"
+msgstr "Audio"
+
+#: swamp_strings.rstabcover
+msgid "Cover"
+msgstr "Okładka"
+
+#: swamp_strings.rstabfile
+msgid "File"
+msgstr "Plik"
+
+#: swamp_strings.rstabtags
+msgid "Tags"
+msgstr "Tagi"
+
+#: swamp_strings.rstitle
+msgid "Title:"
+msgstr "Tytuł:"
+
+#: swamp_strings.rstrackno
+msgid "Track #:"
+msgstr "Ścieżka #:"
+
+#: swamp_strings.rsyear
+msgid "Year:"
+msgstr "Rok:"
+
+#: swamp_strings.sheq
+msgctxt "swamp_strings.sheq"
 msgid "Show Equalizer"
 msgstr "Pokaż korektor"
 
-#: sw_player.spanalizer
-msgctxt "sw_player.spanalizer"
+#: swamp_strings.spanalizer
+msgctxt "swamp_strings.spanalizer"
 msgid "Spectrum Analizer"
 msgstr "Analizator widma"
 
-#: sw_player.startanalizer
+#: swamp_strings.startanalizer
+msgctxt "swamp_strings.startanalizer"
 msgid "Start Analizer"
 msgstr "Uruchom Analizator"
 
-#: sw_player.stereo
-msgctxt "sw_player.stereo"
+#: swamp_strings.stereo
+msgctxt "swamp_strings.stereo"
 msgid "Stereo"
 msgstr "Stereofoniczny"
 
-#: sw_player.stopanalizer
-msgctxt "sw_player.stopanalizer"
+#: swamp_strings.stopanalizer
+msgctxt "swamp_strings.stopanalizer"
 msgid "Stop Analizer"
 msgstr "Zatrzymaj analizator"
 
-#: sw_player.tonvol
-msgctxt "sw_player.tonvol"
+#: swamp_strings.tonvol
+msgctxt "swamp_strings.tonvol"
 msgid "Loudly compensated volume control"
 msgstr "Głośno kompensowana regulacja głośności"
 
-#: sw_player.volume
-msgctxt "sw_player.volume"
+#: swamp_strings.volume
+msgctxt "swamp_strings.volume"
 msgid "Volume"
 msgstr "Tom"
 
-#: sw_player.wet
-msgctxt "sw_player.wet"
+#: swamp_strings.wet
+msgctxt "swamp_strings.wet"
 msgid "Delayed/Direct"
 msgstr "Opóźniony/bezpośredni"
 
@@ -413,7 +586,7 @@ msgstr ""
 
 #: tform_addurl.button1.caption
 msgid "Ok"
-msgstr ""
+msgstr "OK"
 
 #: tform_addurl.button2.caption
 msgctxt "tform_addurl.button2.caption"
@@ -431,7 +604,7 @@ msgstr ""
 
 #: tform_addurl.label2.caption
 msgid "Tittle"
-msgstr "Odrobina"
+msgstr "Tytuł"
 
 #: tform_player.acoustic.caption
 msgid "Acoustic"
@@ -484,6 +657,10 @@ msgstr ""
 msgctxt "tform_player.bgrashape14.caption"
 msgid "BGRAShape14"
 msgstr ""
+
+#: tform_player.bgrashape14.hint
+msgid "Stream Write"
+msgstr "Zapis strumieniowy"
 
 #: tform_player.bgrashape16.caption
 msgctxt "tform_player.bgrashape16.caption"
@@ -569,7 +746,7 @@ msgstr "SW-AMP"
 
 #: tform_player.classic.caption
 msgid "Classic"
-msgstr ""
+msgstr "Klasyczny"
 
 #: tform_player.clearlist.caption
 msgctxt "tform_player.clearlist.caption"
@@ -592,7 +769,7 @@ msgstr "Zamknij SW-AMP"
 
 #: tform_player.club.caption
 msgid "Club"
-msgstr ""
+msgstr "Klub"
 
 #: tform_player.copytocustomeq.caption
 msgctxt "tform_player.copytocustomeq.caption"
@@ -601,11 +778,11 @@ msgstr "Kopiuj do Custom"
 
 #: tform_player.custom.caption
 msgid "Custom"
-msgstr ""
+msgstr "Zwyczaj"
 
 #: tform_player.dance.caption
 msgid "Dance"
-msgstr "Dance"
+msgstr "Taniec"
 
 #: tform_player.deleteplaylist.caption
 msgid "Delete PlayList"
@@ -637,7 +814,7 @@ msgstr "Full Treble"
 
 #: tform_player.headphones.caption
 msgid "Headphones"
-msgstr "Headphones"
+msgstr "Słuchawki"
 
 #: tform_player.heavymetal.caption
 msgid "Heavy Metal"
@@ -762,9 +939,6 @@ msgid "Беларускі"
 msgstr "Беларускі"
 
 #: tform_player.lang8.caption
-#, fuzzy
-#| msgctxt "tform_player.lang8.caption"
-#| msgid "عرب"
 msgid "عرب"
 msgstr "عرب"
 
@@ -778,7 +952,7 @@ msgstr "Język"
 
 #: tform_player.largehall.caption
 msgid "Large Hall"
-msgstr "Large Hall"
+msgstr "Duża sala"
 
 #: tform_player.lbleq1.caption
 msgctxt "tform_player.lbleq1.caption"
@@ -876,7 +1050,7 @@ msgstr ""
 
 #: tform_player.live.caption
 msgid "Live"
-msgstr "Live"
+msgstr "Na żywo"
 
 #: tform_player.menuitem3.caption
 msgid "Bar graph"
@@ -1099,11 +1273,11 @@ msgstr "Normalna"
 
 #: tform_player.soft.caption
 msgid "Soft"
-msgstr "Soft"
+msgstr "Miękki"
 
 #: tform_player.softbass.caption
 msgid "Soft Bass"
-msgstr "Soft Bass"
+msgstr "Miękki bas"
 
 #: tform_player.softrock.caption
 msgid "Soft Rock"
@@ -1127,13 +1301,17 @@ msgstr "Tom"
 msgid "Balance"
 msgstr "Balansować"
 
+#: tform_player.trackproperties.caption
+msgid "Властивості треку..."
+msgstr "Właściwości śladu..."
+
 #: tform_player.trackspeed.caption
 msgid "Audiotrack Speed"
 msgstr "Szybkość ścieżki dźwiękowej"
 
 #: tform_player.vocal.caption
 msgid "Vocal"
-msgstr "Vocal"
+msgstr "Wokal"
 
 #: tfrm_effects.bgrashape17.caption
 msgctxt "tfrm_effects.bgrashape17.caption"
@@ -1543,7 +1721,7 @@ msgstr ""
 
 #: tfrm_list.caption
 msgid "list"
-msgstr ""
+msgstr "lista"
 
 #: tfrm_list.statusbar1.hint
 msgid "Current playlist file"
@@ -1714,6 +1892,345 @@ msgstr "Wyrównywacz"
 msgctxt "toptions_frm.panel9.caption"
 msgid "Player"
 msgstr "Gracz"
+
+#~ msgctxt "sw_player.acancel"
+#~ msgid "Cancel"
+#~ msgstr "Anulować"
+
+#~ msgctxt "sw_player.actualbitrate"
+#~ msgid "Actual Track Bitrate"
+#~ msgstr "Rzeczywista szybkość transmisji utworu"
+
+#~ msgctxt "sw_player.adelete"
+#~ msgid "Are you sure you want to delete this "
+#~ msgstr "Czy na pewno chcesz usunąć ten "
+
+#~ msgctxt "sw_player.afile"
+#~ msgid "The file "
+#~ msgstr "Plik "
+
+#~ msgctxt "sw_player.afileerror"
+#~ msgid "File upload error"
+#~ msgstr "Błąd przesyłania pliku"
+
+#~ msgctxt "sw_player.autoplay"
+#~ msgid "Auto Play"
+#~ msgstr "Automatyczne odtwarzanie"
+
+#~ msgctxt "sw_player.balance"
+#~ msgid "Balanсe"
+#~ msgstr "Balansować"
+
+#~ msgctxt "sw_player.bandanalizer"
+#~ msgid "Count Bands Analizer"
+#~ msgstr "Analizator pasm zliczania"
+
+#~ msgctxt "sw_player.bargraph"
+#~ msgid "Bar Graph"
+#~ msgstr "Wykres słupkowy"
+
+#~ msgctxt "sw_player.bfile"
+#~ msgid "file?"
+#~ msgstr "Plik "
+
+#~ msgctxt "sw_player.bright"
+#~ msgid "Bright"
+#~ msgstr "Jasny"
+
+#~ msgctxt "sw_player.chorus"
+#~ msgid "Chorus"
+#~ msgstr "Chór"
+
+#~ msgctxt "sw_player.clearyesno"
+#~ msgid "Are you sure you want to clear the playlist?"
+#~ msgstr "Czy na pewno chcesz wyczyścić listę odtwarzania?"
+
+#~ msgctxt "sw_player.confirm"
+#~ msgid "Confirm"
+#~ msgstr "Potwierdzenie"
+
+#~ msgctxt "sw_player.delayleft"
+#~ msgid "Delay for left channel"
+#~ msgstr "Opóźnienie dla lewego kanału"
+
+#~ msgctxt "sw_player.delayright"
+#~ msgid "Delay for right channel"
+#~ msgstr "Opóźnienie dla prawego kanału"
+
+#~ msgctxt "sw_player.depth"
+#~ msgid "Depth"
+#~ msgstr "Głębokość"
+
+#~ msgctxt "sw_player.ebass_error_codec"
+#~ msgid ""
+#~ "The file uses a codec that is not available/supported. This can apply to "
+#~ "WAV and AIFF files."
+#~ msgstr ""
+#~ "Plik używa kodeka, który nie jest dostępny/obsługiwany. Może to dotyczyć "
+#~ "plików WAV i AIFF."
+
+#~ msgctxt "sw_player.ebass_error_denied"
+#~ msgid "A valid username/password is required."
+#~ msgstr "Wymagana jest prawidłowa nazwa użytkownika i hasło."
+
+#~ msgctxt "sw_player.ebass_error_fileform"
+#~ msgid "The files format is not recognised/supported."
+#~ msgstr "Format pliku nie jest rozpoznawany/obsługiwany."
+
+#~ msgctxt "sw_player.ebass_error_fileopen"
+#~ msgid "The file could not be opened."
+#~ msgstr "Nie można otworzyć pliku."
+
+#~ msgctxt "sw_player.ebass_error_format"
+#~ msgid "The sample format is not supported."
+#~ msgstr "Format próbki nie jest obsługiwany."
+
+#~ msgctxt "sw_player.ebass_error_illparam"
+#~ msgid "url is not a valid URL."
+#~ msgstr "Url nie jest prawidłowym adresem URL. "
+
+#~ msgctxt "sw_player.ebass_error_init"
+#~ msgid "BASS_Init has not been successfully called."
+#~ msgstr "Nie udało się pomyślnie wywołać funkcji BASS_Init."
+
+#~ msgctxt "sw_player.ebass_error_mem"
+#~ msgid "There is insufficient memory."
+#~ msgstr "Brak wystarczającej ilości pamięci."
+
+#~ msgctxt "sw_player.ebass_error_no3d"
+#~ msgid "Could not initialize 3D support."
+#~ msgstr "Nie można zainicjować obsługi 3D."
+
+#~ msgctxt "sw_player.ebass_error_nonet"
+#~ msgid ""
+#~ "No internet connection could be opened. Can be caused by a bad proxy "
+#~ "setting."
+#~ msgstr ""
+#~ "Nie można nawiązać połączenia internetowego. Przyczyną mogą być "
+#~ "nieprawidłowe ustawienia serwera proxy."
+
+#~ msgctxt "sw_player.ebass_error_notaudio"
+#~ msgid ""
+#~ "The file does not contain audio, or it also contains video and videos are "
+#~ "disabled."
+#~ msgstr ""
+#~ "Plik nie zawiera dźwięku lub zawiera również wideo, a wideo jest "
+#~ "wyłączone."
+
+#~ msgctxt "sw_player.ebass_error_notavail"
+#~ msgid ""
+#~ "The BASS_STREAM_AUTOFREE flag cannot be combined with the "
+#~ "BASS_STREAM_DECODE flag."
+#~ msgstr ""
+#~ "Flagi BASS_STREAM_AUTOFREE nie można łączyć z flagą BASS_STREAM_DECODE."
+
+#~ msgctxt "sw_player.ebass_error_protocol"
+#~ msgid "The protocol in url is not supported."
+#~ msgstr "Protokół w adresie URL nie jest obsługiwany."
+
+#~ msgctxt "sw_player.ebass_error_speaker"
+#~ msgid "The specified SPEAKER flags are invalid."
+#~ msgstr "Określone flagi SPEAKER są nieprawidłowe."
+
+#~ msgctxt "sw_player.ebass_error_ssl"
+#~ msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
+#~ msgstr "Obsługa SSL/HTTPS nie jest dostępna. Zobacz BASS_CONFIG_LIBSSL."
+
+#~ msgctxt "sw_player.ebass_error_timeout"
+#~ msgid ""
+#~ "The server did not respond to the request within the timeout period, as "
+#~ "set with the BASS_CONFIG_NET_TIMEOUT config option."
+#~ msgstr ""
+#~ "Serwer nie odpowiedział na żądanie w określonym czasie określonym w opcji "
+#~ "konfiguracyjnej BASS_CONFIG_NET_TIMEOUT."
+
+#~ msgctxt "sw_player.ebass_error_unknown"
+#~ msgid "Some other mystery problem!"
+#~ msgstr "Jakiś inny tajemniczy problem!"
+
+#~ msgctxt "sw_player.ebass_error_unstreamable"
+#~ msgid ""
+#~ "The file cannot be streamed. This could be because an MP4 files mdat atom "
+#~ "comes before its \"moov\" atom."
+#~ msgstr ""
+#~ "Plik nie może być przesyłany strumieniowo. Może to być spowodowane tym, "
+#~ "że atom mdat plików MP4 występuje przed atomem „moov”."
+
+#~ msgctxt "sw_player.echo"
+#~ msgid "Echo"
+#~ msgstr "Echo"
+
+#~ msgctxt "sw_player.efects"
+#~ msgid "Effects"
+#~ msgstr "Efekty"
+
+#~ msgctxt "sw_player.effenable"
+#~ msgid "Effect Enable"
+#~ msgstr "Efekt Włącz"
+
+#~ msgctxt "sw_player.equalizer"
+#~ msgid "Equalazer"
+#~ msgstr "Wyrównywacz"
+
+#~ msgctxt "sw_player.feedback"
+#~ msgid "Feedback"
+#~ msgstr "Feedback"
+
+#~ msgctxt "sw_player.flanger"
+#~ msgid "Flanger"
+#~ msgstr "Flanger"
+
+#~ msgctxt "sw_player.flchor0"
+#~ msgid "Flanger"
+#~ msgstr "Flanger"
+
+#~ msgctxt "sw_player.flchor1"
+#~ msgid "Exaggerated chorus leads to multiple pitch shifted voices"
+#~ msgstr "Przesadny chór prowadzi do wielu głosów o zmienionej wysokości tonu"
+
+#~ msgctxt "sw_player.flchor2"
+#~ msgid "Motocycle"
+#~ msgstr "Motocykl"
+
+#~ msgctxt "sw_player.flchor3"
+#~ msgid "Devil"
+#~ msgstr "Diabeł"
+
+#~ msgctxt "sw_player.flchor4"
+#~ msgid "Who say that there are not many voices?"
+#~ msgstr "Kto powiedział, że głosów jest mało?"
+
+#~ msgctxt "sw_player.flchor5"
+#~ msgid "Back chipmunk"
+#~ msgstr "Wiewiórka z tyłu"
+
+#~ msgctxt "sw_player.flchor6"
+#~ msgid "Water"
+#~ msgstr "Woda"
+
+#~ msgctxt "sw_player.flchor7"
+#~ msgid "This is the airplane"
+#~ msgstr "To jest samolot"
+
+#~ msgctxt "sw_player.frequency"
+#~ msgid "Frequency modulation"
+#~ msgstr "Modulacja częstotliwości"
+
+#~ msgctxt "sw_player.hideq"
+#~ msgid "Hide Equalizer"
+#~ msgstr "Ukryj korektor"
+
+#~ msgctxt "sw_player.interpolat0"
+#~ msgid "Interpolation: Linear"
+#~ msgstr "Interpolacja: liniowa"
+
+#~ msgctxt "sw_player.interpolat1"
+#~ msgid "Interpolation: Sync 8 point"
+#~ msgstr "Interpolacja: od 8 pkt"
+
+#~ msgctxt "sw_player.interpolat2"
+#~ msgid "Interpolation: Sync 16 point"
+#~ msgstr "Interpolacja: od 16 pkt"
+
+#~ msgctxt "sw_player.interpolat3"
+#~ msgid "Interpolation: Sync 32 point "
+#~ msgstr "Interpolacja: od 32 pkt "
+
+#~ msgctxt "sw_player.interpolat4"
+#~ msgid "Interpolation: Sync 64 point"
+#~ msgstr "Interpolacja: od 64 pkt"
+
+#~ msgctxt "sw_player.languages"
+#~ msgid "Languages"
+#~ msgstr "Języki"
+
+#~ msgctxt "sw_player.line"
+#~ msgid "Line"
+#~ msgstr "Linia"
+
+#~ msgctxt "sw_player.logvol"
+#~ msgid "Logarithmic volume control"
+#~ msgstr "Logarytmiczna regulacja głośności"
+
+#~ msgctxt "sw_player.mono"
+#~ msgid "Mono"
+#~ msgstr "Mono"
+
+#~ msgctxt "sw_player.nosuch"
+#~ msgid " does not exist"
+#~ msgstr " nie istnieje"
+
+#~ msgctxt "sw_player.ofeq"
+#~ msgid "Off Equalizer"
+#~ msgstr "Wyłączony korektor"
+
+#~ msgctxt "sw_player.offanalizer"
+#~ msgid "Turn OFF Analizer"
+#~ msgstr "Wyłącz analizator"
+
+#~ msgctxt "sw_player.oneq"
+#~ msgid "On Equalizer"
+#~ msgstr "Włącz korektor"
+
+#~ msgctxt "sw_player.openplaylistcaption"
+#~ msgid "Open Playlist"
+#~ msgstr "Otwórz listę odtwarzania"
+
+#~ msgctxt "sw_player.params"
+#~ msgid "Params"
+#~ msgstr "Parametry"
+
+#~ msgctxt "sw_player.player"
+#~ msgid "Player"
+#~ msgstr "Gracz"
+
+#~ msgctxt "sw_player.playlist"
+#~ msgid "PlayList"
+#~ msgstr "Listy odtwarzania"
+
+#~ msgctxt "sw_player.reverberation"
+#~ msgid "Reverberation"
+#~ msgstr "Pogłos"
+
+#~ msgctxt "sw_player.reverbmix"
+#~ msgid "Reverberation Mix"
+#~ msgstr "Mieszanka pogłosu"
+
+#~ msgctxt "sw_player.reverbtime"
+#~ msgid "Reverberation Time"
+#~ msgstr "Czas pogłosu"
+
+#~ msgctxt "sw_player.sheq"
+#~ msgid "Show Equalizer"
+#~ msgstr "Pokaż korektor"
+
+#~ msgctxt "sw_player.spanalizer"
+#~ msgid "Spectrum Analizer"
+#~ msgstr "Analizator widma"
+
+#~ msgctxt "sw_player.startanalizer"
+#~ msgid "Start Analizer"
+#~ msgstr "Uruchom Analizator"
+
+#~ msgctxt "sw_player.stereo"
+#~ msgid "Stereo"
+#~ msgstr "Stereofoniczny"
+
+#~ msgctxt "sw_player.stopanalizer"
+#~ msgid "Stop Analizer"
+#~ msgstr "Zatrzymaj analizator"
+
+#~ msgctxt "sw_player.tonvol"
+#~ msgid "Loudly compensated volume control"
+#~ msgstr "Głośno kompensowana regulacja głośności"
+
+#~ msgctxt "sw_player.volume"
+#~ msgid "Volume"
+#~ msgstr "Tom"
+
+#~ msgctxt "sw_player.wet"
+#~ msgid "Delayed/Direct"
+#~ msgstr "Opóźniony/bezpośredni"
 
 #~ msgctxt "tfrm_effects.checkbox1.hint"
 #~ msgid "Effect Enable"

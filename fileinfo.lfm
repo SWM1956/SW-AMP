@@ -1,0 +1,33 @@
+object FileInfoForm: TFileInfoForm
+  Left = 300
+  Height = 390
+  Top = 200
+  Width = 450
+  BorderStyle = bsDialog
+  Caption = 'Інформація про трек'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.0.4'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 350
+    Top = 0
+    Width = 450
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+    object TabTags: TTabSheet
+      Caption = 'Теги'
+    end
+    object TabTech: TTabSheet
+      Caption = 'Аудіо'
+    end
+    object TabFile: TTabSheet
+      Caption = 'Файл'
+    end
+    object TabCover: TTabSheet
+      Caption = 'Обкладинка'
+    end
+  end
+end

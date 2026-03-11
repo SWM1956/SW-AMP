@@ -11,7 +11,8 @@ uses
   AdvancedSingleInstance, // !!!
   Dialogs,
   Interfaces, // this includes the LCL widgetset
-  Forms, unit1, sw_player, Options1, effects, list, Cover, add_url
+  Forms, unit1, sw_player, Options1, effects, list, Cover, add_url,
+  swamp_strings
   { you can add units after this };
 
 {$R *.res}

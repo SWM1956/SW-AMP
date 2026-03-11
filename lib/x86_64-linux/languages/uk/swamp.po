@@ -13,85 +13,93 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: sw_player.acancel
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "sw_player.acancel"
+#: swamp_strings.acancel
+msgctxt "swamp_strings.acancel"
 msgid "Cancel"
 msgstr "Відміна"
 
-#: sw_player.actualbitrate
+#: swamp_strings.actualbitrate
+msgctxt "swamp_strings.actualbitrate"
 msgid "Actual Track Bitrate"
 msgstr "Бітрейт Поточного Треку"
 
-#: sw_player.adelete
+#: swamp_strings.adelete
+msgctxt "swamp_strings.adelete"
 msgid "Are you sure you want to delete this "
 msgstr "Ви впевнені, що хочете видалити цей "
 
-#: sw_player.afile
+#: swamp_strings.afile
+msgctxt "swamp_strings.afile"
 msgid "The file "
 msgstr "Файл "
 
-#: sw_player.afileerror
+#: swamp_strings.afileerror
+msgctxt "swamp_strings.afileerror"
 msgid "File upload error"
 msgstr "Помилка завантаження файлу"
 
-#: sw_player.autoplay
-msgctxt "sw_player.autoplay"
+#: swamp_strings.autoplay
+msgctxt "swamp_strings.autoplay"
 msgid "Auto Play"
 msgstr "Автоматичне Відтвореня"
 
-#: sw_player.balance
+#: swamp_strings.balance
+msgctxt "swamp_strings.balance"
 msgid "Balanсe"
 msgstr "Баланс"
 
-#: sw_player.bandanalizer
-msgctxt "sw_player.bandanalizer"
+#: swamp_strings.bandanalizer
+msgctxt "swamp_strings.bandanalizer"
 msgid "Count Bands Analizer"
 msgstr "Кількість Смуг Аналізатора"
 
-#: sw_player.bargraph
+#: swamp_strings.bargraph
+msgctxt "swamp_strings.bargraph"
 msgid "Bar Graph"
 msgstr "Гістограма"
 
-#: sw_player.bfile
+#: swamp_strings.bfile
+msgctxt "swamp_strings.bfile"
 msgid "file?"
 msgstr "файл?"
 
-#: sw_player.bright
-msgctxt "sw_player.bright"
+#: swamp_strings.bright
+msgctxt "swamp_strings.bright"
 msgid "Bright"
 msgstr "Яскравість"
 
-#: sw_player.chorus
-msgctxt "sw_player.chorus"
+#: swamp_strings.chorus
+msgctxt "swamp_strings.chorus"
 msgid "Chorus"
 msgstr "Хорус"
 
-#: sw_player.clearyesno
+#: swamp_strings.clearyesno
+msgctxt "swamp_strings.clearyesno"
 msgid "Are you sure you want to clear the playlist?"
 msgstr "Ви впевнені, що бажаєте очистити список відтворення?"
 
-#: sw_player.confirm
+#: swamp_strings.confirm
+msgctxt "swamp_strings.confirm"
 msgid "Confirm"
 msgstr "Підтвердження"
 
-#: sw_player.delayleft
-msgctxt "sw_player.delayleft"
+#: swamp_strings.delayleft
+msgctxt "swamp_strings.delayleft"
 msgid "Delay for left channel"
 msgstr "Затримка для лівого каналу"
 
-#: sw_player.delayright
-msgctxt "sw_player.delayright"
+#: swamp_strings.delayright
+msgctxt "swamp_strings.delayright"
 msgid "Delay for right channel"
 msgstr "Затримка для правого каналу"
 
-#: sw_player.depth
-msgctxt "sw_player.depth"
+#: swamp_strings.depth
+msgctxt "swamp_strings.depth"
 msgid "Depth"
 msgstr "Глибина"
 
-#: sw_player.ebass_error_codec
+#: swamp_strings.ebass_error_codec
+msgctxt "swamp_strings.ebass_error_codec"
 msgid ""
 "The file uses a codec that is not available/supported. This can apply to WAV "
 "and AIFF files."
@@ -99,52 +107,63 @@ msgstr ""
 "Файл використовує кодек, який не (доступний/підтримується). Це стосується "
 "файлів WAV і AIFF."
 
-#: sw_player.ebass_error_denied
+#: swamp_strings.ebass_error_denied
+msgctxt "swamp_strings.ebass_error_denied"
 msgid "A valid username/password is required."
-msgstr ""
+msgstr "Потрібно дійсне ім'я користувача/пароль."
 
-#: sw_player.ebass_error_fileform
+#: swamp_strings.ebass_error_fileform
+msgctxt "swamp_strings.ebass_error_fileform"
 msgid "The files format is not recognised/supported."
 msgstr "Формат файлів не розпізнається/не підтримується."
 
-#: sw_player.ebass_error_fileopen
+#: swamp_strings.ebass_error_fileopen
+msgctxt "swamp_strings.ebass_error_fileopen"
 msgid "The file could not be opened."
-msgstr "Не вдалося відкрити файл."
+msgstr "Файл не вдалося відкрити."
 
-#: sw_player.ebass_error_format
+#: swamp_strings.ebass_error_format
+msgctxt "swamp_strings.ebass_error_format"
 msgid "The sample format is not supported."
 msgstr "Формат зразка не підтримується."
 
-#: sw_player.ebass_error_illparam
+#: swamp_strings.ebass_error_illparam
+msgctxt "swamp_strings.ebass_error_illparam"
 msgid "url is not a valid URL."
 msgstr "URL-адреса не є дійсною URL-адресою."
 
-#: sw_player.ebass_error_init
+#: swamp_strings.ebass_error_init
+msgctxt "swamp_strings.ebass_error_init"
 msgid "BASS_Init has not been successfully called."
 msgstr "BASS_Init не було успішно викликано."
 
-#: sw_player.ebass_error_mem
+#: swamp_strings.ebass_error_mem
+msgctxt "swamp_strings.ebass_error_mem"
 msgid "There is insufficient memory."
 msgstr "Недостатньо пам'яті."
 
-#: sw_player.ebass_error_no3d
+#: swamp_strings.ebass_error_no3d
+msgctxt "swamp_strings.ebass_error_no3d"
 msgid "Could not initialize 3D support."
 msgstr "Не вдалося ініціалізувати підтримку 3D."
 
-#: sw_player.ebass_error_nonet
+#: swamp_strings.ebass_error_nonet
+msgctxt "swamp_strings.ebass_error_nonet"
 msgid ""
 "No internet connection could be opened. Can be caused by a bad proxy setting."
 msgstr ""
 "Не вдалося відкрити підключення до Інтернету. Може бути спричинено "
 "неправильним налаштуванням проксі."
 
-#: sw_player.ebass_error_notaudio
+#: swamp_strings.ebass_error_notaudio
+msgctxt "swamp_strings.ebass_error_notaudio"
 msgid ""
 "The file does not contain audio, or it also contains video and videos are "
 "disabled."
 msgstr "Файл не містить аудіо або також містить відео, і відео вимкнено."
 
-#: sw_player.ebass_error_notavail
+#: swamp_strings.ebass_error_notavail
+msgctxt "swamp_strings.ebass_error_notavail"
 msgid ""
 "The BASS_STREAM_AUTOFREE flag cannot be combined with the BASS_STREAM_DECODE "
 "flag."
@@ -152,19 +171,23 @@ msgstr ""
 "Прапор BASS_STREAM_AUTOFREE не можна комбінувати з прапором "
 "BASS_STREAM_DECODE."
 
-#: sw_player.ebass_error_protocol
+#: swamp_strings.ebass_error_protocol
+msgctxt "swamp_strings.ebass_error_protocol"
 msgid "The protocol in url is not supported."
 msgstr "Протокол в url не підтримується."
 
-#: sw_player.ebass_error_speaker
+#: swamp_strings.ebass_error_speaker
+msgctxt "swamp_strings.ebass_error_speaker"
 msgid "The specified SPEAKER flags are invalid."
 msgstr "Зазначені позначки SPEAKER недійсні."
 
-#: sw_player.ebass_error_ssl
+#: swamp_strings.ebass_error_ssl
+msgctxt "swamp_strings.ebass_error_ssl"
 msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
 msgstr "Підтримка SSL/HTTPS недоступна. Перегляньте BASS_CONFIG_LIBSSL."
 
-#: sw_player.ebass_error_timeout
+#: swamp_strings.ebass_error_timeout
+msgctxt "swamp_strings.ebass_error_timeout"
 msgid ""
 "The server did not respond to the request within the timeout period, as set "
 "with the BASS_CONFIG_NET_TIMEOUT config option."
@@ -172,11 +195,13 @@ msgstr ""
 "Сервер не відповів на запит протягом періоду очікування, встановленого "
 "параметром конфігурації BASS_CONFIG_NET_TIMEOUT."
 
-#: sw_player.ebass_error_unknown
+#: swamp_strings.ebass_error_unknown
+msgctxt "swamp_strings.ebass_error_unknown"
 msgid "Some other mystery problem!"
 msgstr "Ще якась таємнича проблема!"
 
-#: sw_player.ebass_error_unstreamable
+#: swamp_strings.ebass_error_unstreamable
+msgctxt "swamp_strings.ebass_error_unstreamable"
 msgid ""
 "The file cannot be streamed. This could be because an MP4 files mdat atom "
 "comes before its \"moov\" atom."
@@ -184,210 +209,352 @@ msgstr ""
 "Неможливо передати файл. Це може бути тому, що файл MP4 mdat атом стоїть "
 "перед атомом \"moov\"."
 
-#: sw_player.echo
-msgctxt "sw_player.echo"
+#: swamp_strings.echo
+msgctxt "swamp_strings.echo"
 msgid "Echo"
 msgstr "Ехо"
 
-#: sw_player.efects
-msgctxt "sw_player.efects"
+#: swamp_strings.efects
+msgctxt "swamp_strings.efects"
 msgid "Effects"
 msgstr "Звукові Ефекти"
 
-#: sw_player.effenable
-msgctxt "sw_player.effenable"
+#: swamp_strings.effenable
+msgctxt "swamp_strings.effenable"
 msgid "Effect Enable"
 msgstr "Дозволити Ефект"
 
-#: sw_player.equalizer
+#: swamp_strings.equalizer
+msgctxt "swamp_strings.equalizer"
 msgid "Equalazer"
 msgstr "Еквалайзер"
 
-#: sw_player.feedback
-msgctxt "sw_player.feedback"
+#: swamp_strings.feedback
+msgctxt "swamp_strings.feedback"
 msgid "Feedback"
 msgstr "Зворотній зв'язок"
 
-#: sw_player.flanger
-msgctxt "sw_player.flanger"
+#: swamp_strings.flanger
+msgctxt "swamp_strings.flanger"
 msgid "Flanger"
 msgstr "Фленджер"
 
-#: sw_player.flchor0
-msgctxt "sw_player.flchor0"
+#: swamp_strings.flchor0
+msgctxt "swamp_strings.flchor0"
 msgid "Flanger"
 msgstr "Фленджер"
 
-#: sw_player.flchor1
+#: swamp_strings.flchor1
+msgctxt "swamp_strings.flchor1"
 msgid "Exaggerated chorus leads to multiple pitch shifted voices"
 msgstr "Перебільшений хорус призводить до численних змін висоти голосів"
 
-#: sw_player.flchor2
+#: swamp_strings.flchor2
+msgctxt "swamp_strings.flchor2"
 msgid "Motocycle"
 msgstr "Мотоцикл"
 
-#: sw_player.flchor3
+#: swamp_strings.flchor3
+msgctxt "swamp_strings.flchor3"
 msgid "Devil"
 msgstr "Диявол"
 
-#: sw_player.flchor4
+#: swamp_strings.flchor4
+msgctxt "swamp_strings.flchor4"
 msgid "Who say that there are not many voices?"
 msgstr "Хто сказав, що голосів небагато?"
 
-#: sw_player.flchor5
+#: swamp_strings.flchor5
+msgctxt "swamp_strings.flchor5"
 msgid "Back chipmunk"
 msgstr "Спина бурундука"
 
-#: sw_player.flchor6
+#: swamp_strings.flchor6
+msgctxt "swamp_strings.flchor6"
 msgid "Water"
 msgstr "Вода"
 
-#: sw_player.flchor7
-#, fuzzy
-#| msgid "This is the airplane "
+#: swamp_strings.flchor7
+msgctxt "swamp_strings.flchor7"
 msgid "This is the airplane"
 msgstr "Це літак"
 
-#: sw_player.frequency
-msgctxt "sw_player.frequency"
+#: swamp_strings.frequency
+msgctxt "swamp_strings.frequency"
 msgid "Frequency modulation"
 msgstr "Частота модуляції"
 
-#: sw_player.hideq
-msgctxt "sw_player.hideq"
+#: swamp_strings.hideq
+msgctxt "swamp_strings.hideq"
 msgid "Hide Equalizer"
 msgstr "Сховати Еквалайзер"
 
-#: sw_player.interpolat0
+#: swamp_strings.interpolat0
+msgctxt "swamp_strings.interpolat0"
 msgid "Interpolation: Linear"
 msgstr "Інтерполяція: Лінійна"
 
-#: sw_player.interpolat1
+#: swamp_strings.interpolat1
+msgctxt "swamp_strings.interpolat1"
 msgid "Interpolation: Sync 8 point"
 msgstr "Інтерполяція: Sinc 8 point"
 
-#: sw_player.interpolat2
+#: swamp_strings.interpolat2
+msgctxt "swamp_strings.interpolat2"
 msgid "Interpolation: Sync 16 point"
 msgstr "Інтерполяція: Sinc 16 point"
 
-#: sw_player.interpolat3
+#: swamp_strings.interpolat3
+msgctxt "swamp_strings.interpolat3"
 msgid "Interpolation: Sync 32 point "
 msgstr "Інтерполяція: Sinc 32 point "
 
-#: sw_player.interpolat4
+#: swamp_strings.interpolat4
+msgctxt "swamp_strings.interpolat4"
 msgid "Interpolation: Sync 64 point"
 msgstr "Інтерполяція: Sinc 64 point"
 
-#: sw_player.languages
+#: swamp_strings.languages
+msgctxt "swamp_strings.languages"
 msgid "Languages"
 msgstr "Мова"
 
-#: sw_player.line
+#: swamp_strings.line
+msgctxt "swamp_strings.line"
 msgid "Line"
 msgstr "Лінійний"
 
-#: sw_player.logvol
-msgctxt "sw_player.logvol"
+#: swamp_strings.logvol
+msgctxt "swamp_strings.logvol"
 msgid "Logarithmic volume control"
 msgstr "Логарифмічний регулятор гучності"
 
-#: sw_player.mono
+#: swamp_strings.mono
+msgctxt "swamp_strings.mono"
 msgid "Mono"
 msgstr "Моно"
 
-#: sw_player.nosuch
+#: swamp_strings.nosuch
+msgctxt "swamp_strings.nosuch"
 msgid " does not exist"
 msgstr " не існує"
 
-#: sw_player.ofeq
-msgctxt "sw_player.ofeq"
+#: swamp_strings.ofeq
+msgctxt "swamp_strings.ofeq"
 msgid "Off Equalizer"
 msgstr "Вимкнути Еквалайзер"
 
-#: sw_player.offanalizer
-msgctxt "sw_player.offanalizer"
+#: swamp_strings.offanalizer
+msgctxt "swamp_strings.offanalizer"
 msgid "Turn OFF Analizer"
 msgstr "Вимкнути Аналізатор Спектру"
 
-#: sw_player.oneq
+#: swamp_strings.oneq
+msgctxt "swamp_strings.oneq"
 msgid "On Equalizer"
 msgstr "Ввімкнути Еквалайзер"
 
-#: sw_player.openplaylistcaption
-msgctxt "sw_player.openplaylistcaption"
+#: swamp_strings.openplaylistcaption
+msgctxt "swamp_strings.openplaylistcaption"
 msgid "Open Playlist"
 msgstr "Відкрити Список Відтворення"
 
-#: sw_player.params
-msgctxt "sw_player.params"
+#: swamp_strings.params
+msgctxt "swamp_strings.params"
 msgid "Params"
 msgstr "Параметри"
 
-#: sw_player.player
-msgctxt "sw_player.player"
+#: swamp_strings.player
+msgctxt "swamp_strings.player"
 msgid "Player"
 msgstr "Програвач"
 
-#: sw_player.playlist
-msgctxt "sw_player.playlist"
+#: swamp_strings.playlist
+msgctxt "swamp_strings.playlist"
 msgid "PlayList"
 msgstr "Список відтворення"
 
-#: sw_player.reverberation
-msgctxt "sw_player.reverberation"
+#: swamp_strings.reverberation
+msgctxt "swamp_strings.reverberation"
 msgid "Reverberation"
 msgstr "Реверберація"
 
-#: sw_player.reverbmix
-msgctxt "sw_player.reverbmix"
+#: swamp_strings.reverbmix
+msgctxt "swamp_strings.reverbmix"
 msgid "Reverberation Mix"
 msgstr "Суміш реверберації"
 
-#: sw_player.reverbtime
-msgctxt "sw_player.reverbtime"
+#: swamp_strings.reverbtime
+msgctxt "swamp_strings.reverbtime"
 msgid "Reverberation Time"
 msgstr "Час реверберації"
 
-#: sw_player.rsdb
+#: swamp_strings.rsalbum
+msgid "Album:"
+msgstr "Альбом:"
+
+#: swamp_strings.rsartist
+msgid "Artist:"
+msgstr "Виконавець:"
+
+#: swamp_strings.rsbitrate
+msgid "Bitrate:"
+msgstr "Бітрейт:"
+
+#: swamp_strings.rscannotopen
+msgid "(failed to open file)"
+msgstr "(не вдалося відкрити файл)"
+
+#: swamp_strings.rschannels
+msgid "Channels:"
+msgstr "Канали:"
+
+#: swamp_strings.rschmono
+msgid "1 (Mono)"
+msgstr "(Моно)"
+
+#: swamp_strings.rschstereo
+msgid "2 (Stereo)"
+msgstr "2 (Стерео)"
+
+#: swamp_strings.rsclose
+msgid "Close"
+msgstr "Закрити"
+
+#: swamp_strings.rscomment
+msgid "Comment:"
+msgstr "Коментарі:"
+
+#: swamp_strings.rsdb
+msgctxt "swamp_strings.rsdb"
 msgid " dB"
 msgstr ""
 
-#: sw_player.sheq
-msgctxt "sw_player.sheq"
+#: swamp_strings.rsduration
+msgid "Duration:"
+msgstr "Тривалість:"
+
+#: swamp_strings.rserrorload
+msgid "Error load"
+msgstr "Помилка завантаження"
+
+#: swamp_strings.rsfileinfocaption
+msgid "Track Information"
+msgstr "Властивості треку"
+
+#: swamp_strings.rsfilename
+msgid "File name:"
+msgstr "Ім'я файлу:"
+
+#: swamp_strings.rsfilenotfound
+msgid "File not found:"
+msgstr "Файл не знайдений:"
+
+#: swamp_strings.rsfilesize
+msgid "Size:"
+msgstr "Розмір:"
+
+#: swamp_strings.rsformat
+msgid "Format:"
+msgstr "Формат:"
+
+#: swamp_strings.rsgenre
+msgid "Genre:"
+msgstr "Жанр:"
+
+#: swamp_strings.rsmodified
+msgid "Modified:"
+msgstr "Змінений:"
+
+#: swamp_strings.rsnhappend
+msgid "won't happen!"
+msgstr "не станеться!"
+
+#: swamp_strings.rsnocover
+msgid "No cover image"
+msgstr "Обкладинка відсутня"
+
+#: swamp_strings.rsnostreamprops
+msgid "Properties are not available for internet streams."
+msgstr "Властивості недоступні для інтернет-трансляцій."
+
+#: swamp_strings.rsonlystream
+msgid "This List only for stream's"
+msgstr "Цей список тільки для потоків!"
+
+#: swamp_strings.rsplaybackerror
+msgid "File playback error"
+msgstr "Помилка відтворення файлу"
+
+#: swamp_strings.rssamplerate
+msgid "Sample rate:"
+msgstr "Частота дискретизації:"
+
+#: swamp_strings.rstabaudio
+msgid "Audio"
+msgstr "Аудіо"
+
+#: swamp_strings.rstabcover
+msgid "Cover"
+msgstr "Обкладинка"
+
+#: swamp_strings.rstabfile
+msgid "File"
+msgstr "Файл"
+
+#: swamp_strings.rstabtags
+msgid "Tags"
+msgstr "Теги"
+
+#: swamp_strings.rstitle
+msgid "Title:"
+msgstr "Назва:"
+
+#: swamp_strings.rstrackno
+msgid "Track #:"
+msgstr "Номер треку:"
+
+#: swamp_strings.rsyear
+msgid "Year:"
+msgstr "Рік:"
+
+#: swamp_strings.sheq
+msgctxt "swamp_strings.sheq"
 msgid "Show Equalizer"
 msgstr "Показати Еквалайзер"
 
-#: sw_player.spanalizer
-msgctxt "sw_player.spanalizer"
+#: swamp_strings.spanalizer
+msgctxt "swamp_strings.spanalizer"
 msgid "Spectrum Analizer"
 msgstr "Аналізатор Спектру"
 
-#: sw_player.startanalizer
+#: swamp_strings.startanalizer
+msgctxt "swamp_strings.startanalizer"
 msgid "Start Analizer"
 msgstr "Запустити Аналізатор Спектру"
 
-#: sw_player.stereo
-msgctxt "sw_player.stereo"
+#: swamp_strings.stereo
+msgctxt "swamp_strings.stereo"
 msgid "Stereo"
 msgstr "Стерео"
 
-#: sw_player.stopanalizer
-msgctxt "sw_player.stopanalizer"
+#: swamp_strings.stopanalizer
+msgctxt "swamp_strings.stopanalizer"
 msgid "Stop Analizer"
 msgstr "Зупинити Аналізатор Спектру"
 
-#: sw_player.tonvol
-msgctxt "sw_player.tonvol"
+#: swamp_strings.tonvol
+msgctxt "swamp_strings.tonvol"
 msgid "Loudly compensated volume control"
 msgstr "Тонкомпенсований регулятор гучності"
 
-#: sw_player.volume
-msgctxt "sw_player.volume"
+#: swamp_strings.volume
+msgctxt "swamp_strings.volume"
 msgid "Volume"
 msgstr "Гучність"
 
-#: sw_player.wet
-msgctxt "sw_player.wet"
+#: swamp_strings.wet
+msgctxt "swamp_strings.wet"
 msgid "Delayed/Direct"
 msgstr "Затриманий/Прямий"
 
@@ -403,7 +570,7 @@ msgstr ""
 
 #: tcover_form.caption
 msgid "Cover_Form"
-msgstr ""
+msgstr "Обкладинка"
 
 #: tform_addurl.bgrashape15.caption
 msgctxt "tform_addurl.bgrashape15.caption"
@@ -417,11 +584,9 @@ msgstr ""
 
 #: tform_addurl.button1.caption
 msgid "Ok"
-msgstr ""
+msgstr "Ок"
 
 #: tform_addurl.button2.caption
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "tform_addurl.button2.caption"
 msgid "Cancel"
 msgstr "Відміна"
@@ -441,7 +606,7 @@ msgstr "Назва"
 
 #: tform_player.acoustic.caption
 msgid "Acoustic"
-msgstr ""
+msgstr "Акустичний"
 
 #: tform_player.addurl.caption
 msgctxt "tform_player.addurl.caption"
@@ -450,11 +615,11 @@ msgstr "Додати URL"
 
 #: tform_player.alternative.caption
 msgid "Alternative"
-msgstr ""
+msgstr "Альтернатива"
 
 #: tform_player.ballad.caption
 msgid "Ballad"
-msgstr ""
+msgstr "Баллада"
 
 #: tform_player.bgrashape1.caption
 msgid "BGRAShape1"
@@ -490,6 +655,10 @@ msgstr ""
 msgctxt "tform_player.bgrashape14.caption"
 msgid "BGRAShape14"
 msgstr ""
+
+#: tform_player.bgrashape14.hint
+msgid "Stream Write"
+msgstr "Запис потоку"
 
 #: tform_player.bgrashape16.caption
 msgctxt "tform_player.bgrashape16.caption"
@@ -575,7 +744,7 @@ msgstr "SW-AMP"
 
 #: tform_player.classic.caption
 msgid "Classic"
-msgstr ""
+msgstr "Класика"
 
 #: tform_player.clearlist.caption
 msgctxt "tform_player.clearlist.caption"
@@ -598,7 +767,7 @@ msgstr "Закрити SW-AMP"
 
 #: tform_player.club.caption
 msgid "Club"
-msgstr ""
+msgstr "Клубний"
 
 #: tform_player.copytocustomeq.caption
 msgctxt "tform_player.copytocustomeq.caption"
@@ -607,11 +776,11 @@ msgstr "Копіювати в Custom"
 
 #: tform_player.custom.caption
 msgid "Custom"
-msgstr ""
+msgstr "Збережений"
 
 #: tform_player.dance.caption
 msgid "Dance"
-msgstr "Dance"
+msgstr "Танцювальний"
 
 #: tform_player.deleteplaylist.caption
 msgid "Delete PlayList"
@@ -623,31 +792,31 @@ msgstr "Редагувати Обраний"
 
 #: tform_player.electronic.caption
 msgid "Electronic"
-msgstr ""
+msgstr "Електронний"
 
 #: tform_player.flat.caption
 msgid "Flat"
-msgstr ""
+msgstr "Плаский"
 
 #: tform_player.fullbass.caption
 msgid "Full Bass"
-msgstr ""
+msgstr "Повний бас"
 
 #: tform_player.fullbassandtreble.caption
 msgid "Full Bass And Treble"
-msgstr ""
+msgstr "Повний бас і  високі"
 
 #: tform_player.fulltreble.caption
 msgid "Full Treble"
-msgstr ""
+msgstr "Повні високі"
 
 #: tform_player.headphones.caption
 msgid "Headphones"
-msgstr ""
+msgstr "Навушники"
 
 #: tform_player.heavymetal.caption
 msgid "Heavy Metal"
-msgstr ""
+msgstr "Важкий метал"
 
 #: tform_player.hideeq.caption
 msgctxt "tform_player.hideeq.caption"
@@ -665,15 +834,15 @@ msgstr "Сховати Список"
 
 #: tform_player.hiphop.caption
 msgid "Hip-Hop"
-msgstr ""
+msgstr "Хіп-хоп"
 
 #: tform_player.industrial.caption
 msgid "Industrial"
-msgstr ""
+msgstr "Індустріальний"
 
 #: tform_player.jazz.caption
 msgid "Jazz"
-msgstr ""
+msgstr "Джаз"
 
 #: tform_player.label1.caption
 msgctxt "tform_player.label1.caption"
@@ -744,7 +913,7 @@ msgstr ""
 
 #: tform_player.lang14.caption
 msgid "қазақ"
-msgstr ""
+msgstr "қазақ"
 
 #: tform_player.lang2.caption
 msgid "English"
@@ -755,9 +924,6 @@ msgid "Español"
 msgstr "Español"
 
 #: tform_player.lang4.caption
-#, fuzzy
-#| msgctxt "tform_player.lang4.caption"
-#| msgid "Сatalà"
 msgid "Сatalà"
 msgstr "Сatalà"
 
@@ -766,30 +932,18 @@ msgid "Deutsch"
 msgstr "Deutsch"
 
 #: tform_player.lang6.caption
-#, fuzzy
-#| msgctxt "tform_player.lang6.caption"
-#| msgid "Ελληνικά"
 msgid "Ελληνικά"
 msgstr "Ελληνικά"
 
 #: tform_player.lang7.caption
-#, fuzzy
-#| msgctxt "tform_player.lang7.caption"
-#| msgid "Беларускі"
 msgid "Беларускі"
 msgstr "Беларускі"
 
 #: tform_player.lang8.caption
-#, fuzzy
-#| msgctxt "tform_player.lang8.caption"
-#| msgid "عرب"
 msgid "عرب"
 msgstr "عرب"
 
 #: tform_player.lang9.caption
-#, fuzzy
-#| msgctxt "tform_player.lang9.caption"
-#| msgid "Український"
 msgid "Український"
 msgstr "Український"
 
@@ -799,7 +953,7 @@ msgstr "Мова"
 
 #: tform_player.largehall.caption
 msgid "Large Hall"
-msgstr "Large Hall"
+msgstr "Великий хол"
 
 #: tform_player.lbleq1.caption
 msgctxt "tform_player.lbleq1.caption"
@@ -897,7 +1051,7 @@ msgstr ""
 
 #: tform_player.live.caption
 msgid "Live"
-msgstr "Live"
+msgstr "Живий"
 
 #: tform_player.menuitem3.caption
 msgid "Bar graph"
@@ -944,7 +1098,7 @@ msgstr "Відкрити Список Відтворення"
 
 #: tform_player.party.caption
 msgid "Party"
-msgstr ""
+msgstr "Вечірка"
 
 #: tform_player.pausemenu.caption
 msgctxt "tform_player.pausemenu.caption"
@@ -1033,7 +1187,7 @@ msgstr "Грати"
 
 #: tform_player.pop.caption
 msgid "Pop"
-msgstr "Pop"
+msgstr "Поп"
 
 #: tform_player.presets.caption
 msgctxt "tform_player.presets.caption"
@@ -1046,11 +1200,11 @@ msgstr "Попередній Трек"
 
 #: tform_player.rap.caption
 msgid "Rap"
-msgstr ""
+msgstr "Реп"
 
 #: tform_player.reggae.caption
 msgid "Reggae"
-msgstr ""
+msgstr "Регі"
 
 #: tform_player.rightover.caption
 msgid "RightOver"
@@ -1058,7 +1212,7 @@ msgstr ""
 
 #: tform_player.rock.caption
 msgid "Rock"
-msgstr ""
+msgstr "Рок"
 
 #: tform_player.s125.caption
 msgid "1.25"
@@ -1120,15 +1274,15 @@ msgstr ""
 
 #: tform_player.soft.caption
 msgid "Soft"
-msgstr ""
+msgstr "М'який"
 
 #: tform_player.softbass.caption
 msgid "Soft Bass"
-msgstr ""
+msgstr "М'який бас"
 
 #: tform_player.softrock.caption
 msgid "Soft Rock"
-msgstr ""
+msgstr "М'який рок"
 
 #: tform_player.stopmenu.caption
 msgctxt "tform_player.stopmenu.caption"
@@ -1137,7 +1291,7 @@ msgstr "Стоп"
 
 #: tform_player.techno.caption
 msgid "Techno"
-msgstr ""
+msgstr "Техно"
 
 #: tform_player.trackbar1.hint
 msgctxt "tform_player.trackbar1.hint"
@@ -1148,13 +1302,17 @@ msgstr "Гучність"
 msgid "Balance"
 msgstr "Баланс"
 
+#: tform_player.trackproperties.caption
+msgid "Властивості треку..."
+msgstr "Властивості треку..."
+
 #: tform_player.trackspeed.caption
 msgid "Audiotrack Speed"
 msgstr "Швидкість звукової доріжки"
 
 #: tform_player.vocal.caption
 msgid "Vocal"
-msgstr ""
+msgstr "Вокал"
 
 #: tfrm_effects.bgrashape17.caption
 msgctxt "tfrm_effects.bgrashape17.caption"
@@ -1396,12 +1554,9 @@ msgid "Compression ratio"
 msgstr "Ступінь стисненя"
 
 #: tfrm_effects.label32.caption
-#, fuzzy
-#| msgctxt "tform_player.label3.caption"
-#| msgid "0"
 msgctxt "tfrm_effects.label32.caption"
 msgid "0%"
-msgstr "0"
+msgstr "0%"
 
 #: tfrm_effects.label33.caption
 #, fuzzy
@@ -1564,7 +1719,7 @@ msgstr ""
 
 #: tfrm_list.caption
 msgid "list"
-msgstr ""
+msgstr "Список"
 
 #: tfrm_list.statusbar1.hint
 msgid "Current playlist file"
@@ -1735,6 +1890,344 @@ msgstr "Еквалайзер"
 msgctxt "toptions_frm.panel9.caption"
 msgid "Player"
 msgstr "Програвач"
+
+#~ msgctxt "sw_player.acancel"
+#~ msgid "Cancel"
+#~ msgstr "Відміна"
+
+#~ msgctxt "sw_player.actualbitrate"
+#~ msgid "Actual Track Bitrate"
+#~ msgstr "Бітрейт Поточного Треку"
+
+#~ msgctxt "sw_player.adelete"
+#~ msgid "Are you sure you want to delete this "
+#~ msgstr "Ви впевнені, що хочете видалити цей "
+
+#~ msgctxt "sw_player.afile"
+#~ msgid "The file "
+#~ msgstr "Файл "
+
+#~ msgctxt "sw_player.afileerror"
+#~ msgid "File upload error"
+#~ msgstr "Помилка завантаження файлу"
+
+#~ msgctxt "sw_player.autoplay"
+#~ msgid "Auto Play"
+#~ msgstr "Автоматичне Відтвореня"
+
+#~ msgctxt "sw_player.balance"
+#~ msgid "Balanсe"
+#~ msgstr "Баланс"
+
+#~ msgctxt "sw_player.bandanalizer"
+#~ msgid "Count Bands Analizer"
+#~ msgstr "Кількість Смуг Аналізатора"
+
+#~ msgctxt "sw_player.bargraph"
+#~ msgid "Bar Graph"
+#~ msgstr "Гістограма"
+
+#~ msgctxt "sw_player.bfile"
+#~ msgid "file?"
+#~ msgstr "файл?"
+
+#~ msgctxt "sw_player.bright"
+#~ msgid "Bright"
+#~ msgstr "Яскравість"
+
+#~ msgctxt "sw_player.chorus"
+#~ msgid "Chorus"
+#~ msgstr "Хорус"
+
+#~ msgctxt "sw_player.clearyesno"
+#~ msgid "Are you sure you want to clear the playlist?"
+#~ msgstr "Ви впевнені, що бажаєте очистити список відтворення?"
+
+#~ msgctxt "sw_player.confirm"
+#~ msgid "Confirm"
+#~ msgstr "Підтвердження"
+
+#~ msgctxt "sw_player.delayleft"
+#~ msgid "Delay for left channel"
+#~ msgstr "Затримка для лівого каналу"
+
+#~ msgctxt "sw_player.delayright"
+#~ msgid "Delay for right channel"
+#~ msgstr "Затримка для правого каналу"
+
+#~ msgctxt "sw_player.depth"
+#~ msgid "Depth"
+#~ msgstr "Глибина"
+
+#~ msgctxt "sw_player.ebass_error_codec"
+#~ msgid ""
+#~ "The file uses a codec that is not available/supported. This can apply to "
+#~ "WAV and AIFF files."
+#~ msgstr ""
+#~ "Файл використовує кодек, який не (доступний/підтримується). Це стосується "
+#~ "файлів WAV і AIFF."
+
+#~ msgctxt "sw_player.ebass_error_denied"
+#~ msgid "A valid username/password is required."
+#~ msgstr "Потрібно дійсне ім'я користувача/пароль."
+
+#~ msgctxt "sw_player.ebass_error_fileform"
+#~ msgid "The files format is not recognised/supported."
+#~ msgstr "Формат файлів не розпізнається/не підтримується."
+
+#~ msgctxt "sw_player.ebass_error_fileopen"
+#~ msgid "The file could not be opened."
+#~ msgstr "Не вдалося відкрити файл."
+
+#~ msgctxt "sw_player.ebass_error_format"
+#~ msgid "The sample format is not supported."
+#~ msgstr "Формат зразка не підтримується."
+
+#~ msgctxt "sw_player.ebass_error_illparam"
+#~ msgid "url is not a valid URL."
+#~ msgstr "URL-адреса не є дійсною URL-адресою."
+
+#~ msgctxt "sw_player.ebass_error_init"
+#~ msgid "BASS_Init has not been successfully called."
+#~ msgstr "BASS_Init не було успішно викликано."
+
+#~ msgctxt "sw_player.ebass_error_mem"
+#~ msgid "There is insufficient memory."
+#~ msgstr "Недостатньо пам'яті."
+
+#~ msgctxt "sw_player.ebass_error_no3d"
+#~ msgid "Could not initialize 3D support."
+#~ msgstr "Не вдалося ініціалізувати підтримку 3D."
+
+#~ msgctxt "sw_player.ebass_error_nonet"
+#~ msgid ""
+#~ "No internet connection could be opened. Can be caused by a bad proxy "
+#~ "setting."
+#~ msgstr ""
+#~ "Не вдалося відкрити підключення до Інтернету. Може бути спричинено "
+#~ "неправильним налаштуванням проксі."
+
+#~ msgctxt "sw_player.ebass_error_notaudio"
+#~ msgid ""
+#~ "The file does not contain audio, or it also contains video and videos are "
+#~ "disabled."
+#~ msgstr "Файл не містить аудіо або також містить відео, і відео вимкнено."
+
+#~ msgctxt "sw_player.ebass_error_notavail"
+#~ msgid ""
+#~ "The BASS_STREAM_AUTOFREE flag cannot be combined with the "
+#~ "BASS_STREAM_DECODE flag."
+#~ msgstr ""
+#~ "Прапор BASS_STREAM_AUTOFREE не можна комбінувати з прапором "
+#~ "BASS_STREAM_DECODE."
+
+#~ msgctxt "sw_player.ebass_error_protocol"
+#~ msgid "The protocol in url is not supported."
+#~ msgstr "Протокол в url не підтримується."
+
+#~ msgctxt "sw_player.ebass_error_speaker"
+#~ msgid "The specified SPEAKER flags are invalid."
+#~ msgstr "Зазначені позначки SPEAKER недійсні."
+
+#~ msgctxt "sw_player.ebass_error_ssl"
+#~ msgid "SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL."
+#~ msgstr "Підтримка SSL/HTTPS недоступна. Перегляньте BASS_CONFIG_LIBSSL."
+
+#~ msgctxt "sw_player.ebass_error_timeout"
+#~ msgid ""
+#~ "The server did not respond to the request within the timeout period, as "
+#~ "set with the BASS_CONFIG_NET_TIMEOUT config option."
+#~ msgstr ""
+#~ "Сервер не відповів на запит протягом періоду очікування, встановленого "
+#~ "параметром конфігурації BASS_CONFIG_NET_TIMEOUT."
+
+#~ msgctxt "sw_player.ebass_error_unknown"
+#~ msgid "Some other mystery problem!"
+#~ msgstr "Ще якась таємнича проблема!"
+
+#~ msgctxt "sw_player.ebass_error_unstreamable"
+#~ msgid ""
+#~ "The file cannot be streamed. This could be because an MP4 files mdat atom "
+#~ "comes before its \"moov\" atom."
+#~ msgstr ""
+#~ "Неможливо передати файл. Це може бути тому, що файл MP4 mdat атом стоїть "
+#~ "перед атомом \"moov\"."
+
+#~ msgctxt "sw_player.echo"
+#~ msgid "Echo"
+#~ msgstr "Ехо"
+
+#~ msgctxt "sw_player.efects"
+#~ msgid "Effects"
+#~ msgstr "Звукові Ефекти"
+
+#~ msgctxt "sw_player.effenable"
+#~ msgid "Effect Enable"
+#~ msgstr "Дозволити Ефект"
+
+#~ msgctxt "sw_player.equalizer"
+#~ msgid "Equalazer"
+#~ msgstr "Еквалайзер"
+
+#~ msgctxt "sw_player.feedback"
+#~ msgid "Feedback"
+#~ msgstr "Зворотній зв'язок"
+
+#~ msgctxt "sw_player.flanger"
+#~ msgid "Flanger"
+#~ msgstr "Фленджер"
+
+#~ msgctxt "sw_player.flchor0"
+#~ msgid "Flanger"
+#~ msgstr "Фленджер"
+
+#~ msgctxt "sw_player.flchor1"
+#~ msgid "Exaggerated chorus leads to multiple pitch shifted voices"
+#~ msgstr "Перебільшений хорус призводить до численних змін висоти голосів"
+
+#~ msgctxt "sw_player.flchor2"
+#~ msgid "Motocycle"
+#~ msgstr "Мотоцикл"
+
+#~ msgctxt "sw_player.flchor3"
+#~ msgid "Devil"
+#~ msgstr "Диявол"
+
+#~ msgctxt "sw_player.flchor4"
+#~ msgid "Who say that there are not many voices?"
+#~ msgstr "Хто сказав, що голосів небагато?"
+
+#~ msgctxt "sw_player.flchor5"
+#~ msgid "Back chipmunk"
+#~ msgstr "Спина бурундука"
+
+#~ msgctxt "sw_player.flchor6"
+#~ msgid "Water"
+#~ msgstr "Вода"
+
+#~ msgctxt "sw_player.flchor7"
+#~ msgid "This is the airplane"
+#~ msgstr "Це літак"
+
+#~ msgctxt "sw_player.frequency"
+#~ msgid "Frequency modulation"
+#~ msgstr "Частота модуляції"
+
+#~ msgctxt "sw_player.hideq"
+#~ msgid "Hide Equalizer"
+#~ msgstr "Сховати Еквалайзер"
+
+#~ msgctxt "sw_player.interpolat0"
+#~ msgid "Interpolation: Linear"
+#~ msgstr "Інтерполяція: Лінійна"
+
+#~ msgctxt "sw_player.interpolat1"
+#~ msgid "Interpolation: Sync 8 point"
+#~ msgstr "Інтерполяція: Sinc 8 point"
+
+#~ msgctxt "sw_player.interpolat2"
+#~ msgid "Interpolation: Sync 16 point"
+#~ msgstr "Інтерполяція: Sinc 16 point"
+
+#~ msgctxt "sw_player.interpolat3"
+#~ msgid "Interpolation: Sync 32 point "
+#~ msgstr "Інтерполяція: Sinc 32 point "
+
+#~ msgctxt "sw_player.interpolat4"
+#~ msgid "Interpolation: Sync 64 point"
+#~ msgstr "Інтерполяція: Sinc 64 point"
+
+#~ msgctxt "sw_player.languages"
+#~ msgid "Languages"
+#~ msgstr "Мова"
+
+#~ msgctxt "sw_player.line"
+#~ msgid "Line"
+#~ msgstr "Лінійний"
+
+#~ msgctxt "sw_player.logvol"
+#~ msgid "Logarithmic volume control"
+#~ msgstr "Логарифмічний регулятор гучності"
+
+#~ msgctxt "sw_player.mono"
+#~ msgid "Mono"
+#~ msgstr "Моно"
+
+#~ msgctxt "sw_player.nosuch"
+#~ msgid " does not exist"
+#~ msgstr " не існує"
+
+#~ msgctxt "sw_player.ofeq"
+#~ msgid "Off Equalizer"
+#~ msgstr "Вимкнути Еквалайзер"
+
+#~ msgctxt "sw_player.offanalizer"
+#~ msgid "Turn OFF Analizer"
+#~ msgstr "Вимкнути Аналізатор Спектру"
+
+#~ msgctxt "sw_player.oneq"
+#~ msgid "On Equalizer"
+#~ msgstr "Ввімкнути Еквалайзер"
+
+#~ msgctxt "sw_player.openplaylistcaption"
+#~ msgid "Open Playlist"
+#~ msgstr "Відкрити Список Відтворення"
+
+#~ msgctxt "sw_player.params"
+#~ msgid "Params"
+#~ msgstr "Параметри"
+
+#~ msgctxt "sw_player.player"
+#~ msgid "Player"
+#~ msgstr "Програвач"
+
+#~ msgctxt "sw_player.playlist"
+#~ msgid "PlayList"
+#~ msgstr "Список відтворення"
+
+#~ msgctxt "sw_player.reverberation"
+#~ msgid "Reverberation"
+#~ msgstr "Реверберація"
+
+#~ msgctxt "sw_player.reverbmix"
+#~ msgid "Reverberation Mix"
+#~ msgstr "Суміш реверберації"
+
+#~ msgctxt "sw_player.reverbtime"
+#~ msgid "Reverberation Time"
+#~ msgstr "Час реверберації"
+
+#~ msgctxt "sw_player.sheq"
+#~ msgid "Show Equalizer"
+#~ msgstr "Показати Еквалайзер"
+
+#~ msgctxt "sw_player.spanalizer"
+#~ msgid "Spectrum Analizer"
+#~ msgstr "Аналізатор Спектру"
+
+#~ msgctxt "sw_player.startanalizer"
+#~ msgid "Start Analizer"
+#~ msgstr "Запустити Аналізатор Спектру"
+
+#~ msgctxt "sw_player.stereo"
+#~ msgid "Stereo"
+#~ msgstr "Стерео"
+
+#~ msgctxt "sw_player.stopanalizer"
+#~ msgid "Stop Analizer"
+#~ msgstr "Зупинити Аналізатор Спектру"
+
+#~ msgctxt "sw_player.tonvol"
+#~ msgid "Loudly compensated volume control"
+#~ msgstr "Тонкомпенсований регулятор гучності"
+
+#~ msgctxt "sw_player.volume"
+#~ msgid "Volume"
+#~ msgstr "Гучність"
+
+#~ msgctxt "sw_player.wet"
+#~ msgid "Delayed/Direct"
+#~ msgstr "Затриманий/Прямий"
 
 #, fuzzy
 #~| msgid "Next Track"

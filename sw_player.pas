@@ -9,13 +9,16 @@ uses
   LCLTranslator, DefaultTranslator, Math,
    Spectrum_vis,  Types, CommonTypes, lazdynamic_bass, Dynamic_BassFX, Dynamic_Bassenc,
     XMLPropStorage, IniPropStorage,  BGRAShape, FileInfo,  xlib, CDControl,
-    dbus_keys;
+    dbus_keys,
+    fileinfo_frm,
+    swamp_strings;
 
   //It is safe to place code here as no form is initialized before unit
   //initialization is made
 
 //end.
 //end.
+     procedure ShowCenteredMessage(const Msg: string; Parent: TForm);
 type
 
 
@@ -160,6 +163,8 @@ type
     Custom: TMenuItem;
     Vocal: TMenuItem;
     ClearList: TMenuItem;
+    SeparatorProperties: TMenuItem;
+    TrackProperties: TMenuItem;
     MenuItem5: TMenuItem;
     HideList: TMenuItem;
     HideEq: TMenuItem;
@@ -218,6 +223,8 @@ type
     procedure BGRAShape12MouseLeave(Sender: TObject);
     procedure BGRAShape12MouseMove(Sender: TObject);
     procedure BGRAShape14Click(Sender: TObject);
+    procedure BGRAShape14MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
     procedure BGRAShape15Click(Sender: TObject);
     procedure BGRAShape1Click(Sender: TObject);
     procedure BGRAShape1MouseLeave(Sender: TObject);
@@ -316,6 +323,7 @@ type
     procedure OffEqualizerClick(Sender: TObject);
     procedure MenuItem2Click1(Sender: TObject);
     procedure ClearListClick(Sender: TObject);
+    procedure TrackPropertiesClick(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuOnStopStart(Sender: TObject);
     procedure MouseRefreshTimerTimer(Sender: TObject);
@@ -406,13 +414,14 @@ type
     procedure LabelEqRefresh;
     procedure EQActivate;
     procedure EQDeActivate;
+
  //   function  GetBitrate(file_name:string):integer;
     private
     { Private declarations }
        FFileVersion: string;
        procedure draw;
        procedure putfile(val: string);
-     //  function GetMaxLevel1(file_name: string; fstart: integer; fend: integer
+     //  function Get41(file_name: string; fstart: integer; fend: integer
      //    ): single;
   public
     { Public declarations }
@@ -421,89 +430,10 @@ type
     procedure SetInterpolation(val:integer);
     property FileVersion: string read FFileVersion;
     function GetMaxLevel(file_name:string):single;
+
   end;
 
-resourcestring
-  openplaylistCaption = 'Open Playlist';
-  ofeq = 'Off Equalizer';
-  oneq = 'On Equalizer';
-  hideq = 'Hide Equalizer';
-  sheq = 'Show Equalizer';
-  logvol = 'Logarithmic volume control';
-  tonvol = 'Loudly compensated volume control';
-  offanalizer = 'Turn OFF Analizer';
-  bandanalizer = 'Count Bands Analizer';
-  autoplay = 'Auto Play';
-  player = 'Player';
-  equalizer = 'Equalazer';
-  spanalizer = 'Spectrum Analizer';
-  interpolat0 = 'Interpolation: Linear';
-  interpolat1 = 'Interpolation: Sync 8 point';
-  interpolat2 = 'Interpolation: Sync 16 point';
-  interpolat3 = 'Interpolation: Sync 32 point ';
-  interpolat4 = 'Interpolation: Sync 64 point';
-  FlChor0 = 'Flanger';
-  FlChor1 = 'Exaggerated chorus leads to multiple pitch shifted voices';
-  FlChor2 = 'Motocycle';
-  FlChor3 = 'Devil';
-  FlChor4 = 'Who say that there are not many voices?';
-  FlChor5 = 'Back chipmunk';
-  FlChor6 = 'Water';
-  FlChor7 = 'This is the airplane';
-  actualbitrate ='Actual Track Bitrate';
-  clearYesNo = 'Are you sure you want to clear the playlist?';
-  stereo = 'Stereo';
-  mono = 'Mono';
-  bright = 'Bright';
-  volume = 'Volume';
-  balance = 'Balanсe';
-  frequency = 'Frequency modulation';
-  flanger = 'Flanger';
-  chorus = 'Chorus';
-  reverberation = 'Reverberation';
-  echo = 'Echo';
-  delayleft = 'Delay for left channel';
-  delayright = 'Delay for right channel';
-  wet = 'Delayed/Direct';
-  feedback = 'Feedback';
-  depth = 'Depth';
-  reverbtime = 'Reverberation Time';
-  reverbmix = 'Reverberation Mix';
-  efects = 'Effects';
-  line = 'Line';
-  bargraph = 'Bar Graph';
-  params = 'Params';
-  playlist ='PlayList';
-  effenable = 'Effect Enable';
-  stopanalizer = 'Stop Analizer';
-  startanalizer = 'Start Analizer';
-  rsDB = ' dB';
-  languages = 'Languages';
-  afile = 'The file ';
-  nosuch = ' does not exist';
-  afileerror = 'File upload error';
-  confirm = 'Confirm';
-  aCancel = 'Cancel';
-  aDelete = 'Are you sure you want to delete this ';
-  bFile = 'file?';
-  eBASS_ERROR_INIT = 'BASS_Init has not been successfully called.';
-  eBASS_ERROR_NOTAVAIL = 'The BASS_STREAM_AUTOFREE flag cannot be combined with the BASS_STREAM_DECODE flag.';
-  eBASS_ERROR_NONET = 'No internet connection could be opened. Can be caused by a bad proxy setting.';
-  eBASS_ERROR_ILLPARAM = 'url is not a valid URL.';
-  eBASS_ERROR_PROTOCOL = 'The protocol in url is not supported.';
-  eBASS_ERROR_SSL      = 'SSL/HTTPS support is not available. See BASS_CONFIG_LIBSSL.';
-  eBASS_ERROR_TIMEOUT  = 'The server did not respond to the request within the timeout period, as set with the BASS_CONFIG_NET_TIMEOUT config option.';
-  eBASS_ERROR_DENIED   = 'A valid username/password is required.';
-  eBASS_ERROR_FILEOPEN = 'The file could not be opened.';
-  eBASS_ERROR_FILEFORM = 'The file'+'s format is not recognised/supported.';
-  eBASS_ERROR_UNSTREAMABLE = 'The file cannot be streamed. This could be because an MP4 file'+'s mdat atom comes before its "moov" atom.';
-  eBASS_ERROR_NOTAUDIO = 'The file does not contain audio, or it also contains video and videos are disabled.';
-  eBASS_ERROR_CODEC    = 'The file uses a codec that is not available/supported. This can apply to WAV and AIFF files.';
-  eBASS_ERROR_FORMAT   = 'The sample format is not supported.';
-  eBASS_ERROR_SPEAKER  = 'The specified SPEAKER flags are invalid.';
-  eBASS_ERROR_MEM      = 'There is insufficient memory.';
-  eBASS_ERROR_NO3D     = 'Could not initialize 3D support.';
-  eBASS_ERROR_UNKNOWN  = 'Some other mystery problem!';
+
 var
 
   Form_player: TForm_player;
@@ -656,9 +586,64 @@ uses  unit1, options1, effects, list,cover, add_url;
 //initialization
 // SetDefaultLang('uk', 'Languages');
 //end.
+var
+cc:integer;
 
 
+procedure ShowCenteredMessage(const Msg: string; Parent: TForm);
+var
+  Dlg: TForm;
+  Lbl: TLabel;
+  Btn: TButton;
+  MaxWidth: Integer;
+  LblWidth: Integer;
+  R: TRect;
+begin
+  MaxWidth := 400;
+  LblWidth := MaxWidth - 80;
 
+  Dlg := TForm.Create(nil);
+  try
+    Dlg.BorderStyle := bsDialog;
+    Dlg.Caption     := Application.Title;
+    Dlg.Width       := MaxWidth;
+
+    Lbl := TLabel.Create(Dlg);
+    Lbl.Parent   := Dlg;
+    Lbl.Left     := 40;
+    Lbl.Top      := 20;
+    Lbl.Width    := LblWidth;
+    Lbl.WordWrap := True;
+    Lbl.AutoSize := False;
+    Lbl.Alignment := taCenter;
+    Lbl.Caption  := Msg;
+
+    // Розраховуємо висоту тексту вручну через Canvas
+    Dlg.HandleNeeded;
+    dlg.Caption:='';
+    R := Rect(0, 0, LblWidth, 2000);
+    DrawText(Dlg.Canvas.Handle, PChar(Msg), -1, R,
+             DT_CALCRECT or DT_WORDBREAK or DT_LEFT);
+    Lbl.Height := R.Bottom - R.Top;
+
+    Btn := TButton.Create(Dlg);
+    Btn.Parent      := Dlg;
+    Btn.Caption     := 'OK';
+    Btn.ModalResult := mrOK;
+    Btn.Width       := 80;
+    Btn.Top         := Lbl.Top + Lbl.Height + 16;
+    Btn.Left        := (MaxWidth - Btn.Width) div 2;
+
+    Dlg.Height := Btn.Top + Btn.Height + 40;
+
+    Dlg.Position := poDesigned;
+    Dlg.Left := Parent.Left + (Parent.Width  - Dlg.Width)  div 2;
+    Dlg.Top  := Parent.Top  + (Parent.Height - Dlg.Height) div 2;
+    Dlg.ShowModal;
+  finally
+    Dlg.Free;
+  end;
+end;
 
 function BrightC(Color: TColor; BrightPercent: Byte): TColor;
 
@@ -793,6 +778,7 @@ procedure TForm_player.UpdateTonComp;
  var
 t,v,vol:double;
  begin
+
  v:= TrackBar1.Position;
  t:= TrackBar1.Position;
  if lnVolume then   begin
@@ -810,6 +796,7 @@ t,v,vol:double;
        BASS_ChannelRemoveFX(Channel,fx[0]);
   fx[0] := BASS_ChannelSetFX(Channel, BASS_FX_VOLUME, 0);
     end;
+
     if MaxLevel>1 then
                   Vol:=  v*(1-(maxlevel-1))
                   else
@@ -817,7 +804,8 @@ t,v,vol:double;
 end
  else  begin
 if (BASS_FXGetParameters(fx[0], @pFXvol)) then begin
-
+//   if isStream then
+//   maxlevel :=1.9;
     pFXvol.fTarget:= 1-(chvolume) ;
 
    if MaxLevel>1 then
@@ -850,6 +838,7 @@ end;
 
 procedure TForm_player.TrackBar1Change(Sender: TObject);
 begin
+
 updateTonComp;
 end;
 
@@ -957,10 +946,13 @@ for i:=1 to 18 do
 if not off_equalizer then  begin
     ratio :=1+(maxval);
     ratio := power(10.0, ratio / 20.0);
-  if (maxval > minv)  then
-   chvolume:= (1-(1/ratio))/1.2
+  if (maxval > minv)  then begin
+   chvolume:= (1-(1/ratio))/1.2;
+   if isStream then chvolume:=chvolume+0.11;
+   end
    else
    chvolume:=0;
+
  UpdateTonComp;
    end;
 
@@ -993,187 +985,85 @@ var
   tfl, fmax:Single;
 
 
-function TForm_player.GetMaxLevel(file_name:string):single;
+ function TForm_player.GetMaxLevel(file_name: string): Single;
 var
   chanm: DWORD;
- // channel: HSTREAM;  // audio channel identifier
-  buffer: array[0..8192] of Single;  // buffer for reading data from the audio channel
-  bytesRead: DWORD;  // number of bytes read from the audio channel
-  bdiv4, pos, lng:DWORD;
- // ss:string;
-  i:integer;
-
+  buffer: array[0..8191] of Single;  // 8192 float-семплів = 32768 байт
+  bytesRead: DWORD;
+  currentPos, endPos: DWORD;
+  localMax: Single;
+  i, sampleCount: Integer;
 begin
-pos:=0;
- cuePos:=0;
- CueEndPos:=0;
-chanm:=0;
-fmax:=0;
-//exit;
-  // open the audio file and get the audio channel identifier
+  Result   := 1.0;  // безпечне значення за замовчуванням
+  localMax := 0.0;
+  chanm    := 0;
 
-  chanm := BASS_StreamCreateFile(False, Pchar(file_name), 0, 0, BASS_STREAM_DECODE);
-Frm_list.Caption:=Frm_List.Lb2.Items[Frm_List.Lb1.ItemIndex];
-  if chanm <> 0 then begin
-     // set the initial position in the file
-    pos := 0;
-    // set the buffer size for reading data from the audio channel
-// BASS_ChannelSetAttribute(chanm, BASS_ATTRIB_BUFFER, SizeOf(buffer));
- if (Length(frm_list.LB3.Items[frm_list.LB1.ItemIndex])>0) then
- isCue:=True;
-                     if iscue then begin
-              //       caption:=intToStr(frm_list.Lb1.ItemIndex)+caption;
-                   frm_list.GetStartT(frm_list.Lb1.ItemIndex);
-                     cuePos:= BASS_ChannelSeconds2Bytes(Chanm, tms);
-                     frm_list.GetEndT(frm_list.Lb1.ItemIndex);
-                 //  cueEndPos:= BASS_ChannelSeconds2Bytes(Chanm, tmn);
-                 cueEndPos:= BASS_ChannelSeconds2Bytes(Chanm, tmn);
-                   if CueEndPos=0 then
-                   cueEndPos:= BASS_ChannelGetLength(chanm, BASS_POS_BYTE);
-                   end
-                   else   begin
-                   lng := qbass_gettime(chanm);
-                    cueEndPos:= BASS_ChannelSeconds2Bytes(Chanm, Round(lng));
-                    cuePos:=0;
-                   end;
-                   BASS_StreamFree(Chanm);
-                   chanm:=0;
- //  if isscue then
- //if (Length(frm_list.LB4.Items[frm_list.Lb1.ItemIndex])=0) then
- // ss:=frm_list.LB4.Items[frm_list.Lb1.ItemIndex];
-  if frm_list.LB4.Items[frm_list.Lb1.ItemIndex]='' then begin
+  // Якщо значення вже кешоване в LB4 — повертаємо одразу, файл не відкриваємо
+  if Frm_List.LB4.Items[Frm_List.Lb1.ItemIndex] <> '' then
+  begin
+    Result := StrToFloat(Frm_List.LB4.Items[Frm_List.LB1.ItemIndex]);
+    Exit;
+  end;
 
-      pos:=cuepos;
-       chanm := BASS_StreamCreateFile(false, Pchar(file_name), 0, 0, BASS_STREAM_DECODE or BASS_SAMPLE_FLOAT);
-      BASS_ChannelSetAttribute(chanm, BASS_ATTRIB_BUFFER, SizeOf(buffer));
+  Frm_list.Caption := Frm_List.Lb2.Items[Frm_List.Lb1.ItemIndex];
 
-   BASS_ChannelSetPosition(chanm, pos, BASS_POS_BYTE);
-    // loop for reading and processing data from the audio channel
-   while ( (BASS_ChannelIsActive(chanm) = BASS_ACTIVE_PLAYING) or (BASS_ChannelIsActive(chanm) = BASS_ACTIVE_PAUSED)) and ((fmax<1.0) and (Cuepos<CueEndPos-10 ) )
-do begin
-     // read a block of data from the audio channel
-      bytesRead := BASS_ChannelGetData(chanm, @buffer, SizeOf(buffer));
-      if (bytesRead>SizeOf(buffer)) then  begin
-      BASS_StreamFree(Chanm);
-      Chanm:=0;
-      ShowMessage(file_name+' Destroyed');
-      result:=1.0;
-     BGRAShape2Click(self);
-     exit;
-      end;
-      if bytesRead > 0 then begin
-      i:=0;
-    // adding code to process the maximum sample level
-     bdiv4:=(bytesRead div 4);
+  // Перший прохід: визначаємо межі треку (CUE або весь файл)
+  chanm := BASS_StreamCreateFile(False, PChar(file_name), 0, 0, BASS_STREAM_DECODE);
+  if chanm = 0 then Exit;
 
-     while (i<bdiv4) do begin
-      tfl:= abs(buffer[i]);
-         fmax:=Max(tfl, fmax);
-         i+=1;
-        end;
-      end;
-      // move to the next position in the file
-      pos := pos + bytesRead;
-      BASS_ChannelSetPosition(chanm, pos, BASS_POS_BYTE);
-     cuePos:=cuePos+bytesRead;
-     if  (bytesRead =0) or (fmax>=1.0) then  begin
-     cuepos:=CueEndPos;
-     end;
-    end;
-   result := fmax;
-   Frm_List.LB4.Items[Frm_List.Lb1.ItemIndex]:=FloatToStr(fmax);
-BASS_StreamFree(Chanm);
-chanm:=0;
-fillchar(buffer,sizeof(buffer),0);
- end
-   else  begin
-     //   fmax:=1;
-  result:=StrToFloat(Frm_List.LB4.Items[Frm_List.LB1.ItemIndex]);
-   end;
-end;
+  cuePos    := 0;
+  cueEndPos := 0;
+  isCue     := Length(frm_list.LB3.Items[frm_list.LB1.ItemIndex]) > 0;
+
+  if isCue then
+  begin
+    frm_list.GetStartT(frm_list.Lb1.ItemIndex);
+    cuePos    := BASS_ChannelSeconds2Bytes(chanm, tms);
+    frm_list.GetEndT(frm_list.Lb1.ItemIndex);
+    cueEndPos := BASS_ChannelSeconds2Bytes(chanm, tmn);
+    if cueEndPos = 0 then
+      cueEndPos := BASS_ChannelGetLength(chanm, BASS_POS_BYTE);
+  end
+  else
+  begin
+    cuePos    := 0;
+    cueEndPos := BASS_ChannelGetLength(chanm, BASS_POS_BYTE);
+  end;
+
+  BASS_StreamFree(chanm);
+
+  // Другий прохід: читаємо float-семпли і шукаємо пік
+  chanm := BASS_StreamCreateFile(False, PChar(file_name), 0, 0,
+             BASS_STREAM_DECODE or BASS_SAMPLE_FLOAT);
+  if chanm = 0 then Exit;
+
+  // Встановлюємо початкову позицію одноразово перед циклом
+  BASS_ChannelSetPosition(chanm, cuePos, BASS_POS_BYTE);
+  currentPos := cuePos;
+
+  while (currentPos < cueEndPos) and (localMax < 1.0) do
+  begin
+    bytesRead := BASS_ChannelGetData(chanm, @buffer, SizeOf(buffer));
+    if bytesRead = 0 then Break;
+
+    sampleCount := bytesRead div SizeOf(Single);
+    for i := 0 to sampleCount - 1 do
+      if Abs(buffer[i]) > localMax then
+        localMax := Abs(buffer[i]);
+
+    currentPos := currentPos + bytesRead;
+  end;
+
+  BASS_StreamFree(chanm);
+
+  if localMax = 0.0 then localMax := 1.0;  // захист від порожнього/тихого треку
+  Result := localMax;
+
+  // Кешуємо результат щоб не сканувати повторно
+  Frm_List.LB4.Items[Frm_List.Lb1.ItemIndex] := FloatToStr(localMax);
 end;
 
 
-
-{
-
-function TForm_player.GetMaxLevel1(file_name:string; fstart:integer; fend:integer):single;
-var
-  chanm: DWORD;
- // channel: HSTREAM;  // audio channel identifier
-  buffer: array[0..8192] of Single;  // buffer for reading data from the audio channel
-  bytesRead: DWORD;  // number of bytes read from the audio channel
-  bdiv4, pos, lng:DWORD;
- // ss:string;
-  i:integer;
-
-begin
-pos:=0;
- cuePos:=0;
- CueEndPos:=0;
-chanm:=0;
-fmax:=0;
-  // open the audio file and get the audio channel identifier
-
- { chanm := BASS_StreamCreateFile(False, Pchar(file_name), 0, 0, BASS_STREAM_DECODE);
-//Frm_list.Caption:=Frm_List.Lb2.Items[Frm_List.Lb1.ItemIndex];
-  if chanm <> 0 then begin
-     // set the initial position in the file
-    pos := 0;
-    // set the buffer size for reading data from the audio channel
- BASS_ChannelSetAttribute(chanm, BASS_ATTRIB_BUFFER, SizeOf(buffer));
- if (Length(frm_list.LB3.Items[frm_list.LB1.ItemIndex])>0) then
- isCue:=True;
-                     if iscue then begin
-                   frm_list.GetStartT(frm_list.Lb1.ItemIndex);
-                     cuePos:= BASS_ChannelSeconds2Bytes(Chanm, tms);
-                     frm_list.GetEndT(frm_list.Lb1.ItemIndex);
-                   cueEndPos:= BASS_ChannelSeconds2Bytes(Chanm, tmn);
-                   if CueEndPos=0 then
-                   cueEndPos:= BASS_ChannelGetLength(chanm, BASS_POS_BYTE);
-                   end
-                   else   begin
-                   lng := qbass_gettime(chanm);
-                    cueEndPos:= BASS_ChannelSeconds2Bytes(Chanm, Round(lng));
-                    cuePos:=0;
-                   end;
-      pos:=fstart;
-       chanm := BASS_StreamCreateFile(false, Pchar(file_name), 0, 0, BASS_STREAM_DECODE or BASS_SAMPLE_FLOAT or BASS_ASYNCFILE or BASS_SAMPLE_MONO);
-      BASS_ChannelSetAttribute(chanm, BASS_ATTRIB_BUFFER, SizeOf(buffer));
-   BASS_ChannelSetPosition(chanm, pos, BASS_POS_BYTE);
-    // loop for reading and processing data from the audio channel
-   while ( (BASS_ChannelIsActive(chanm) = BASS_ACTIVE_PLAYING) or (BASS_ChannelIsActive(chanm) = BASS_ACTIVE_PAUSED)) and ((fmax<1.0) and (Cuepos<fend ) )
-do begin
-     // read a block of data from the audio channel
-      bytesRead := BASS_ChannelGetData(chanm, @buffer, SizeOf(buffer));
-      if bytesRead > 0 then begin
-      i:=0;
-    // adding code to process the maximum sample level
-     bdiv4:=(bytesRead div 4);
-     while (i<bdiv4) do begin
-      tfl:= abs(buffer[i]);
-         fmax:=Max(tfl, fmax);
-         i+=1;
-        end;
-      end;
-      // move to the next position in the file
-      pos := pos + bytesRead;
-      BASS_ChannelSetPosition(chanm, pos, BASS_POS_BYTE);
-     cuePos:=cuePos+bytesRead;
-     if  (bytesRead =0) or (fmax>=1.0) then  begin
-     cuepos:=CueEndPos;
-     end;
-    end;
-   result := fmax;
-BASS_StreamFree(Chanm);
-chanm:=0;
-fillchar(buffer,sizeof(buffer),0);
- end;
-
-//end;
-          }
-
-// stop and free the playback channel
 procedure freechannel;
 begin
  if channel>0 then begin
@@ -1222,9 +1112,9 @@ isStream:= false;
 if copy(Filename,0, 4)='http' then
 isStream:= true;
 if isStream then
-Frm_List.LB1.ItemHeight:=(Frm_List.LB1.Font.Size+4)
+  Frm_List.UpdateLB1ItemHeightStream
 else
-Frm_List.LB1.ItemHeight:=(Options_frm.UpDown1.Position-4+Options_frm.UpDown1.Position*2);
+  Frm_List.UpdateLB1ItemHeight;
 end;
 if SameText(Pchar(FileName), '.cue') or (mode=paused) or (FileName = '') then exit
   else  begin
@@ -1243,7 +1133,7 @@ if not FileExists(FileName) then Begin
 timer1.Enabled:=false;
 mode:=stop;
 scrollBar1.Max:=scrollBar1.Min;
-ShowMessage(afile +FileName+nosuch);
+ShowCenteredMessage(afile +FileName+nosuch, Frm_list);
 result:=false;
 exit;
 end;
@@ -1265,10 +1155,8 @@ Channel := BASS_FX_TempoCreate(Fchannel,  BASS_FX_FREESOURCE);
   BASS_ChannelSetAttribute(channel, BASS_ATTRIB_TEMPO, FXTempo);
   BASS_ChannelSetAttribute(channel, BASS_ATTRIB_TEMPO_PITCH, FXPitch);
    frm_list.pict:=frm_list.GetPictureFileName(ExtractFilePath(Filename));
-if frm_list.pict>'' then  begin
 frm_list.Hide;
      Cover_Form.show;
-    end;
 
     end
     else begin
@@ -1294,39 +1182,39 @@ scrollBar1.Min:=0;
 scrollBar1.Max:=scrollBar1.Min;
  scrollBar1.Position:=0;
 if err=BASS_ERROR_INIT then begin
-  ShowMessage(eBASS_ERROR_INIT);exit;
+  ShowCenteredMessage(eBASS_ERROR_INIT,Frm_List);exit;
   end;
 if err=BASS_ERROR_NOTAVAIL then begin
-  ShowMessage(eBASS_ERROR_NOTAVAIL);exit;
+  ShowCenteredMessage(eBASS_ERROR_NOTAVAIL,Frm_List);exit;
   end;
 if err=BASS_ERROR_NONET then  begin
-  ShowMessage(eBASS_ERROR_NONET);exit; end;
+  ShowCenteredMessage(eBASS_ERROR_NONET,Frm_List);exit; end;
 if (err=BASS_ERROR_ILLPARAM) then begin
-  ShowMessage(eBASS_ERROR_ILLPARAM);exit; end;
+  ShowCenteredMessage(eBASS_ERROR_ILLPARAM,Frm_List);exit; end;
 if err = BASS_ERROR_PROTOCOL then begin
-  ShowMessage(eBASS_ERROR_PROTOCOL);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_PROTOCOL,Frm_List);exit;end;
 if err=BASS_ERROR_TIMEOUT then  begin
-  ShowMessage(eBASS_ERROR_TIMEOUT);exit; end;
+  ShowCenteredMessage(eBASS_ERROR_TIMEOUT,Frm_List);exit; end;
 if err=BASS_ERROR_FILEOPEN then begin
-  ShowMessage(eBASS_ERROR_FILEOPEN);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_FILEOPEN,Frm_List);exit;end;
   if err=BASS_ERROR_FILEFORM then  begin
-  ShowMessage(eBASS_ERROR_FILEFORM);exit; end;
+  ShowCenteredMessage(eBASS_ERROR_FILEFORM,Frm_List);exit; end;
   if err=BASS_ERROR_UNSTREAMABLE then begin
-  ShowMessage(eBASS_ERROR_UNSTREAMABLE);exit; end;
+  ShowCenteredMessage(eBASS_ERROR_UNSTREAMABLE,Frm_List);exit; end;
   if err=BASS_ERROR_NOTAUDIO then begin
-  ShowMessage(eBASS_ERROR_NOTAUDIO);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_NOTAUDIO,Frm_List);exit;end;
   if err=BASS_ERROR_CODEC then begin
-  ShowMessage(eBASS_ERROR_CODEC);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_CODEC,Frm_List);exit;end;
   if err=BASS_ERROR_FORMAT then begin
-  ShowMessage(eBASS_ERROR_FORMAT);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_FORMAT,Frm_List);exit;end;
   if err=BASS_ERROR_SPEAKER then begin
-  ShowMessage(eBASS_ERROR_SPEAKER);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_SPEAKER,Frm_List);exit;end;
   if err=BASS_ERROR_MEM then begin
-  ShowMessage(eBASS_ERROR_MEM);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_MEM,Frm_List);exit;end;
     if err=BASS_ERROR_NO3D then  begin
-  ShowMessage(eBASS_ERROR_NO3D);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_NO3D,Frm_List);exit;end;
     if err=BASS_ERROR_UNKNOWN then begin
-  ShowMessage(eBASS_ERROR_UNKNOWN);exit;end;
+  ShowCenteredMessage(eBASS_ERROR_UNKNOWN,Frm_List);exit;end;
   //  player;
     exit;
 end;
@@ -1343,7 +1231,7 @@ if err=0 then begin
 
 
    if (channel>0) and( not BASS_ChannelPlay(Channel, false) )then
-  begin ShowMessage('File playback error');
+  begin ShowCenteredMessage(rsPlayBackError,frm_list);
   exit;
   end;
      BASS_ChannelPause(Channel);
@@ -1355,17 +1243,7 @@ if err=0 then begin
    UpdateEQ(aEqualizer);
 
       BASS_ChannelPlay(Channel, false);
-   // Start recording to file
-//  encoder := BASS_Encode_Start(FChannel, PChar('./recorded_stream.wav'), BASS_ENCODE_PCM or BASS_ENCODE_AUTOFREE, nil, nil)
-//  else
- //   begin
-//    ShowMessage('Failed to open stream!');
-//    Exit;
-//  end;
 
-
-//   Timer3.Enabled:=True;
-//Timer3Timer(self);
 ListBox1ItemIndex:= Frm_list.lb1.ItemIndex;
 ATTRIB_SRC:=Options_frm.ComboBox5.ItemIndex;
 BASS_ChannelSetAttribute(Channel, BASS_ATTRIB_SRC,  ATTRIB_SRC);
@@ -1381,7 +1259,7 @@ BASS_ChannelGetInfo(Channel, bcinfo);
 if Channel=0 then
 delay(100);
 if Channel=0 then
-  begin ShowMessage(afileerror+BASS_ErrorGetCode().ToString);end;
+  begin ShowCenteredMessage(afileerror+BASS_ErrorGetCode().ToString,Frm_List);end;
 
 //assign the form caption to the name of the playing file
 //using BASS_ChannelPlay(Channel, False) we try to play the file,
@@ -1528,11 +1406,6 @@ maxval:=0;
   end;
  ratio :=maxval/1000;
  ratio := power(10.0, ratio / 20.0);
-{if (BASS_FXGetParameters(fx[0], @pFXvol)) then begin
-pFXvol.fTarget:=(1/ratio)+0.05;
-pFXvol.fTime:=0;
-BASS_FXSetParameters(fx[0], @pFXvol);
-end;   }
  Timer3Timer(Self);
    end;
 
@@ -2008,7 +1881,7 @@ begin
         end
       else begin
            if (BASS_PluginLoad(PChar(Dir+DirectorySeparator+DirInfo.Name), 0)=0) then
-          showMessage('Error load '+DirectorySeparator+DirInfo.Name);
+          ShowCenteredMessage(rsErrorLoad+' '+DirectorySeparator+DirInfo.Name, frm_list);
         end ;
         until FindNext(DirInfo)<>0;
   FindClose(DirInfo);
@@ -2288,6 +2161,7 @@ begin
 end;
 
 
+
 procedure TForm_player.ListBoxMenuPopup(Sender: TObject);
 begin
 //SetDefaultLang(tLang[Language.Tag], 'languages');
@@ -2360,6 +2234,8 @@ Label5.Caption:=(Trunc(ATTRIB_FREQ)/1000).ToString+'k';
 //(FindComponent('LblEQ' +IntToStr(i)) as TLabel).Caption:=;
 LabelEqRefresh;
 UpdateTonComp;
+  if Assigned(FileInfoForm) then
+    FileInfoForm.UpdateLanguage;
   end;
 {frm_Effects.ComboBox1.Items[0]:= FlChor0;
 frm_Effects.ComboBox1.Items[1]:= FlChor1;
@@ -2453,39 +2329,49 @@ begin
 end;
 
 procedure TForm_player.OpenPlayListClick(Sender: TObject);
+var
+  SaveFontName:  string;
+  SaveFontSize:  Integer;
+  SaveFontColor: TColor;
+  SaveFontStyle: TFontStyles;
 begin
-if Frm_List.OpenDialog1.Execute then begin
-//BGRAShape2Click(self);
-StopMenuClick(self);
-application.ProcessMessages;
-//Frm_List.XMLPropStorage1.FileName:='./swampproperties/listprop.xml';
-ClearList.Visible:=False;
-filename:='';
-Frm_List.ListClear(self);
+  if Frm_List.OpenDialog1.Execute then begin
+    StopMenuClick(self);
+    application.ProcessMessages;
+    ClearList.Visible := False;
+    filename := '';
+    Frm_List.ListClear(self);
+    ClosePlayListClick(self);
 
-//clearlistClick(self);
+    // Запам'ятовуємо поточні параметри шрифту LB1
+    SaveFontName  := Frm_List.lb1.Font.Name;
+    SaveFontSize  := Frm_List.lb1.Font.Size;
+    SaveFontColor := Frm_List.lb1.Font.Color;
+    SaveFontStyle := Frm_List.lb1.Font.Style;
 
-ClosePlayListClick(self);
-  Frm_List.XMLPropStorage1.FileName:= Frm_List.OpenDialog1.Filename;
- // Frm_List.XMLPropStorage1.
-  Frm_List.XMLPropStorage1.Restore;
- Frm_List.XMLPropStorage1.FileName:='./swampproperties/listprop.xml';
-  Frm_List.XMLPropStorage1.Save;
-  Frm_List.XMLPropStorage1.Restore;
-form_player.FormChangeBounds(self);
-isStream:= false;
-if copy(Frm_List.lb2.items[0],0, 4)='http' then
-isStream:= true;
-if isStream then
-Frm_List.LB1.ItemHeight:=(Frm_List.LB1.Font.Size+4)
-else
-Frm_List.LB1.ItemHeight:=(Options_frm.UpDown1.Position-4+Options_frm.UpDown1.Position*2);
+    Frm_List.XMLPropStorage1.FileName := Frm_List.OpenDialog1.Filename;
+    Frm_List.XMLPropStorage1.Restore;
+    Frm_List.XMLPropStorage1.FileName := './swampproperties/listprop.xml';
+    Frm_List.XMLPropStorage1.Save;
+    Frm_List.XMLPropStorage1.Restore;
 
-if autostart then
-form_player.FormChangeBounds(self);
-player;
+    // Відновлюємо параметри шрифту LB1
+    Frm_List.lb1.Font.Name  := SaveFontName;
+    Frm_List.lb1.Font.Size  := SaveFontSize;
+    Frm_List.lb1.Font.Color := SaveFontColor;
+    Frm_List.lb1.Font.Style := SaveFontStyle;
 
-end;
+    isStream := false;
+    if copy(Frm_List.lb2.items[0], 0, 4) = 'http' then
+      isStream := true;
+    if isStream then
+      Frm_List.UpdateLB1ItemHeightStream
+    else
+      Frm_List.UpdateLB1ItemHeight;
+    if autostart then
+      form_player.FormChangeBounds(self);
+    player;
+  end;
 end;
 
 procedure TForm_player.draw;
@@ -2803,8 +2689,44 @@ ClearList.Visible:=False;
 //sleep(1000);
 filename:='';
 Frm_List.ListClear(self);
+Frm_List.Show;
+//Options_Frm.UpDown1Click(self);
  end;
 
+end;
+
+
+
+procedure TForm_player.TrackPropertiesClick(Sender: TObject);
+var
+  FileName: string;
+  Idx: Integer;
+begin
+  Idx := Frm_List.LB1.ItemIndex;
+  if Idx < 0 then Exit;
+  if Idx >= Frm_List.LB2.Items.Count then Exit;
+
+  FileName := Frm_List.LB2.Items[Idx];
+
+  // Для інтернет-потоків немає локального файлу
+  if (Copy(FileName, 1, 4) = 'http') or (Copy(FileName, 1, 4) = 'rtsp') then
+  begin
+    ShowCenteredMessage(rsNoStreamProps, Frm_List);
+    Exit;
+  end;
+
+  if not FileExists(FileName) then
+  begin
+    ShowCenteredMessage(rsFileNotFound + LineEnding + FileName, Frm_List);
+    Exit;
+  end;
+
+  if FileInfoForm = nil then
+    FileInfoForm := TFileInfoForm.Create(Form_player);
+
+  FileInfoForm.LoadInfo(FileName);
+  FileInfoForm.Show;
+  FileInfoForm.FormStyle:= fsStayOnTop;
 end;
 
 procedure TForm_player.MenuItem5Click(Sender: TObject);
@@ -3421,6 +3343,7 @@ begin
 form_player.Refresh;
 timerRenderTimer(self);
 Frm_list.FormDropFiles(Self,arrayFiles);
+
 loadFromDialog:=-1;
 end;
 
@@ -3543,6 +3466,15 @@ end;
   end;
   end;
   end;
+
+procedure TForm_player.BGRAShape14MouseMove(Sender: TObject;
+  Shift: TShiftState; X, Y: Integer);
+begin
+  if isStream then
+  Bgrashape14.ShowHint:=True
+  else
+  Bgrashape14.ShowHint:=false;
+end;
 
 
 
@@ -4369,15 +4301,13 @@ end;
 
 procedure TForm_player.TrackBar12MouseLeave(Sender: TObject);
 begin
-    trackBar12.Cursor:=crDefault;
-Application.ProcessMessages;
+
 end;
 
 procedure TForm_player.TrackBar12MouseMove(Sender: TObject; Shift: TShiftState;
   X, Y: Integer);
 begin
-    trackBar12.Cursor:=crSizeWE;
-Application.ProcessMessages;
+
 end;
 
 procedure TForm_player.TrackBar12MouseWheel(Sender: TObject;
@@ -4448,129 +4378,18 @@ end;
  else
  frm_list.caption:=frm_list.LB1.Items[ListBox1ItemIndex];
  end;
- if (init and (atrfq <> ATTRIB_FREQ)) or changeBand then   begin
-changeBand:=false;
-atrfq := ATTRIB_FREQ;
-Spectrum.DrawPeak := True;
+ if (init and (atrfq <> ATTRIB_FREQ)) or changeBand then
+begin
+  changeBand := False;
+  atrfq := ATTRIB_FREQ;
+  Spectrum.DrawPeak := True;
+  Spectrum.DrawType := 1;
 
-
-if  ATTRIB_FREQ>=44100 then
-if  Spectrum.ColWidth=7 then
-Spectrum.DrawRes:=0.65
-else
-if  Spectrum.ColWidth=6 then
-Spectrum.DrawRes:=0.56
-else
-if  Spectrum.ColWidth=5 then
-Spectrum.DrawRes:=0.48
-else
-if  Spectrum.ColWidth=4 then
-Spectrum.DrawRes:=0.41
-else
-if  Spectrum.ColWidth=3 then
-Spectrum.DrawRes:=0.32
-else
-if  Spectrum.ColWidth=2 then
-Spectrum.DrawRes:=0.24;
-
-if  ATTRIB_FREQ>=48000 then
-if  Spectrum.ColWidth=7 then
-Spectrum.DrawRes:=0.635
-else
-if  Spectrum.ColWidth=6 then
-Spectrum.DrawRes:=0.55
-else
-if  Spectrum.ColWidth=5 then
-Spectrum.DrawRes:=0.47
-else
-if  Spectrum.ColWidth=4 then
-Spectrum.DrawRes:=0.39
-else
-if  Spectrum.ColWidth=3 then
-Spectrum.DrawRes:=0.31
-else
-if  Spectrum.ColWidth=2 then
-Spectrum.DrawRes:=0.232;
-
-if  ATTRIB_FREQ>=88200 then
-if  Spectrum.ColWidth=7 then
-Spectrum.DrawRes:=0.46
-else
-if  Spectrum.ColWidth=6 then
-Spectrum.DrawRes:=0.4
-else
-if  Spectrum.ColWidth=5 then
-Spectrum.DrawRes:=0.34
-else
-if  Spectrum.ColWidth=4 then
-Spectrum.DrawRes:=0.28
-else
-if  Spectrum.ColWidth=3 then
-Spectrum.DrawRes:=0.22
-else
-if  Spectrum.ColWidth=2 then
-Spectrum.DrawRes:=0.17;
-
-if  ATTRIB_FREQ>=96000 then
-if  Spectrum.ColWidth=7 then
-Spectrum.DrawRes:=0.43
-else
-if  Spectrum.ColWidth=6 then
-Spectrum.DrawRes:=0.37
-else
-if  Spectrum.ColWidth=5 then
-Spectrum.DrawRes:=0.32
-else
-if  Spectrum.ColWidth=4 then
-Spectrum.DrawRes:=0.264
-else
-if  Spectrum.ColWidth=3 then
-Spectrum.DrawRes:=0.214
-else
-if  Spectrum.ColWidth=2 then
-Spectrum.DrawRes:=0.16;
-
-if  ATTRIB_FREQ>=176400 then
-if  Spectrum.ColWidth=7 then
-Spectrum.DrawRes:=0.321
-else
-if  Spectrum.ColWidth=6 then
-Spectrum.DrawRes:=0.28
-else
-if  Spectrum.ColWidth=5 then
-Spectrum.DrawRes:=0.239
-else
-if  Spectrum.ColWidth=4 then
-Spectrum.DrawRes:=0.198
-else
-if  Spectrum.ColWidth=3 then
-Spectrum.DrawRes:=0.157
-else
-if  Spectrum.ColWidth=2 then
-Spectrum.DrawRes:=0.116;
-
-if  ATTRIB_FREQ>=192000 then
-if  Spectrum.ColWidth=7 then
-Spectrum.DrawRes:=0.302
-else
-if  Spectrum.ColWidth=6 then
-Spectrum.DrawRes:=0.264
-else
-if  Spectrum.ColWidth=5 then
-Spectrum.DrawRes:=0.226
-else
-if  Spectrum.ColWidth=4 then
-Spectrum.DrawRes:=0.188
-else
-if  Spectrum.ColWidth=3 then
-Spectrum.DrawRes:=0.15
-else
-if  Spectrum.ColWidth=2 then
-Spectrum.DrawRes:=0.112;
-
-//Spectrum.DrawRes :=Spectrum.DrawRes/3.5;
-Spectrum.DrawType := 1;
-  end;
+  // Автоматичний розрахунок масштабу спектру:
+  // масштабується за шириною смуги і частотою дискретизації
+  Spectrum.DrawRes := 0.65 * ((Spectrum.ColWidth + 1) / 8)
+                          * Sqrt(44100 / ATTRIB_FREQ);
+end;
 // Hnd := BASS_ChannelGetData(Channel, @FFTData,  BASS_DATA_FFT1024);
 // if Hnd < 0 then Exit;
  //     BASS_ChannelGetData(Channel, @FFTData,  BASS_DATA_FFT1024);
@@ -4646,9 +4465,9 @@ maxnumber:= Max(chLeft, chRight) ;
  if chRight<10 then
     levelRight.Position:=chRight; }
  levelRight.Position:=chRight;
-if  (chRight > 32766) then
+if  (chRight > 32767) then
 TimerRighOverDrive.Enabled :=true;
- if  chLeft > 32766 then
+ if  chLeft > 32767 then
 TimerLeftOverDrive.Enabled :=true;
 if TimerLeftOverDrive.Enabled then begin
 LeftOver.Visible:= true;
@@ -4709,7 +4528,7 @@ LevelLeft.Height:=6;
 path:= ExtractFilePath(ParamStr(0))+'lib'+DirectorySeparator;
 fname:=PChar(path+'libbass.so');
                           if not Load_BASSDLL(PChar(fname)) then
-                           begin showMessage('won''t happen!'); exit end;
+                           begin ShowCenteredMessage(rsNhappend,frm_list); exit end;
 
 LoadLibsInDirs( ExtractFilePath(ParamStr(0))+'lib'+DirectorySeparator);
 LoadLibsInDirs( ExtractFilePath(ParamStr(0)));
@@ -4759,21 +4578,21 @@ Reset(fil1);
   DBusKeys := TDBusKeyHandler.Create;
   DBusKeys.Activate;
 
+
+
 end;
 
 
 
 procedure TForm_player.TrackBar1MouseLeave(Sender: TObject);
 begin
-  trackBar1.Cursor:=crDefault;
-Application.ProcessMessages;
+
 end;
 
 procedure TForm_player.TrackBar1MouseMove(Sender: TObject; Shift: TShiftState;
   X, Y: Integer);
 begin
-  trackBar1.Cursor:=crSizeWE;
-Application.ProcessMessages;
+
 end;
 
 procedure TForm_player.TrackSpeedClick(Sender: TObject);
